@@ -1,0 +1,41 @@
+import os,sys
+import pyslha2 as pyslha
+import argparse
+from Data_Analyzer_Recast import *
+import numpy as np
+
+"""
+ Select BINO or HIGGSINO dataset
+ Usage: python Create_Numpys.py -W BINO    ( or -W HIGGSINO)
+ This creates the dictionary from the list of OLD excluded points
+"""
+parser = argparse.ArgumentParser(description='Bino or Higgsino' )
+parser.add_argument('--what',  '-W', help='Bino or Higgsino'    )
+
+args      = parser.parse_args()
+WHAT     = args.what
+
+LISTA = WHAT
+
+# folder containing the results AND the SLHA files
+folder = '/scratch/fambrogi/PMSSM_TGQ/'+WHAT+'_NOHIGGS_RESULTS/'
+
+# Extract the data for the OLD excluded points
+
+old_list = '/scratch/fambrogi/PMSSM_TGQ/GitHub_Repo/pMSSM_TGQ/SLHA_LISTS/' + WHAT + '_old_excluded.txt'
+
+lista = open(old_list,'r').readlines()[1:]
+
+print len(lista)
+
+Masses = {'SLHA':[] , 'Glu':[] , 'Neu':[] , 'Light_S':[] }
+
+for slha in lista:
+    slha = slha.replace('\n','')
+    #print slha 
+    slha_path = folder + slha + '.slha'
+
+    Glu, Char1, Char2, Neu2, Neu , Light_S , Sbot_1, Stop_1 = Extract_Masses(slha_path)                                                                                                     
+    Masses['Glu'].append(Glu) , Masses['Neu'].append(Neu) , Masses['Light_S'].append(Light_S) , Masses['SLHA'].append(slha) 
+
+np.save('Masses_OLD_Excluded_'     + WHAT , Masses )                                                                                                                                                        

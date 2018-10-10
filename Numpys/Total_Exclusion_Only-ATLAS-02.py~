@@ -1,0 +1,360 @@
+import os,sys
+import matplotlib
+matplotlib.use('Agg')
+from matplotlib  import cm
+from itertools import izip
+from matplotlib import ticker
+#from Plotter_Functions import *
+import matplotlib.pyplot as plt
+from matplotlib.colors import LogNorm
+import argparse
+import numpy as np
+from matplotlib.ticker import MultipleLocator, FormatStrFormatter
+from Data_Analyzer_Recast import Check_Dec
+import pyslha2 as pyslha
+from Functions import *
+
+
+os.system('mkdir PLOTS_ATLAS-02')
+# Select Bino or Higgsino sets
+parser = argparse.ArgumentParser(description='Bino or Higgsino' )
+parser.add_argument('--what',  '-W', help='Bino or Higgsino'    )
+
+args      = parser.parse_args()
+WHAT     = args.what
+
+SLHA_Source = '../Data/' + WHAT+'_RESULTS'
+
+FILES = []
+for name in os.listdir(SLHA_Source):
+    if '.slha' in name and '.smodels' not in name and '.py' not in name:
+         NAME = name
+         if os.path.isfile(SLHA_Source +'/'+ NAME + '.smodels') and  os.path.isfile(SLHA_Source + '/'+ NAME + '.py'):
+              FILES.append(NAME + '.py')
+
+#FILES = [ name for name in os.listdir(SLHA_Source) if '.slha.py' in name and os.path.isfile()] # All results in .py files
+
+
+print 'the total number of files is: ' , len(FILES)
+
+
+def Extract_rValue_txName(Res, txName = ''):
+            r = [0]
+            for key in Res['TxNames weights (fb)'].keys():
+                if key == txName:
+                    r.append(Res['TxNames weights (fb)'][txName] / Res['upper limit (fb)'])
+            return max(r)
+
+def Is_Res(smodelsOutput, ANALYSIS):
+    Is_Result = False
+    for Res in smodelsOutput['ExptRes']:
+        if (Res['AnalysisID'] == ANALYSIS):
+            Is_Result = True
+    return Is_Result
+
+
+lim_exclusion = 1.00001
+
+RESULTS = {'Glu':[] , 'Neu':[] , 'Light_S':[] ,
+           'T1':[] , 'T2':[] , 'T5':[] , 'T3GQon':[] ,
+            'r':[] , 'SLHA':[] }
+
+for name in FILES: #looping over the .py results files
+    slha_name = name.replace('.py','').replace('\n','')
+    slha = SLHA_Source + '/' + slha_name
+    slhaDOTpy = SLHA_Source + '/' + name.replace('\n','')
+    
+    if os.path.isfile(slha):
+        
+      execfile(slhaDOTpy)
+      Dec_Status = Check_Dec(smodelsOutput)
+      
+      # Extracting the rValues for the best analysis only
+      if (Dec_Status == 1):
+          if not Is_Res(smodelsOutput, 'ATLAS-SUSY-2013-02'): continue
+          for Res in smodelsOutput['ExptRes']:
+              if (Res['AnalysisID'] == 'ATLAS-SUSY-2013-02'):
+                  r_tot = float(Res['r'])
+                  if r_tot > lim_exclusion:
+                    T1  = Extract_rValue_txName(Res, txName = 'T1')
+                    T2  = Extract_rValue_txName(Res, txName = 'T2')
+                    T5  = Extract_rValue_txName(Res, txName = 'T5')
+                    TGQ = Extract_rValue_txName(Res, txName = 'T3GQon')
+                    
+                    Glu, Char1, Char2, Neu2, Neu , Light_S , Sbot_1, Stop_1 = Extract_Masses(slha)
+                    RESULTS['Glu'].append(Glu) , RESULTS['Neu'].append(Neu) , RESULTS['Light_S'].append(Light_S) , RESULTS['SLHA'].append(slha_name)
+
+
+#print r_tot , T1, T2 , T5 , TGQ , T1+T2+T5+TGQ
+
+
+
+np.save('ATLAS02_Excluded_'     + WHAT , RESULTS )
+
+
+
+
+
+
+
+
+
+
+
+'''
+# Workflow:
+# 1) I check all the results in the OLD folder
+# 2) I extract the best EM and best UL , and best analysis
+# 3) I check that the same file exists with the new results
+# 4) I extract the EM results for CMS-012 and ATLAS-02
+# 5) I fill the results with the best analysis for each type
+'''
+
+'''
+
+RES = { 'ATLAS_OLD' : [] ,
+        'ATLAS_NEW' : [] ,
+        'CMS_OLD'   : [] ,
+        'CMS_NEW'   : [] }
+
+
+
+Masses = np.load(WHAT+'_Officially_Excluded_ATLAS-02.npy').item()
+
+
+
+def Select_rValue(Results, rvalue):
+
+    T2_glu  = []
+    T5_glu  = []
+    TGQ_glu = []
+
+    T2_sq  = []
+    T5_sq  = []
+    TGQ_sq = []
+
+    TOT_glu , TOT_sq = [] ,[]
+    
+    for D in Results:
+        G = D['Glu']
+        Q = D['Light_S']
+
+        t2 , t5, tgq = D['ATLAS-SUSY-2013-02']['EM']['T2-EM'] , D['ATLAS-SUSY-2013-02']['EM']['T5-EM'] , D['ATLAS-SUSY-2013-02']['EM']['T3GQon-EM']
+        tot = t2 + t5 + tgq
+
+        if t2 > rvalue :
+            T2_glu.append(G)   , T2_sq.append(Q)
+        if t5 > rvalue:
+            T5_glu.append(G)   , T5_sq.append(Q)
+        if tgq > rvalue :
+            TGQ_glu.append(G)  , TGQ_sq.append(Q)
+        if tot > rvalue:
+            TOT_glu.append(G)  , TOT_sq.append(Q)
+
+
+    return T2_glu, T2_sq , T5_glu, T5_sq , TGQ_glu , TGQ_sq, TOT_glu , TOT_sq
+
+
+T2_glu, T2_sq , T5_glu, T5_sq , TGQ_glu , TGQ_sq, TOT_glu , TOT_sq = Select_rValue(Results, 1)
+
+
+# *************************************************** Plotting part
+fontsize = 20
+bins = [0 + i*80 for i in range (0,100)]
+
+lab_x_frac , lab_y_frac = 2 , 95
+ymax , lab_x , lab_y = 0 , 0 , 0
+
+xmin , ymin = 0 , 0
+XMAX = 4500
+
+if WHAT == 'Higgsino':
+    COLOR = 'red'
+if WHAT == 'Bino':
+    COLOR = 'blue'
+
+YMAX = 3000
+lab_x = 200
+lab_y = 2750
+
+
+X_glu =      [ T2_glu,  T5_glu , TGQ_glu ,  TOT_glu ]
+X_sq  =      [ T2_sq ,  T5_sq  , TGQ_sq  ,  TOT_sq  ]
+LABELS = [ 'T2' , 'T5',    'T3GQon' , 'T2+T5+T3GQon']
+
+
+T2_GLU  = []
+T5_GLU  = []
+TGQ_GLU = []
+TOT_GLU = []
+
+T2_SQ  = []
+T5_SQ  = []
+TGQ_SQ = []
+TOT_SQ = []
+
+
+
+                           
+COLORS = [ 'blue',   'yellow'   , 'orange' , 'red']
+
+F_legend = 12
+
+for R in [ 1 , 1.2 , 1.5 , 2]:
+    T2_glu, T2_sq , T5_glu, T5_sq , TGQ_glu , TGQ_sq, TOT_glu , TOT_sq = Select_rValue(Results, R)
+    T2_GLU.append(T2_glu)
+    T2_SQ.append(T2_sq)
+    T5_GLU.append(T5_glu)
+    T5_SQ.append(T5_sq)
+    TGQ_GLU.append(TGQ_glu)
+    TGQ_SQ.append(TGQ_sq)
+    TOT_GLU.append(TOT_glu)
+    TOT_SQ.append(TOT_sq)
+
+
+
+l = str(len(Glu))
+
+LABELS = [ 'r$\geq$ 1.0 [' + str(len(TOT_GLU[0])) + ']' ,
+          'r$\geq$ 1.2 [' + str(len(TOT_GLU[1])) + ']' ,
+          'r$\geq$ 1.5 [' + str(len(TOT_GLU[2])) + ']' ,
+          'r$\geq$ 2.0 [' + str(len(TOT_GLU[3])) + ']' ]
+
+
+# T2
+plt.axis([xmin, XMAX, ymin , YMAX])
+LW = 1.3
+plt.grid()
+n, bins, patches = plt.hist(Glu        , bins, histtype='stepfilled'   , stacked=False , fill = True  , color = 'lightgray' , label = 'Official ATLAS-02 ' + l , linewidth=LW)
+n, bins, patches = plt.hist(T2_GLU[0]  , bins, histtype='stepfilled'   , stacked=False , fill = False  , color = COLORS[1]   , linewidth=LW)
+n, bins, patches = plt.hist(T2_GLU     , bins, histtype='step'         , stacked=False , fill = False , color = COLORS      , label = LABELS      , linewidth=LW)
+n, bins, patches = plt.hist(Glu        , bins, histtype='step'         , stacked=False , fill = False , color = 'black' , linewidth=LW)
+
+plt.text(lab_x, lab_y    , WHAT+'-like LSP', color = COLOR, fontsize = fontsize )
+plt.text(lab_x, lab_y-200 , 'T2 Exclusion'  , color = 'black', fontsize = fontsize )
+
+plt.ylabel('Number of Points / 80 GeV' , fontsize = fontsize-2)
+plt.xlabel(r'$ m_{\tilde g }$ [GeV]'   , fontsize = fontsize+2)
+plt.legend(fontsize = F_legend)
+plt.savefig('PLOTS_ATLAS-02/'+ WHAT+'_T2_GLU_Histo_rValue.png', dpi = 170,bbox_inches='tight' )
+
+plt.close()
+
+
+
+# T2
+plt.axis([xmin, XMAX, ymin , YMAX])
+plt.grid()
+n, bins, patches = plt.hist(Glu        , bins, histtype='stepfilled'   , stacked=False , fill = True  , color = 'lightgray' , label = 'Official ATLAS-02 ' + l , linewidth=LW)
+n, bins, patches = plt.hist(T5_GLU[0]  , bins, histtype='stepfilled'   , stacked=False , fill = False  , color = COLORS[1]   , linewidth=LW)
+n, bins, patches = plt.hist(T5_GLU     , bins, histtype='step'         , stacked=False , fill = False , color = COLORS      , label = LABELS      , linewidth=LW)
+n, bins, patches = plt.hist(Glu        , bins, histtype='step'         , stacked=False , fill = False , color = 'black' , linewidth=LW)
+
+plt.text(lab_x, lab_y , WHAT+'-like LSP', color = COLOR, fontsize = fontsize )
+plt.text(lab_x, lab_y-200 , 'T5 Exclusion'  , color = COLOR, fontsize = fontsize )
+
+plt.ylabel('Number of Points / 80 GeV' , fontsize = fontsize-2)
+plt.xlabel(r'$ m_{\tilde g }$ [GeV]'   , fontsize = fontsize+2)
+plt.legend(fontsize = F_legend)
+plt.savefig('PLOTS_ATLAS-02/'+ WHAT+'_T5_GLU_Histo_rValue.png', dpi = 170,bbox_inches='tight' )
+
+plt.close()
+
+
+# T2
+plt.axis([xmin, XMAX, ymin , YMAX])
+plt.grid()
+n, bins, patches = plt.hist(Glu        , bins, histtype='stepfilled'   , stacked=False , fill = True  , color = 'lightgray' , label = 'Official ATLAS-02 ' + l , linewidth=LW)
+n, bins, patches = plt.hist(TGQ_GLU[0]  , bins, histtype='stepfilled'   , stacked=False , fill = False  , color = COLORS[1]   , linewidth=LW)
+n, bins, patches = plt.hist(TGQ_GLU     , bins, histtype='step'         , stacked=False , fill = False , color = COLORS      , label = LABELS      , linewidth=LW)
+n, bins, patches = plt.hist(Glu        , bins, histtype='step'         , stacked=False , fill = False , color = 'black' , linewidth=LW)
+
+plt.text(lab_x, lab_y , WHAT+'-like LSP', color = COLOR, fontsize = fontsize )
+plt.text(lab_x, lab_y-200 , 'TGQ Exclusion'  , color = COLOR, fontsize = fontsize )
+
+plt.ylabel('Number of Points / 80 GeV' , fontsize = fontsize-2)
+plt.xlabel(r'$ m_{\tilde g }$ [GeV]'   , fontsize = fontsize+2)
+plt.legend(fontsize = F_legend)
+plt.savefig('PLOTS_ATLAS-02/'+ WHAT+'_TGQ_GLU_Histo_rValue.png', dpi = 170,bbox_inches='tight' )
+
+plt.close()
+
+
+# TOT
+plt.axis([xmin, XMAX, ymin , YMAX])
+plt.grid()
+n, bins, patches = plt.hist(Glu        , bins, histtype='stepfilled'   , stacked=False , fill = True  , color = 'lavender' , label = 'ATLAS-SUSY-2013-02'  , linewidth=LW)
+n, bins, patches = plt.hist(TOT_GLU[0]  , bins, histtype='stepfilled'   , stacked=False , fill = False  , color = COLORS[1]   , linewidth=LW)
+n, bins, patches = plt.hist(TOT_GLU     , bins, histtype='step'         , stacked=False , fill = False , color = COLORS      , label = LABELS      , linewidth=LW)
+n, bins, patches = plt.hist(Glu        , bins, histtype='step'         , stacked=False , fill = False , color = 'black' , linewidth=LW)
+
+plt.text(lab_x, lab_y , WHAT+'-like LSP', color = COLOR, fontsize = fontsize )
+plt.text(lab_x, lab_y-200 , 'T2+T5+TGQ Exclusion'  , color = 'black', fontsize = fontsize-2)
+
+plt.ylabel('Number of Points / 80 GeV' , fontsize = fontsize-2)
+plt.xlabel(r'$ m_{\tilde g }$ [GeV]'   , fontsize = fontsize+2)
+plt.legend(fontsize = F_legend+1)
+plt.savefig('PLOTS_ATLAS-02/'+ WHAT+'_TOT_GLU_Histo_rValue.png', dpi = 170,bbox_inches='tight' )
+
+plt.close()
+
+
+
+LABELS = [ 'T2' , 'T5',    'T3GQon' , 'T2+T5+T3GQon']
+for x,l in zip(X_glu, LABELS):
+   plt.grid()
+   plt.axis([xmin, XMAX, ymin , YMAX])
+   
+   n, bins, patches = plt.hist(x  , bins, histtype='stepfilled', stacked=False , fill = True , color = 'limegreen' , label = l + ' SModelS'      , linewidth=1.5)
+   n, bins, patches = plt.hist(Glu, bins, histtype='step'      , stacked=False , fill = False, color = 'blue'      , label = 'Official ATLAS-02 ' + l , linewidth=1.8)
+
+   plt.text(lab_x, lab_y , WHAT+'-like LSP', color = COLOR, fontsize = fontsize )
+   
+   plt.ylabel('Number of Points / 80 GeV' , fontsize = fontsize-2)
+   plt.xlabel(r'$ m_{\tilde g }$ [GeV]'   , fontsize = fontsize+2)
+   plt.legend(fontsize = 10)
+   plt.savefig('PLOTS_ATLAS-02/'+ WHAT+'_' + l +'_GLU_Histo.png', dpi = 170,bbox_inches='tight' )
+
+   plt.close()
+
+
+
+
+for x,l in zip(X_sq, LABELS):
+   plt.grid()
+   plt.axis([xmin, XMAX, ymin , YMAX])
+
+   n, bins, patches = plt.hist(x   , bins, histtype='stepfilled' , stacked=False , fill = True , color = 'limegreen' , label = l + ' SModelS' , linewidth=1.5)
+   n, bins, patches = plt.hist(L_Sq, bins, histtype='step' , stacked=False , fill = False , color = 'blue' , label =  'Official ATLAS-02 ' + l  , linewidth=1.8)
+
+   plt.ylabel('Number of Points / 80 GeV' , fontsize = fontsize-2)
+   plt.xlabel(r'$ min(m_{\tilde q })$ [GeV]'   , fontsize = fontsize+2)
+        
+   plt.text(lab_x, lab_y , WHAT+'-like LSP', color = COLOR, fontsize = fontsize )
+   plt.legend(fontsize = 10)
+   plt.savefig('PLOTS_ATLAS-02/'+ WHAT+'_'+l+'_SQ_Histo.png', dpi = 170,bbox_inches='tight' )
+   
+   plt.close()
+
+
+
+
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
