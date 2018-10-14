@@ -1,7 +1,7 @@
 # Extract the masses from the list of excluded points
 
 
-
+'''
 a = open('SummaryBino_noHeavyHiggsExclusion.txt','r').readlines() 
 
 out = open('Bino_old_excluded','w')
@@ -18,12 +18,12 @@ for l in a[1:]:
 # else: print 'Not Excluded'
 
 out.close()
+'''
 
-
-a = open('SummaryBino_noHeavyHiggsExclusion.txt','r').readlines()
+a = open('SummaryHiggsino_noHeavyHiggsExclusion.txt','r').readlines()
 
 out = open('Higgsino_old_excluded','w')
-out.write('#Old Bino Exclusion')
+out.write('#Old Higgsino Exclusion')
 
 for l in a[1:]:
  splitt = l.split(' ')

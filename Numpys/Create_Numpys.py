@@ -71,8 +71,8 @@ for name in FILES: #looping over the .py results files
 
 
 
-np.save('Results_ALL_'     + WHAT , Res_ALL )
-np.save('Results_ATLAS02_' + WHAT , Res_ATLAS02eff )
-np.save('Masses_'         + WHAT  , Masses )
+np.save('Numpys_All/Results_ALL_'     + WHAT , Res_ALL )
+np.save('Numpys_All/Results_ATLAS02_' + WHAT , Res_ATLAS02eff )
+np.save('Numpys_All/Masses_'         + WHAT  , Masses )
 
 
