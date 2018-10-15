@@ -1,0 +1,19 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{Ambrogi:2017lov}
+F.~Ambrogi, S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, and W.~Waltenberger, {\it
+  {On the coverage of the pMSSM by simplified model results}},  {\em Eur. Phys.
+  J.} {\bf C78} (2018), no.~3 215, [\href{http://arxiv.org/abs/1707.09036}{{\tt
+  arXiv:1707.09036}}].
+
+\bibitem{ATLASpMSSMhepdata}
+\url{http://hepdata.cedar.ac.uk/view/ins1389857}.
+
+\bibitem{Ambrogi:2017neo}
+F.~Ambrogi, S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, V.~Magerl, J.~Sonneveld,
+  M.~Traub, and W.~Waltenberger, {\it {SModelS v1.1 user manual: Improving
+  simplified model constraints with efficiency maps}},  {\em Comput. Phys.
+  Commun.} {\bf 227} (2018) 72--98,
+  [\href{http://arxiv.org/abs/1701.06586}{{\tt arXiv:1701.06586}}].
+
+\end{thebibliography}\endgroup

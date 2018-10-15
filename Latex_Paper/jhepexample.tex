@@ -1,0 +1,257 @@
+\documentclass[a4paper,11pt]{article}
+\pdfoutput=1 % if your are submitting a pdflatex (i.e. if you have
+             % images in pdf, png or jpg format)
+\usepackage{jheppub} % for details on the use of the package, please
+                     % see the JHEP-author-manual
+\usepackage[T1]{fontenc} % if needed
+
+\usepackage{slashed}
+\usepackage{booktabs}
+%% %simple case: 2 authors, same institution
+%% \author{A. Uthor}
+%% \author{and A. Nother Author}
+%% \affiliation{Institution,\\Address, Country}
+
+
+
+\title{\boldmath Extending the pMSSM Coverage with 3-jets+$\slashed{E}_T$ Simplified Models Results}
+
+\author[a]{Federico Ambrogi}
+\affiliation[a]{University of Vienna, Faculty of Physics, Bolzmanngasse 5, A-1090 Wien, Austria}
+% e-mail addresses: one for each author, in the same order as the authors\emailAdd{federico.ambrogi@oeaw.ac.at}
+\emailAdd{federico.ambrogi88@gmail.com}
+
+
+%%% Various Tools
+\newcommand{\amc}{{\sc MadGraph5\textunderscore}a{\sc MC@NLO}}
+\newcommand{\pyE}{{\sc Pythia\,8}\xspace}
+\newcommand{\pys}{{\sc Pythia\,6}\xspace}
+\newcommand{\pythiaS}{{\sc Pythia\,6}\xspace}
+\newcommand{\pythiaSF}{{\sc Pythia\,6.4}\xspace}
+\newcommand{\pythiaSFTS}{{\sc Pythia\,6.4.27}\xspace}
+\newcommand{\nllfast}{{\sc NLLfast}\xspace}
+\newcommand{\delphes}{{\sc Delphes\,3}}
+\newcommand{\MA}{{\sc MadAnalysis\,5}}
+\newcommand{\SMO}{{\sc SModelS}}
+
+%%% Sparticles
+\newcommand{\MSQ}{$ m _{ \tilde q } $\xspace} 
+\newcommand{\MGLU}{$ m _{ \tilde g } $\xspace} 
+
+
+
+\abstract{Simplified model results can be efficiently used to constrain generic BSM model ... }
+\begin{document} 
+\maketitle
+                
+                                           
+
+%\pagestyle{plain}
+\sffamily
+\flushbottom
+
+\section{Introduction}
+
+The coverage of the pMSSM by means of simplified model results was originaly presented in \cite{Ambrogi:2017lov}. In particular, the set of pMSSM points considered were made public by the ATLAS collaboration on the \texttt{HepData} website\cite{ATLASpMSSMhepdata}, and the ATLAS experiment's sensitivity of Run 1 searches for SUSY and other more exotic signatures was extensively discussed in \ref{2015baa}. The total coverage obtained by the previous \SMO~study amounted to roughly 55$\%$-63$\%$ for the Bino and Higgsino-like LSP case, respectively. The work also showed that by means of efficiency maps (EM) results, particularly produced by phenomenologists outside the experimental collaborations, it was possible to increase the number of excluded point.
+\\
+The comparison between the \SMO~approach and the re-interpretation performed by the ATLAS collaboration, based on a full recast approach, showed that the main limitation of the simplified model approach is the lack of results for simple signatures, such as the 3jets + $\slashed{E}_T$. One of the \SMO~tool main features is indeed the ability of extracting the most relevant signatures in terms of $\sigma \times BR$ (cross section production times branching ratio) that are not currently constrained by simplified models results, called \textit{missing topologies}. The aforementioned signature can arise, for example, from gluino-squark associated production, where the gluino decays preferentially to an on-shell lighter squark, in turn decaying to a jet and the LSP. This simplified model can be fully described by three mass parameters of the sparticle involved. Under simplifid model assumption, results for such model can be used to constrain the alternative mass hierarchy where the squark is heavier than the gluino, so that this time the squark decays to on-shell gluino. The gluino can then decay radiatively to a gluon and the LSP or via an off-shell squark (3-body decay, producing a 4jets + $\slashed{E}_T$ signature ), depending on its mass difference with the lightest squark. 
+\\
+The idea at the basis of this paper is to extend further the previous study of the coverage of the pMSSM, and concretely show how the inclusion of newly created EM for the 3jets + $\slashed{E}_T$ signature increases the coverage of the pMSSM. This can be efficiently done by combining the information obtained with \SMO~, which extracts the important missing topologies, and the usage of analyses recasting tools to produce EMs results for arbitrary simplified models, to be implemented in the database of experimental results. For this purpose, this paper is structured as follows: in Section \ref{sec::setup} the set up of the analysis is described, with special emphasis on the production of the EMs and the choice of the mass hierarchy ... 
+
+
+\section{Analysis Set Up}\label{sec::setup}
+{\color{blue} ??? }
+
+
+\section{Analysis of the 3 jets + $\slashed{E}_T$ Topology}\label{sec::T3GQ}
+In generic pMSSM points there are three free squark mass parameters plus the mass of the gluinos, that can result in different allowed mass hierarchies. When considering one single squark mass with $m_{\tilde g} > m_{\tilde q}$ (and the other third generation squark set to a high scale), then the gluino will decay almost entirely to an on-shell intermediate squark, and the squark directly to a quark plus the LSP. However, for alternative hierarchies where the squarks considered are heavier than the gluino, the squarks will decay to an on-shell intermediate gluino, while the gluino will decay either via loop decay to the LSP, or for a small enough mass gap between the gluino and the lightest squark, via a three-body decay from off-shell squark $\tilde g \rightarrow q \bar q \tilde \chi _1 ^0$. This last model, that produces a 4-jets "[[[`jet',`jet']],[[`jet'],[`jet']]]" signature, will not be considered in this work. The simplified model of interest of this paper is instead the one described by the experimental signature 3jets + $\slashed{E}_T$ or, using \SMO~language, by the \textit{[[[`jet']],[[`jet'],['jet']]]} constrain. This experimental signature can be obtained by considering two different mass hierarchies, which are depicted by the diagrams a) and b) in Fig. \ref{Diagrams}. The former, labelled \textit{T3GQ} represents the case where the gluinos are heavier than the squarks considered, while the latter, labelled \textit{T3QG} represents the opposite case. Depending on the specific pMSSM model point considered, one mass hierarchy or the other can potentially produce this particular signature. According to simplified models assumptions, however, there is no need to distinguish between the two cases, and it should be possible to use efficiencies (and consequently limits) obtained with the choice of one of the hierarchies to constrain both scenarios. 
+%
+\begin{figure}[!]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Diagrams}
+\end{center}
+\caption{Diagrams for the simplified models used for the extension of the database. Models \textit{T3GQ}(a) and \textit{T3QG}(b), corresponding to the two different mass hierarchies $m_{\tilde g} > m_{\tilde q}$ and $m_{\tilde q} > m_{\tilde g}$, are identified by the experimental signature \textit{[[[`jet']],[[`jet'],['jet']]]} in \SMO~notation. Diagrams c) and d) represent the \textit{T2} and \textit{T5} models, mapping to the \textit{[[[`jet']],[['jet']]]} and \textit{[[[`jet'],['jet']],[[`jet'],['jet']]]} signatures.}
+\label{Diagrams}
+\end{figure}
+%
+As stated in the introduction, the \textit{T3GQ} model was foud to be the most important missing result for the pMSSM. It is to note, however that, by construction, the \textit{T2} and \textit{T5} models, represented by plots c) and d) of Fig. \ref{Diagrams}, are automatically important when the \textit{T3GQ} model is. In practice, the \textit{T3GQ} model is an asymmetric model composed by one branch from the \textit{T2} and one branch from the \textit{T5} models. Thanks to the usage of EM results, it is thus possible to combine the signals from the $pp \rightarrow \tilde g \tilde g$, $pp \rightarrow \tilde q \tilde q$ and $pp \rightarrow \tilde g \tilde q$ channels. Along with the results from \textit{TGQ}, the power of combining the \textit{T2} and \textit{T5} models will be explored in this work. For completeness, results for the \textit{T2} and \textit{T5} models were already included in the previous release of the database, hence did not appear in the missing topologies list of the original study.
+
+\subsection{Efficiency Maps Production and Extension of the Database}
+\\
+The set-up for the homegrown EMs production, including the description of the Monte Carlo settings was described in the Appendix of \cite{Ambrogi:2017neo}. The complete set of simplified models results, together with the relative grid and mass planes used are described in Tab. \ref{TGQ_Planes}. The analyses considered were the two multijets analyses ATLAS-SUSY-2013-02 and CMS-SUS-13-012. Although official EM results for the \textit{T2} model were made public by the collaborations, part of the parameter space with small mass gap between the squark and the LSP is below $~$50 GeV is not properly covered. For this reason, EMs were produced, up to a mass difference as small as 5 GeV betqeen the suqarks and the LSP. 
+%
+\begin{table}[!htbp]
+\footnotesize
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{ c c c} 
+\toprule 
+  \textbf{Txname} & \textbf{Mass Planes} & \textbf{Description} \\ \toprule \toprule
+  \textit{T2} & - & $\Delta M(\tilde q, \tilde \chi _1 ^0)$ as low as 5 GeV \\ \midrule
+  \textit{T5} & x = (0.05 , 0.50, 0.95) & - \\
+       &  $\Delta M(\tilde g, \tilde q )$ = 5 GeV & - \\
+       &  $\Delta M(\tilde q, \tilde \chi _1 ^0)$ = 5 GeV        & - \\ \midrule
+  \textit{T3GQ}  & Fixed $m_{\tilde g}$ = 200,250,...,1200       &  $m_{\tilde g}$ in 50 GeV bins \\ 
+                 & Fixed $m_{\tilde g}$ = 1300,1400,...,2000    &  $m_{\tilde g}$ in  100 GeV bins \\
+                 &                                                                                                                  & $m_{\tilde q}$ in 50 GeV bins (up to 1 TeV) \\
+                 &                                                                                                                         &  $\Delta M(\tilde q, \tilde \chi _1 ^0)$ as low as 5 GeV \\ 
+\bottomrule \bottomrule
+\end{tabular}
+\end{center}
+\caption{Mass plane parametrization used for the EMs production of the \textit{T2}, \textit{T3GQon} and \textit{T5}. The parameter x is defined so that $m_{\tilde q}= x\cdot m_{\tidle g} + (1-x)\cdot m_{\tilde \chi_1 ^0}$. For the \textit{T3GQon} model, the gluino mass reaches the value of 2 TeV, with a binning of 50 GeV for $200 \leq m_{\tilde g} < 1200$, and a binning of 100 GeV for $1200 \leq m_{\tilde g}  \leq 2000$ GeV. The squark masses have a 50 GeV binning, up to 1 TeV. For a better coverage of the parameter space in the case of small mass differences, additional mass planes parametrized with $\Delta M ( \tilde q, \tilde \chi _1 ^0)$=(5,10,15) GeV were produced. }
+\label{TGQ_Planes} 
+\end{table}
+%
+%
+The mass hierarchy used for the production of the gluino-squark model is $m_{\tilde g} > m_{\tilde q}$, meaning that the \textit{T3GQ} model was chosen to constrain the "[[[`jet']],[[`jet],[`jet']]]" signature. Note that the same problem related to the choice of the mass hierarchy applies to the $T5$ model: the "[[[`jet']],[[`jet']]]" signature can be obtained both with $\tilde g \rightarrow g \tilde \chi _1 ^0$ and $\tilde q \rightarrow q \tilde \chi _1 ^0$; for the maps production, again the former hierachy was chosen. 
+
+
+\section{Extending the pMSSM Coverage}\label{sec::impact}
+In this Section we study the improvements in the pMSSM coverage provided by the additional EMs for the \textit{T3GQ} gluino-squark model, in combination with the \textit{T2} and \textit{T5} model. Table \ref{Res_Tab_New} shows the new total exclusion of the pMSSM points. The coverage in the Bino and Higgsino-like case reaches up to 74 and 71 $\%$, with an increase of +19$\%$ and +8$\%$ respectively from the previous work. 
+%
+\begin{table}
+\center
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{ l | c   c  }
+\textbf{Number of Points} & \textbf{Bino-like LSP }& \textbf{Higgsino-like LSP} \\
+\toprule \toprule
+Total   & 38527 & 45345 \\
+Excluded by UL+EM & 28765 (74 $\%$) & 32358 (71 $\%$) \\ 
+\hline
+\end{tabular}
+\caption{SModelS constraints for the Bino and Higgsino-like LSP after the addition of the newly implemented EMs results fro the models \textit{T2}, \textit{T5} and \textit{T3GQ}.}
+\label{Res_Tab_New}
+\end{table}
+%
+The major improvement appears in the Bino-like LSP case, as visible also in the gluino and squark mass coverage distributions in Fig. \ref{pmssm_new_exclusion_gluino} and \ref{pmssm_new_exclusion_squark}. 
+%
+It is also interesting to analise the exclusion provided by each Txname result, and the impact of their combination. This is shown in Fig.\ref{combination}, where the study is done considering the analysis ATLAS-SUSY-2013-02 only. 
+%
+\begin{figure}[!]
+\begin{center}
+\subfigure
+\includegraphics[width=0.49\textwidth]{PLOTS/Bino_Comparison_Gluino.png}
+\subfigure
+{\includegraphics[width=0.49\textwidth]{PLOTS/Higgsino_Comparison_Gluino.png}}
+\end{center}
+\caption{SModelS exclusion as a function of \MGLU for the Bino(left) and Higgsino-like LSP (right): the points officially excluded by ATLAS are shown in purple, while in light blue the SModelS exclusion using the newly `homegrown' maps for the \textit{T2}, \textit{T5} and \textit{TGQ} (\textit{T3GQon}) models is shown. The previous exclusion from \cite{Ambrogi:2017lov}, obtained without the EMs produced for this work, is shown in slate blue.} 
+\label{pmssm_new_exclusion_gluino}
+\end{figure}
+%
+\begin{figure}[!]
+\begin{center}
+\subfigure
+\includegraphics[width=0.49\textwidth]{PLOTS/Bino_Comparison_Squark.png}
+\subfigure
+{\includegraphics[width=0.49\textwidth]{PLOTS/Higgsino_Comparison_Squark.png}}
+\end{center}
+\caption{Same as Fig. \ref{} as a function of \MSQ.} 
+\label{pmssm_new_exclusion_squark}
+\end{figure}
+%
+%
+As detailed in Section \ref{sec::T3GQ}, the \textit{T2}, \textit{T5} and \textit{T3GQ} can be combined to efficiently reconstruct the signals from $\tilde g \tilde g$, $\tidle q \tilde q$ and $\tilde g \tilde q$ production channels. The exclusion provided by each single Txname and by the combination of the $T2+T5+T3GQ$ models are drawn in Fig. 
+\ref{combination_gluino} and \ref{combination_squark}, for the analysis ATLAS-SUSY-2013-02 only. Note that points can be excuded by more than one Txname, e.g. points with both light squarks and gluinos. 
+
+%
+%
+Figures \ref{combination_gluino} and \ref{combination_squark} 
+\begin{figure}[!b]
+\begin{center}
+\subfigure
+\includegraphics[width=0.49\textwidth]{PLOTS/BINO_Txnames_Contribution_ATLAS02_Gluino.png}
+\subfigure
+{\includegraphics[width=0.49\textwidth]{PLOTS/HIGGSINO_Txnames_Contribution_ATLAS02_Gluino.png}}
+\end{center}
+\caption{Contribution of the \textit{T1}, \textit{T2}, \textit{T5} and \textit{T3GQ} and their combination for the analysis ATLAS-SUSY-2013-02, as a function of \MGLU. For each Txname, the total number of points excluded is shown.} 
+\label{combination_gluino}
+%
+\end{figure}
+\begin{figure}[!]
+\begin{center}
+\subfigure
+\includegraphics[width=0.49\textwidth]{PLOTS/BINO_Txnames_Contribution_ATLAS02_Squark.png}
+\subfigure
+{\includegraphics[width=0.49\textwidth]{PLOTS/HIGGSINO_Txnames_Contribution_ATLAS02_Squark.png}}
+\end{center}
+\caption{Same as Fig. \ref{combination_gluino} as a function of \MSQ.} 
+\label{combination_squark}
+\end{figure}
+%
+%
+Finally the \SMO~rvalue for the points that could not be excluded in the previous work, is shown in Fig. \ref{rValues}. It is interesting to note that many points exhibit a high value, exceeding the limits of the color bar of the plot. 
+\end{figure}
+\begin{figure}[!]
+\begin{center}
+\subfigure
+\includegraphics[width=0.49\textwidth]{PLOTS/BINO_rValus_Glu_Sq.png}
+\subfigure
+{\includegraphics[width=0.49\textwidth]{PLOTS/HIGGSINO_rValus_Glu_Sq.png}}
+\end{center}
+\caption{\SMO~r-values for the additionally excluded points, for the Bino (left) and Higgsino-like LSP (right).} 
+\label{rValues}
+\end{figure}
+%
+\section{Conclusion}
+%
+\acknowledgments
+%
+\clearpage
+\appendix
+\section{T3GQ vs T3QG Upper Limits}
+The following Tables \ref{ATLAS02_UL} and \ref{ATLAS02_UL_2}  compare the upper limits obtained for the mass point ($M_1,M_2,M_3) = (1000,200,190),(1200,600,500)$ [GeV] for the two different hierarchy models \textit{T3GQ}($m_{\tilde g}, m_{\tilde q}, m_{\tilde \chi _1 ^0 }$) and \textit{T3QG}($m_{\tilde q}, m_{\tilde g}, m_{\tilde \chi _1 ^0 }$. In bold, the best SR providing the strongest expected limit and corresponding observed limit is shown. The difference in the efficiency and consequent choice of a different SR, respectively \textit{2jm} for \textit{T3GQ} and \textit{2jt} for T3QG, favours a strongest limit for the \textit{T3GQ} case. However the difference is contained within a factor 2, which translates to only few tens of GeV difference in the excluded mass of Squarks or Gluinos.
+
+\begin{table}[!b]
+\centering
+\renewcommand\arraystretch{1.3} 
+\scriptsize
+\begin{tabular}{ l c c    c c c  |  c c c  }
+\toprule \toprule
+\multicolumn{3}{c}{($M_1,M_2,M_3) = (1000,200,190)$} & \multicolumn{3}{c}{ \textbf{T3GQ}} & \multicolumn{3}{c}{ \textbf{T3QG}} \\  \toprule 
+\textbf{SR} & $UL_{exp}$ & $UL_{obs}$ & $\epsilon$ &  $UL_{exp}/\epsilon$ & $UL_{obs}/\epsilon$ & $\epsilon$ & $UL_{exp}/ \epsilon$ & $UL_{obs}/ \epsilon$ \\
+2jm & 5.552 &  4.242 &  0.118  & \textbf{47.1} &  \textbf{36.0}  &  0.090 &  \textbf{61.5}  & \textbf{47.0 }\\
+2jt  & 1.512  & 1.818 &  0.032  & \textbf{47.9} &  \textbf{57.5}  &  0.027 &  \textbf{56.1}  & \textbf{67.4} \\
+3j &  0.332 &  0.433  & 0.002 &  139.4 &  182.2  &  0.002 &  186.4 &  243.6 \\ 
+4jl  & 5.435 &  4.749  & 0.032  & 171.4  & 149.8  &  0.039 &  139.7  & 122.1 \\
+4jl-  & 11.561 &  13.292 &  0.036  & 318.7 &  366.4  &  0.047 &  248.0 &  285.2 \\
+4jt  & 0.240  & 0.149  & 0.002  & 146.1  & 90.8 &   0.001  & 178.1  & 110.8 \\
+5j  & 1.714  & 1.543  & 0.007 &  245.1 &  220.7  &  0.010  & 172.9  & 155.6 \\
+6jl  & 1.531  & 1.923  & 0.002  & 965.5 &  1212.5  & 0.003  & 555.5 &  697.7 \\
+6jt &  0.333  & 0.332 &  0.001  & 472.8  & 470.4 &  0.001 &  327.8  & 326.2 \\
+6jt+  & 0.302 &  0.399 &  0.001  & 428.6  & 566.3  & 0.001  & 297.2  & 392.7 \\
+\bottomrule \bottomrule
+\end{tabular}
+\caption{Summary of the UL for the SRs of ATLAS-SUSY-2013-02, for the \textit{T3GQ} and \textit{T3QG} models, with mass spectrum ($M_1,M_2,M_3) = (1000,200,190)$ [GeV] . In bold, the expected and observed limits for the best SR are highlited.}
+\label{ATLAS02_UL}
+\end{table}
+
+\begin{table}[!b]
+\centering
+\renewcommand\arraystretch{1.3} 
+\scriptsize
+\begin{tabular}{ l c c    c c c  |  c c c  }
+\toprule \toprule
+\multicolumn{3}{c}{($M_1,M_2,M_3) = (1200,600,500)$} & \multicolumn{3}{c}{ \textbf{T3GQ}} & \multicolumn{3}{c}{ \textbf{T3QG}} \\  \toprule 
+\textbf{SR} & $UL_{exp}$ & $UL_{obs}$ & $\epsilon$ &  $UL_{exp}/\epsilon$ & $UL_{obs}/\epsilon$ & $\epsilon$ & $UL_{exp}/ \epsilon$ & $UL_{obs}/ \epsilon$ \\
+2jm & 5.552 &  4.242 &  0.178	 &31.172 &	23.815		 &0.184	 &30.111	 &23.004 \\
+2jt  & 1.512  & 1.818 &  0.061& 	\textbf{24.623}	& \textbf{29.601}	& 	0.069	& \textbf{21.949}& 	\textbf{26.385} \\
+3j &  0.332 &  0.433  & 0.005& 	61.421& 	80.255		& 0.005	& 64.971& 	84.893 \\ 
+4jl  & 5.435 &  4.749  & 0.165	& 69.892	& 80.356	& 	0.188	& 61.542& 	70.756  \\
+4jl-  & 11.561 &  13.292 &  0.145	& 37.596	& 32.851		& 0.166	& 32.813	& 28.672 \\
+4jt  & 0.240  & 0.149  & 0.004& 	54.035	& 33.611		& 0.004	& 54.765& 	34.065  \\
+5j  & 1.714  & 1.543  &0.048	& 36.043	& 32.449	& 	0.055	& 31.004	& 27.912  \\
+6jl  & 1.531  & 1.923  & 0.016	& 98.361	& 123.530	& 	0.018	& 83.039	& 104.286 \\
+6jt &  0.333  & 0.332 &  0.008	& 43.713& 	43.489	& 	0.007	& 45.136	& 44.905  \\
+6jt+  & 0.302 &  0.399 & 0.008& 	39.632& 	52.359	& 	0.007	& 40.922	& 54.063 \\
+\bottomrule \bottomrule
+\end{tabular}
+\caption{Summary of the UL for the SRs of ATLAS-SUSY-2013-02, for the \textit{T3GQ} and \textit{T3QG} models, with mass spectrum ($M_1,M_2,M_3) = (1200,600,500)$ [GeV]. In bold, the expected and observed limits for the best SR are highlited.}
+\label{ATLAS02_UL_2}
+\end{table}
+
+
+\bibliographystyle{JHEP}
+\bibliography{references}
+
+
+\end{document}

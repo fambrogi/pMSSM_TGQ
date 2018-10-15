@@ -1,0 +1,1737 @@
+<SAFheader>
+</SAFheader>
+
+<Histo>
+<Description>
+"NJets_METCleaning"
+# nbins        xmin           xmax           
+16             -0.5           15.5           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+23699 0 # nevents
+23699 0 # sum of event-weights over events
+23699 0 # nentries
+23699 0 # sum of event-weights over entries
+23699 0 # sum weights^2
+89067 0 # sum value*weight
+369629 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+4 0 # bin 1 / 16
+373 0 # bin 2 / 16
+2739 0
+7297 0
+7542 0
+3896 0
+1395 0
+349 0
+82 0
+17 0
+2 0
+1 0
+2 0
+0 0
+0 0 # bin 15 / 16
+0 0 # bin 16 / 16
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"NJets_NoLepton"
+# nbins        xmin           xmax           
+16             -0.5           15.5           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+23699 0 # nevents
+23699 0 # sum of event-weights over events
+23699 0 # nentries
+23699 0 # sum of event-weights over entries
+23699 0 # sum weights^2
+89067 0 # sum value*weight
+369629 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+4 0 # bin 1 / 16
+373 0 # bin 2 / 16
+2739 0
+7297 0
+7542 0
+3896 0
+1395 0
+349 0
+82 0
+17 0
+2 0
+1 0
+2 0
+0 0
+0 0 # bin 15 / 16
+0 0 # bin 16 / 16
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"NJets_NJets>2"
+# nbins        xmin           xmax           
+16             -0.5           15.5           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+20583 0 # nevents
+20583 0 # sum of event-weights over events
+20583 0 # nentries
+20583 0 # sum of event-weights over entries
+20583 0 # sum weights^2
+83216 0 # sum value*weight
+358300 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 16
+0 0 # bin 2 / 16
+0 0
+7297 0
+7542 0
+3896 0
+1395 0
+349 0
+82 0
+17 0
+2 0
+1 0
+2 0
+0 0
+0 0 # bin 15 / 16
+0 0 # bin 16 / 16
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"NJets_HT>500"
+# nbins        xmin           xmax           
+16             -0.5           15.5           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+18509 0 # nevents
+18509 0 # sum of event-weights over events
+18509 0 # nentries
+18509 0 # sum of event-weights over entries
+18509 0 # sum weights^2
+76347 0 # sum value*weight
+334963 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 16
+0 0 # bin 2 / 16
+0 0
+5802 0
+7028 0
+3834 0
+1392 0
+349 0
+82 0
+17 0
+2 0
+1 0
+2 0
+0 0
+0 0 # bin 15 / 16
+0 0 # bin 16 / 16
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"NJets_MHT>200"
+# nbins        xmin           xmax           
+16             -0.5           15.5           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+15681 0 # nevents
+15681 0 # sum of event-weights over events
+15681 0 # nentries
+15681 0 # sum of event-weights over entries
+15681 0 # sum weights^2
+64101 0 # sum value*weight
+278675 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 16
+0 0 # bin 2 / 16
+0 0
+5157 0
+5920 0
+3135 0
+1118 0
+265 0
+69 0
+13 0
+2 0
+1 0
+1 0
+0 0
+0 0 # bin 15 / 16
+0 0 # bin 16 / 16
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"NJets_MinDeltaPhi"
+# nbins        xmin           xmax           
+16             -0.5           15.5           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+11926 0 # nevents
+11926 0 # sum of event-weights over events
+11926 0 # nentries
+11926 0 # sum of event-weights over entries
+11926 0 # sum weights^2
+49087 0 # sum value*weight
+214841 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 16
+0 0 # bin 2 / 16
+0 0
+3786 0
+4491 0
+2491 0
+884 0
+208 0
+51 0
+11 0
+2 0
+1 0
+1 0
+0 0
+0 0 # bin 15 / 16
+0 0 # bin 16 / 16
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"HT_METCleaning"
+# nbins        xmin           xmax           
+40             0              4000           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+23699 0 # nevents
+23699 0 # sum of event-weights over events
+23699 0 # nentries
+23699 0 # sum of event-weights over entries
+23699 0 # sum weights^2
+1.88429e+07 0 # sum value*weight
+1.7349e+10 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+42 0 # bin 1 / 40
+165 0 # bin 2 / 40
+417 0
+996 0
+1994 0
+3050 0
+3622 0
+3221 0
+2706 0
+2205 0
+1619 0
+1191 0
+872 0
+553 0
+359 0
+228 0
+153 0
+105 0
+63 0
+52 0
+39 0
+16 0
+10 0
+8 0
+5 0
+2 0
+1 0
+4 0
+1 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0 # bin 39 / 40
+0 0 # bin 40 / 40
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"HT_NoLepton"
+# nbins        xmin           xmax           
+40             0              4000           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+23699 0 # nevents
+23699 0 # sum of event-weights over events
+23699 0 # nentries
+23699 0 # sum of event-weights over entries
+23699 0 # sum weights^2
+1.88429e+07 0 # sum value*weight
+1.7349e+10 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+42 0 # bin 1 / 40
+165 0 # bin 2 / 40
+417 0
+996 0
+1994 0
+3050 0
+3622 0
+3221 0
+2706 0
+2205 0
+1619 0
+1191 0
+872 0
+553 0
+359 0
+228 0
+153 0
+105 0
+63 0
+52 0
+39 0
+16 0
+10 0
+8 0
+5 0
+2 0
+1 0
+4 0
+1 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0 # bin 39 / 40
+0 0 # bin 40 / 40
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"HT_NJets>2"
+# nbins        xmin           xmax           
+40             0              4000           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+20583 0 # nevents
+20583 0 # sum of event-weights over events
+20583 0 # nentries
+20583 0 # sum of event-weights over entries
+20583 0 # sum weights^2
+1.72497e+07 0 # sum value*weight
+1.63937e+10 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 40
+8 0 # bin 2 / 40
+163 0
+568 0
+1335 0
+2364 0
+3190 0
+3002 0
+2603 0
+2137 0
+1595 0
+1172 0
+862 0
+546 0
+356 0
+227 0
+152 0
+104 0
+62 0
+52 0
+39 0
+15 0
+10 0
+8 0
+5 0
+2 0
+1 0
+4 0
+1 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0 # bin 39 / 40
+0 0 # bin 40 / 40
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"HT_HT>500"
+# nbins        xmin           xmax           
+40             0              4000           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+18509 0 # nevents
+18509 0 # sum of event-weights over events
+18509 0 # nentries
+18509 0 # sum of event-weights over entries
+18509 0 # sum weights^2
+1.63943e+07 0 # sum value*weight
+1.60309e+10 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 40
+0 0 # bin 2 / 40
+0 0
+0 0
+0 0
+2364 0
+3190 0
+3002 0
+2603 0
+2137 0
+1595 0
+1172 0
+862 0
+546 0
+356 0
+227 0
+152 0
+104 0
+62 0
+52 0
+39 0
+15 0
+10 0
+8 0
+5 0
+2 0
+1 0
+4 0
+1 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0 # bin 39 / 40
+0 0 # bin 40 / 40
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"HT_MHT>200"
+# nbins        xmin           xmax           
+40             0              4000           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+15681 0 # nevents
+15681 0 # sum of event-weights over events
+15681 0 # nentries
+15681 0 # sum of event-weights over entries
+15681 0 # sum weights^2
+1.39987e+07 0 # sum value*weight
+1.37414e+10 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 40
+0 0 # bin 2 / 40
+0 0
+0 0
+0 0
+1771 0
+2623 0
+2584 0
+2280 0
+1908 0
+1401 0
+1040 0
+734 0
+470 0
+304 0
+193 0
+127 0
+88 0
+47 0
+40 0
+35 0
+10 0
+8 0
+5 0
+5 0
+2 0
+1 0
+4 0
+1 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0 # bin 39 / 40
+0 0 # bin 40 / 40
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"HT_MinDeltaPhi"
+# nbins        xmin           xmax           
+40             0              4000           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+11926 0 # nevents
+11926 0 # sum of event-weights over events
+11926 0 # nentries
+11926 0 # sum of event-weights over entries
+11926 0 # sum weights^2
+1.05546e+07 0 # sum value*weight
+1.02703e+10 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 40
+0 0 # bin 2 / 40
+0 0
+0 0
+0 0
+1482 0
+2036 0
+1925 0
+1662 0
+1459 0
+1065 0
+781 0
+538 0
+353 0
+219 0
+146 0
+97 0
+56 0
+35 0
+27 0
+23 0
+6 0
+5 0
+2 0
+4 0
+0 0
+0 0
+4 0
+1 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0 # bin 39 / 40
+0 0 # bin 40 / 40
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"MHT_METCleaning"
+# nbins        xmin           xmax           
+30             0              1500           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+23699 0 # nevents
+23699 0 # sum of event-weights over events
+23699 0 # nentries
+23699 0 # sum of event-weights over entries
+23699 0 # sum weights^2
+8.63425e+06 0 # sum value*weight
+3.87487e+09 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+273 0 # bin 1 / 30
+825 0 # bin 2 / 30
+1331 0
+1882 0
+2236 0
+2573 0
+2724 0
+2623 0
+2428 0
+1924 0
+1489 0
+1114 0
+768 0
+545 0
+354 0
+244 0
+145 0
+95 0
+54 0
+24 0
+22 0
+9 0
+5 0
+5 0
+2 0
+2 0
+1 0
+1 0
+1 0 # bin 29 / 30
+0 0 # bin 30 / 30
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"MHT_NoLepton"
+# nbins        xmin           xmax           
+30             0              1500           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+23699 0 # nevents
+23699 0 # sum of event-weights over events
+23699 0 # nentries
+23699 0 # sum of event-weights over entries
+23699 0 # sum weights^2
+8.63425e+06 0 # sum value*weight
+3.87487e+09 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+273 0 # bin 1 / 30
+825 0 # bin 2 / 30
+1331 0
+1882 0
+2236 0
+2573 0
+2724 0
+2623 0
+2428 0
+1924 0
+1489 0
+1114 0
+768 0
+545 0
+354 0
+244 0
+145 0
+95 0
+54 0
+24 0
+22 0
+9 0
+5 0
+5 0
+2 0
+2 0
+1 0
+1 0
+1 0 # bin 29 / 30
+0 0 # bin 30 / 30
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"MHT_NJets>2"
+# nbins        xmin           xmax           
+30             0              1500           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+20583 0 # nevents
+20583 0 # sum of event-weights over events
+20583 0 # nentries
+20583 0 # sum of event-weights over entries
+20583 0 # sum weights^2
+7.49177e+06 0 # sum value*weight
+3.36789e+09 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+233 0 # bin 1 / 30
+710 0 # bin 2 / 30
+1173 0
+1644 0
+1951 0
+2303 0
+2409 0
+2227 0
+2079 0
+1598 0
+1252 0
+973 0
+679 0
+484 0
+325 0
+213 0
+129 0
+83 0
+49 0
+24 0
+21 0
+9 0
+4 0
+4 0
+2 0
+2 0
+1 0
+1 0
+1 0 # bin 29 / 30
+0 0 # bin 30 / 30
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"MHT_HT>500"
+# nbins        xmin           xmax           
+30             0              1500           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+18509 0 # nevents
+18509 0 # sum of event-weights over events
+18509 0 # nentries
+18509 0 # sum of event-weights over entries
+18509 0 # sum weights^2
+7.03813e+06 0 # sum value*weight
+3.2474e+09 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+165 0 # bin 1 / 30
+493 0 # bin 2 / 30
+868 0
+1302 0
+1614 0
+1969 0
+2169 0
+2078 0
+2008 0
+1588 0
+1252 0
+973 0
+679 0
+483 0
+325 0
+213 0
+129 0
+83 0
+49 0
+24 0
+21 0
+9 0
+4 0
+4 0
+2 0
+2 0
+1 0
+1 0
+1 0 # bin 29 / 30
+0 0 # bin 30 / 30
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"MHT_MHT>200"
+# nbins        xmin           xmax           
+30             0              1500           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+15681 0 # nevents
+15681 0 # sum of event-weights over events
+15681 0 # nentries
+15681 0 # sum of event-weights over entries
+15681 0 # sum weights^2
+6.65569e+06 0 # sum value*weight
+3.18953e+09 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 30
+0 0 # bin 2 / 30
+0 0
+0 0
+1614 0
+1969 0
+2169 0
+2078 0
+2008 0
+1588 0
+1252 0
+973 0
+679 0
+483 0
+325 0
+213 0
+129 0
+83 0
+49 0
+24 0
+21 0
+9 0
+4 0
+4 0
+2 0
+2 0
+1 0
+1 0
+1 0 # bin 29 / 30
+0 0 # bin 30 / 30
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"MHT_MinDeltaPhi"
+# nbins        xmin           xmax           
+30             0              1500           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+11926 0 # nevents
+11926 0 # sum of event-weights over events
+11926 0 # nentries
+11926 0 # sum of event-weights over entries
+11926 0 # sum weights^2
+5.18045e+06 0 # sum value*weight
+2.53499e+09 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 30
+0 0 # bin 2 / 30
+0 0
+0 0
+1105 0
+1363 0
+1583 0
+1526 0
+1576 0
+1277 0
+1008 0
+789 0
+554 0
+412 0
+269 0
+182 0
+112 0
+73 0
+41 0
+18 0
+17 0
+8 0
+4 0
+4 0
+0 0
+2 0
+1 0
+1 0
+1 0 # bin 29 / 30
+0 0 # bin 30 / 30
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"HT_BL+NJets>7"
+# nbins        xmin           xmax           
+40             0              4000           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+66 0 # nevents
+66 0 # sum of event-weights over events
+66 0 # nentries
+66 0 # sum of event-weights over entries
+66 0 # sum weights^2
+93680.3 0 # sum value*weight
+1.43906e+08 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 40
+0 0 # bin 2 / 40
+0 0
+0 0
+0 0
+0 0
+0 0
+1 0
+4 0
+4 0
+3 0
+8 0
+7 0
+10 0
+7 0
+5 0
+6 0
+3 0
+1 0
+2 0
+0 0
+0 0
+2 0
+1 0
+0 0
+0 0
+0 0
+2 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0 # bin 39 / 40
+0 0 # bin 40 / 40
+0 0 # overflow
+</Data>
+</Histo>
+
+<Histo>
+<Description>
+"NJets_BL+HT>1250"
+# nbins        xmin           xmax           
+16             -0.5           15.5           
+# associated RegionSelections
+ Njets3-5, HT500-800, MHT200-300                   # Region nr. 1
+ Njets3-5, HT500-800, MHT300-450                   # Region nr. 2
+ Njets3-5, HT500-800, MHT450-600                   # Region nr. 3
+ Njets3-5, HT500-800, MHT>600                      # Region nr. 4
+ Njets3-5, HT800-1000, MHT200-300                  # Region nr. 5
+ Njets3-5, HT800-1000, MHT300-450                  # Region nr. 6
+ Njets3-5, HT800-1000, MHT450-600                  # Region nr. 7
+ Njets3-5, HT800-1000, MHT>600                     # Region nr. 8
+ Njets3-5, HT1000-1250, MHT200-300                 # Region nr. 9
+ Njets3-5, HT1000-1250, MHT300-450                 # Region nr. 10
+ Njets3-5, HT1000-1250, MHT450-600                 # Region nr. 11
+ Njets3-5, HT1000-1250, MHT>600                    # Region nr. 12
+ Njets3-5, HT1250-1500, MHT200-300                 # Region nr. 13
+ Njets3-5, HT1250-1500, MHT300-450                 # Region nr. 14
+ Njets3-5, HT1250-1500, MHT>450                    # Region nr. 15
+ Njets3-5, HT>1500, MHT200-300                     # Region nr. 16
+ Njets3-5, HT>1500, MHT>300                        # Region nr. 17
+ Njets6-7, HT500-800, MHT200-300                   # Region nr. 18
+ Njets6-7, HT500-800, MHT300-450                   # Region nr. 19
+ Njets6-7, HT500-800, MHT>450                      # Region nr. 20
+ Njets6-7, HT800-1000, MHT200-300                  # Region nr. 21
+ Njets6-7, HT800-1000, MHT300-450                  # Region nr. 22
+ Njets6-7, HT800-1000, MHT>450                     # Region nr. 23
+ Njets6-7, HT1000-1250, MHT200-300                 # Region nr. 24
+ Njets6-7, HT1000-1250, MHT300-450                 # Region nr. 25
+ Njets6-7, HT1000-1250, MHT>450                    # Region nr. 26
+ Njets6-7, HT1250-1500, MHT200-300                 # Region nr. 27
+ Njets6-7, HT1250-1500, MHT300-450                 # Region nr. 28
+ Njets6-7, HT1250-1500, MHT>450                    # Region nr. 29
+ Njets6-7, HT>1500, MHT200-300                     # Region nr. 30
+ Njets6-7, HT>1500, MHT>300                        # Region nr. 31
+ Njets>7, HT500-800, MHT>200                       # Region nr. 32
+ Njets>7, HT800-1000, MHT>200                      # Region nr. 33
+ Njets>7, HT1000-1250, MHT>200                     # Region nr. 34
+ Njets>7, HT1250-1500, MHT>200                     # Region nr. 35
+ Njets>7, HT>1500, MHT>200                         # Region nr. 36
+</Description>
+<Statistics>
+1216 0 # nevents
+1216 0 # sum of event-weights over events
+1216 0 # nentries
+1216 0 # sum of event-weights over entries
+1216 0 # sum weights^2
+5902 0 # sum value*weight
+30592 0 # sum value^2*weight
+</Statistics>
+<Data>
+0 0 # underflow
+0 0 # bin 1 / 16
+0 0 # bin 2 / 16
+0 0
+147 0
+374 0
+378 0
+203 0
+73 0
+29 0
+9 0
+1 0
+1 0
+1 0
+0 0
+0 0 # bin 15 / 16
+0 0 # bin 16 / 16
+0 0 # overflow
+</Data>
+</Histo>
+
+<SAFfooter>
+</SAFfooter>

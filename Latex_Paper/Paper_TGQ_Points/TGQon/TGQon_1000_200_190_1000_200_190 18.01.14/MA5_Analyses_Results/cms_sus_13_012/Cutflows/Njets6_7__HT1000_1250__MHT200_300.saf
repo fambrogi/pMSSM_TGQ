@@ -1,0 +1,68 @@
+<SAFheader>
+</SAFheader>
+
+<InitialCounter>
+"Initial number of events"      #
+34049           0               # nentries
+3.404900e+04    0.000000e+00    # sum of weights
+3.404900e+04    0.000000e+00    # sum of weights^2
+</InitialCounter>
+
+<Counter>
+"No Lepton"                     # 1st cut
+34049           0               # nentries
+3.404900e+04    0.000000e+00    # sum of weights
+3.404900e+04    0.000000e+00    # sum of weights^2
+</Counter>
+
+<Counter>
+"Njets>2"                       # 2st cut
+10689           0               # nentries
+1.068900e+04    0.000000e+00    # sum of weights
+1.068900e+04    0.000000e+00    # sum of weights^2
+</Counter>
+
+<Counter>
+"HT>500"                        # 3st cut
+8561            0               # nentries
+8.561000e+03    0.000000e+00    # sum of weights
+8.561000e+03    0.000000e+00    # sum of weights^2
+</Counter>
+
+<Counter>
+"MHT>200"                       # 4st cut
+7908            0               # nentries
+7.908000e+03    0.000000e+00    # sum of weights
+7.908000e+03    0.000000e+00    # sum of weights^2
+</Counter>
+
+<Counter>
+"MinDeltaPhi"                   # 5st cut
+6208            0               # nentries
+6.208000e+03    0.000000e+00    # sum of weights
+6.208000e+03    0.000000e+00    # sum of weights^2
+</Counter>
+
+<Counter>
+"NJets6-7"                      # 6st cut
+195             0               # nentries
+1.950000e+02    0.000000e+00    # sum of weights
+1.950000e+02    0.000000e+00    # sum of weights^2
+</Counter>
+
+<Counter>
+"HT1000-1250"                   # 7st cut
+51              0               # nentries
+5.100000e+01    0.000000e+00    # sum of weights
+5.100000e+01    0.000000e+00    # sum of weights^2
+</Counter>
+
+<Counter>
+"MHT200-300"                    # 8st cut
+4               0               # nentries
+4.000000e+00    0.000000e+00    # sum of weights
+4.000000e+00    0.000000e+00    # sum of weights^2
+</Counter>
+
+<SAFfooter>
+</SAFfooter>
