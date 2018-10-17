@@ -54,17 +54,45 @@
 
 The coverage of the pMSSM by means of simplified model results was originaly presented in \cite{Ambrogi:2017lov}. In particular, the set of pMSSM points considered were made public by the ATLAS collaboration on the \texttt{HepData} website\cite{ATLASpMSSMhepdata}, and the ATLAS experiment's sensitivity of Run 1 searches for SUSY and other more exotic signatures was extensively discussed in \ref{2015baa}. The total coverage obtained by the previous \SMO~study amounted to roughly 55$\%$-63$\%$ for the Bino and Higgsino-like LSP case, respectively. The work also showed that by means of efficiency maps (EM) results, particularly produced by phenomenologists outside the experimental collaborations, it was possible to increase the number of excluded point.
 \\
-The comparison between the \SMO~approach and the re-interpretation performed by the ATLAS collaboration, based on a full recast approach, showed that the main limitation of the simplified model approach is the lack of results for simple signatures, such as the 3jets + $\slashed{E}_T$. One of the \SMO~tool main features is indeed the ability of extracting the most relevant signatures in terms of $\sigma \times BR$ (cross section production times branching ratio) that are not currently constrained by simplified models results, called \textit{missing topologies}. The aforementioned signature can arise, for example, from gluino-squark associated production, where the gluino decays preferentially to an on-shell lighter squark, in turn decaying to a jet and the LSP. This simplified model can be fully described by three mass parameters of the sparticle involved. Under simplifid model assumption, results for such model can be used to constrain the alternative mass hierarchy where the squark is heavier than the gluino, so that this time the squark decays to on-shell gluino. The gluino can then decay radiatively to a gluon and the LSP or via an off-shell squark (3-body decay, producing a 4jets + $\slashed{E}_T$ signature ), depending on its mass difference with the lightest squark. 
+
+The comparison between the \SMO~approach and the re-interpretation performed by the ATLAS collaboration, based on a full recast approach, showed that the main limitation of the simplified model approach is the lack of results for simple signatures, such as the 3jets + $\slashed{E}_T$. One of the \SMO~tool main features is indeed the ability of extracting the most relevant signatures in terms of $\sigma \times BR$ (production cross section  times branching ratio) that are not currently constrained by simplified models results, called \textit{missing topologies}. The aforementioned signature can arise, for example, from gluino-squark associated production, where the gluino decays preferentially to an on-shell lighter squark, in turn decaying to a jet and the LSP. This simplified model can be fully described by three mass parameters of the sparticle involved: $m_{\tilde g}, m_{\tilde q}$ and $m_{\tilde \chi _1 ^0}$. Under the simplified model assumption, results for such model can be used to constrain the alternative mass hierarchy where the squark is heavier than the gluino, so that this time the squark decays to on-shell gluino. The gluino can then decay radiatively to a gluon and the LSP or via an off-shell squark (i.e. 3-body decay, producing a 4jets + $\slashed{E}_T$ signature ), depending on its mass difference with the lightest squark. 
 \\
+
 The idea at the basis of this paper is to extend further the previous study of the coverage of the pMSSM, and concretely show how the inclusion of newly created EM for the 3jets + $\slashed{E}_T$ signature increases the coverage of the pMSSM. This can be efficiently done by combining the information obtained with \SMO~, which extracts the important missing topologies, and the usage of analyses recasting tools to produce EMs results for arbitrary simplified models, to be implemented in the database of experimental results. For this purpose, this paper is structured as follows: in Section \ref{sec::setup} the set up of the analysis is described, with special emphasis on the production of the EMs and the choice of the mass hierarchy ... 
 
 
-\section{Analysis Set Up}\label{sec::setup}
+\section{Description of the Analysis Setup}\label{sec::setup}
 {\color{blue} ??? }
 
-
 \section{Analysis of the 3 jets + $\slashed{E}_T$ Topology}\label{sec::T3GQ}
-In generic pMSSM points there are three free squark mass parameters plus the mass of the gluinos, that can result in different allowed mass hierarchies. When considering one single squark mass with $m_{\tilde g} > m_{\tilde q}$ (and the other third generation squark set to a high scale), then the gluino will decay almost entirely to an on-shell intermediate squark, and the squark directly to a quark plus the LSP. However, for alternative hierarchies where the squarks considered are heavier than the gluino, the squarks will decay to an on-shell intermediate gluino, while the gluino will decay either via loop decay to the LSP, or for a small enough mass gap between the gluino and the lightest squark, via a three-body decay from off-shell squark $\tilde g \rightarrow q \bar q \tilde \chi _1 ^0$. This last model, that produces a 4-jets "[[[`jet',`jet']],[[`jet'],[`jet']]]" signature, will not be considered in this work. The simplified model of interest of this paper is instead the one described by the experimental signature 3jets + $\slashed{E}_T$ or, using \SMO~language, by the \textit{[[[`jet']],[[`jet'],['jet']]]} constrain. This experimental signature can be obtained by considering two different mass hierarchies, which are depicted by the diagrams a) and b) in Fig. \ref{Diagrams}. The former, labelled \textit{T3GQ} represents the case where the gluinos are heavier than the squarks considered, while the latter, labelled \textit{T3QG} represents the opposite case. Depending on the specific pMSSM model point considered, one mass hierarchy or the other can potentially produce this particular signature. According to simplified models assumptions, however, there is no need to distinguish between the two cases, and it should be possible to use efficiencies (and consequently limits) obtained with the choice of one of the hierarchies to constrain both scenarios. 
+In generic pMSSM-19 points there are three free squark mass parameters: 
+\begin{equation*}
+m_{\tilde u_L} = m_{\tilde d_L} = m_{\tilde c_L} = m_{\tilde s_L} 
+\end{equation*}
+\begin{equation*}
+m_{\tilde u_R} = m_{\tilde c_R} 
+\end{equation*}
+\begin{equation*}
+m_{\tilde d_R} = m_{\tilde s_R}
+\end{equation*}
+\\
+Since the mass of the gluinos is another free parameter, there are two possible mass hierarchies of interest. 
+When considering for simplicity one single squark mass with $m_{\tilde g} > m_{\tilde q}$ (and the other third generation squark set to a high scale), gluino will decay almost entirely to an on-shell intermediate squark, followed by the decay of the squark to the LSP:
+\begin{equation}
+\tilde g \rightarrow \tilde q q , \tilde q \rightarrow q \chi_1 ^0
+\end{equation}
+\\
+However, for the alternative hierarchy where the squark considered is heavier than the gluino, the squarks will decay to an on-shell intermediate gluino, while the gluino will decay either via radiative decay to the LSP as 
+\begin{equation}
+\tilde q \rightarrow \tilde g q , \tilde g \rightarrow g \chi_1 ^0
+\end{equation} 
+\\
+or, for small $\Delta (min(m_{\tilde q}), m_{\tilde g})$,  via a three-body decay from off-shell squark:
+\begin{equation}
+\tilde q \rightarrow \tilde g q, \tilde g \rightarrow q \bar q \tilde \chi _1 ^0.
+ \end{equation}
+\\
+This last model, that produces a 4-jets "[[[`jet',`jet']],[[`jet'],[`jet']]]" signature, will not be considered in this work. The simplified model of interest of this paper is instead the one described by the experimental signature 3jets + $\slashed{E}_T$ or, using \SMO~language, by the \textit{[[[`jet']],[[`jet'],['jet']]]} constrain. This experimental signature can be obtained by considering two different mass hierarchies, which are depicted by the diagrams a) and b) in Fig. \ref{Diagrams}. The former, labelled \textit{T3GQ} represents the case where the gluinos are heavier than the squarks considered, while the latter, labelled \textit{T3QG} represents the opposite case. Depending on the specific pMSSM model point considered, one mass hierarchy or the other can potentially produce this particular signature. According to simplified models assumptions, however, there is no need to distinguish between the two cases, and it should be possible to use efficiencies (and consequently limits) obtained with the choice of one of the hierarchies to constrain both scenarios. 
 %
 \begin{figure}[!]
 \begin{center}
@@ -91,14 +119,14 @@ The set-up for the homegrown EMs production, including the description of the Mo
   \textit{T5} & x = (0.05 , 0.50, 0.95) & - \\
        &  $\Delta M(\tilde g, \tilde q )$ = 5 GeV & - \\
        &  $\Delta M(\tilde q, \tilde \chi _1 ^0)$ = 5 GeV        & - \\ \midrule
-  \textit{T3GQ}  & Fixed $m_{\tilde g}$ = 200,250,...,1200       &  $m_{\tilde g}$ in 50 GeV bins \\ 
-                 & Fixed $m_{\tilde g}$ = 1300,1400,...,2000    &  $m_{\tilde g}$ in  100 GeV bins \\
+  \textit{T3GQ}  &  $m_{\tilde g}$ = 200,250,...,1200       &  $m_{\tilde g}$ in 50 GeV bins \\ 
+                 &  $m_{\tilde g}$ = 1300,1400,...,2000    &  $m_{\tilde g}$ in  100 GeV bins \\
                  &                                                                                                                  & $m_{\tilde q}$ in 50 GeV bins (up to 1 TeV) \\
                  &                                                                                                                         &  $\Delta M(\tilde q, \tilde \chi _1 ^0)$ as low as 5 GeV \\ 
 \bottomrule \bottomrule
 \end{tabular}
 \end{center}
-\caption{Mass plane parametrization used for the EMs production of the \textit{T2}, \textit{T3GQon} and \textit{T5}. The parameter x is defined so that $m_{\tilde q}= x\cdot m_{\tidle g} + (1-x)\cdot m_{\tilde \chi_1 ^0}$. For the \textit{T3GQon} model, the gluino mass reaches the value of 2 TeV, with a binning of 50 GeV for $200 \leq m_{\tilde g} < 1200$, and a binning of 100 GeV for $1200 \leq m_{\tilde g}  \leq 2000$ GeV. The squark masses have a 50 GeV binning, up to 1 TeV. For a better coverage of the parameter space in the case of small mass differences, additional mass planes parametrized with $\Delta M ( \tilde q, \tilde \chi _1 ^0)$=(5,10,15) GeV were produced. }
+\caption{Mass plane parametrization used for the EMs production of the \textit{T2}, \textit{T3GQ} and \textit{T5}. The parameter x is defined so that $m_{\tilde q}= x\cdot m_{\tidle g} + (1-x)\cdot m_{\tilde \chi_1 ^0}$. For the \textit{T3GQ} model, the gluino mass reaches the value of 2 TeV, with a binning of 50 GeV for $200 \leq m_{\tilde g} < 1200$, and a binning of 100 GeV for $1200 \leq m_{\tilde g}  \leq 2000$ GeV. The squark masses have a 50 GeV binning, up to 1 TeV. For a better coverage of the parameter space in the case of small mass differences, additional mass planes parametrized with $\Delta M ( \tilde q, \tilde \chi _1 ^0)$=(5,10,15) GeV were produced. }
 \label{TGQ_Planes} 
 \end{table}
 %
@@ -134,7 +162,7 @@ It is also interesting to analise the exclusion provided by each Txname result, 
 \subfigure
 {\includegraphics[width=0.49\textwidth]{PLOTS/Higgsino_Comparison_Gluino.png}}
 \end{center}
-\caption{SModelS exclusion as a function of \MGLU for the Bino(left) and Higgsino-like LSP (right): the points officially excluded by ATLAS are shown in purple, while in light blue the SModelS exclusion using the newly `homegrown' maps for the \textit{T2}, \textit{T5} and \textit{TGQ} (\textit{T3GQon}) models is shown. The previous exclusion from \cite{Ambrogi:2017lov}, obtained without the EMs produced for this work, is shown in slate blue.} 
+\caption{SModelS exclusion as a function of \MGLU for the Bino(left) and Higgsino-like LSP (right): the points officially excluded by ATLAS are shown in purple, while in light blue the SModelS exclusion using the newly `homegrown' maps for the \textit{T2}, \textit{T5} and \textit{TGQ} (\textit{T3GQ}) models is shown. The previous exclusion from \cite{Ambrogi:2017lov}, obtained without the EMs produced for this work, is shown in slate blue.} 
 \label{pmssm_new_exclusion_gluino}
 \end{figure}
 %
@@ -199,7 +227,7 @@ Finally the \SMO~rvalue for the points that could not be excluded in the previou
 \clearpage
 \appendix
 \section{T3GQ vs T3QG Upper Limits}
-The following Tables \ref{ATLAS02_UL} and \ref{ATLAS02_UL_2}  compare the upper limits obtained for the mass point ($M_1,M_2,M_3) = (1000,200,190),(1200,600,500)$ [GeV] for the two different hierarchy models \textit{T3GQ}($m_{\tilde g}, m_{\tilde q}, m_{\tilde \chi _1 ^0 }$) and \textit{T3QG}($m_{\tilde q}, m_{\tilde g}, m_{\tilde \chi _1 ^0 }$. In bold, the best SR providing the strongest expected limit and corresponding observed limit is shown. The difference in the efficiency and consequent choice of a different SR, respectively \textit{2jm} for \textit{T3GQ} and \textit{2jt} for T3QG, favours a strongest limit for the \textit{T3GQ} case. However the difference is contained within a factor 2, which translates to only few tens of GeV difference in the excluded mass of Squarks or Gluinos.
+The following Tables \ref{ATLAS02_UL} and \ref{ATLAS02_UL_2}  compare the upper limits obtained for the mass point ($M_1,M_2,M_3) = (1000,200,190),(1200,600,500)$ [GeV] for the two different hierarchy models \textit{T3GQ}($m_{\tilde g}, m_{\tilde q}, m_{\tilde \chi _1 ^0 }$) and \textit{T3QG}($m_{\tilde q}, m_{\tilde g}, m_{\tilde \chi _1 ^0 }$). In bold, the best SR providing the strongest expected limit and corresponding observed limit is shown. The difference in the efficiency and consequent choice of a different SR, respectively \textit{2jm} for \textit{T3GQ} and \textit{2jt} for \textit{T3QG}, favours a strongest limit for the \textit{T3GQ} case. However the difference is contained within a factor 2, which translates to only few tens of GeV difference in the excluded mass of Squarks or Gluinos.
 
 \begin{table}[!b]
 \centering
