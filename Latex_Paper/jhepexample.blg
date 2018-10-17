@@ -1,11 +1,11 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: jhepexample.aux
 The style file: JHEP.bst
 Database file #1: references.bib
+Warning--I didn't find a database entry for "2015baa"
 You've used 3 entries,
             2195 wiz_defined-function locations,
-            530 strings with 4088 characters,
+            531 strings with 4095 characters,
 and the built_in function-call counts, 891 in all, are:
 = -- 76
 > -- 50
@@ -44,3 +44,4 @@ warning$ -- 0
 while$ -- 5
 width$ -- 4
 write$ -- 30
+(There was 1 warning)
