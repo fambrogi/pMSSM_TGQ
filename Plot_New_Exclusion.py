@@ -90,24 +90,31 @@ C1 = 'slateblue'
 C2 = 'lavender'
 C3 = 'cornflowerblue'
 C4 = 'blue'
-
+b = 'black'
+wi = 1.1
 # ******************************* GLUINO                                                                                                                                
 n,bins,patches= plt.hist(Atlas_Off_Glu, bins, histtype='stepfilled' , stacked=False , fill = True,  color = C1, label = lab_excluded_ATLAS   , linewidth=0)
+n,bins,patches= plt.hist(Atlas_Off_Glu, bins, histtype='step' , stacked=False , fill = False,  color = b   , linewidth=wi)
+
 n,bins,patches= plt.hist(New_Excl_Glu,          bins, histtype='stepfilled' , stacked=False , fill = True,  color = C2, label = lab_excluded_SMO_new , linewidth=0)
+n,bins,patches= plt.hist(New_Excl_Glu,          bins, histtype='step' , stacked=False , fill = False,  color = b, linewidth=wi)
+
 n,bins,patches= plt.hist(Old_Excl_Glu,          bins, histtype='stepfilled' , stacked=False , fill = True,  color = C3, label = lab_excluded_SMO_old , linewidth=0)
+n,bins,patches= plt.hist(Old_Excl_Glu,          bins, histtype='step' , stacked=False , fill = False,  color = b , linewidth=wi)
+
 
 plt.ylabel('Number of Points / 80 GeV' , fontsize = fontsize-2)
 plt.xlabel(r'$ m_{\tilde g }$ [GeV]'   , fontsize = fontsize+2)
 
-plt.legend(fontsize = fontsize-10, ncol =1)
+#plt.legend(fontsize = fontsize-10, ncol =1)
 
 plt.grid()
 plt.axis([xmin, XMAX, ymin , YMAX])
-plt.legend(fontsize = fontsize-9, ncol =1)
+plt.legend(fontsize = fontsize-6, ncol =1 , fancybox = True)
 plt.text(lab_x, lab_y , WHAT+'-like LSP', color = COLOR, fontsize = fontsize )
 
 plt.savefig('PLOTS/'+ WHAT+'_Comparison_Gluino.png', dpi = 200,bbox_inches='tight' )
-plt.savefig('/afs/hephy.at/user/f/fambrogi/www/TGQ_Paper/'+ WHAT+'_Comparison_Gluino.png', dpi = 200,bbox_inches='tight' )
+plt.savefig('/afs/hephy.at/user/f/fambrogi/www/TGQ_Paper/'+ WHAT+'_Comparison_Gluino_aaa.png', dpi = 160,bbox_inches='tight' )
 plt.close()
 
 # with numbers in labels
@@ -139,8 +146,13 @@ plt.close()
 # ******************************* SQUARKS
 
 n,bins,patches= plt.hist(Atlas_Off_Sq, bins, histtype='stepfilled' , stacked=False , fill = True,  color = C1, label = lab_excluded_ATLAS   , linewidth=0)
+n,bins,patches= plt.hist(Atlas_Off_Sq, bins, histtype='step' , stacked=False , fill = False,  color = b   , linewidth=wi)
+
 n,bins,patches= plt.hist(New_Excl_Sq,  bins, histtype='stepfilled' , stacked=False , fill = True,  color = C2, label = lab_excluded_SMO_new , linewidth=0)
+n,bins,patches= plt.hist(New_Excl_Sq,  bins, histtype='step' , stacked=False , fill = False,  color = b , linewidth=wi)
+
 n,bins,patches= plt.hist(Old_Excl_Sq,  bins, histtype='stepfilled' , stacked=False , fill = True,  color = C3, label = lab_excluded_SMO_old , linewidth=0)
+n,bins,patches= plt.hist(Old_Excl_Sq,  bins, histtype='step' , stacked=False , fill = False,  color = b , linewidth=wi)
                      
 plt.ylabel('Number of Points / 80 GeV' , fontsize = fontsize-2)
 plt.xlabel(r'min($m_{\tilde q }$) [GeV]'   , fontsize = fontsize+2)

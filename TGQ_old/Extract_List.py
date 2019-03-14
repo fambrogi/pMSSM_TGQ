@@ -1,3 +1,6 @@
+""" Extract the SLHA list of the points excluded by ATLAS
+    and considered in outr previous work """
+
 import os,sys
 
 # select which dataset (Bino or Higgsino)
@@ -17,6 +20,3 @@ for l in source[1:]:
 
           
 print 'Total ' + what + ' : ' + str(len(source))
-# for l in a[1:]:                                                  
-#   ...:     b = l.split(' ')[0]     
-#   ...:     out.write( b + '\n')

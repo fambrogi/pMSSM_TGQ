@@ -96,7 +96,7 @@ for t1,t2,t5,tgq,tot,G,Q in zip(T1,T2,T5,TGQ,TOT,GLU,SQ):
 
 # *************************************************** Plotting part
 fontsize = 20
-F_legend = 11
+F_legend = 14
 bins = [0 + i*80 for i in range (0,100)]
 
 lab_x_frac , lab_y_frac = 2 , 95
@@ -119,21 +119,36 @@ lab_y = 2750
 
 X_glu  = [ T1_glu, T2_glu,  T5_glu , TGQ_glu ]
 X_sq   = [ T1_sq,  T2_sq ,  T5_sq  , TGQ_sq  ]
-LABELS = [ 'T1', 'T2' , 'T5',  'T3GQ' , 'T2+T5+T3GQ']                           
+LABELS = [ 'T1', 'T2' , 'T5',  'TGQ3j' , 'T2+T5+TGQ3j']                           
 COLORS = [ 'blue', 'dodgerblue', 'cyan', 'green']
 
+COLORS = [ 'dodgerblue', 'blue' , 'red' , 'magenta' ]
+
 plt.axis([xmin, XMAX, ymin , YMAX])
-LW = 1.5
+LW = 1.3
+bl = 'black'
 
 # Gluino distribution
 plt.grid()
 print str(len(ATLAS_GLU)), str(len(TOT_glu)) , str(len(T2T5TGQ_glu))
 
 n, bins, patches = plt.hist(ATLAS_GLU, bins, histtype='stepfilled'   , stacked= False , color = 'slateblue' , label = 'ATLAS 1508.06608', linewidth=0)
-n, bins, patches = plt.hist(TOT_glu, bins, histtype='stepfilled'   , stacked= False , color = 'yellow' , label = 'All Txnames', linewidth=0)
+n, bins, patches = plt.hist(ATLAS_GLU, bins, histtype='step'   , stacked= False , color = bl , linewidth=LW-0.2)
+
+n, bins, patches = plt.hist(TOT_glu, bins, histtype='stepfilled'   , stacked= False , color = 'yellow' , label = 'All Results', linewidth=0)
+n, bins, patches = plt.hist(TOT_glu, bins, histtype='step'   , stacked= False , color = bl , linewidth=LW-0.2)
 
 n, bins, patches = plt.hist(T2T5TGQ_glu, bins, histtype='stepfilled'   , stacked= False , color = 'lime' , label = 'T2+T5+T3GQ', linewidth=0)
+n, bins, patches = plt.hist(T2T5TGQ_glu, bins, histtype='step'   , stacked= False , color = bl , linewidth=LW-0.2)
+
+#n, bins, patches = plt.hist(X_glu, bins, histtype='step'   , stacked= False  , fill = False,  color = COLORS , label = LABELS, linewidth=LW)
+
+B = ['black','black','black','black']
+#n, bins, patches = plt.hist(X_glu, bins, histtype='step'   , stacked= False  , fill = False,  color = B , linewidth=LW+0.2)
+
 n, bins, patches = plt.hist(X_glu, bins, histtype='step'   , stacked= False  , fill = False,  color = COLORS , label = LABELS, linewidth=LW)
+
+
 
 plt.text(lab_x, lab_y        , WHAT+'-like LSP', color = COLOR, fontsize = fontsize )
 plt.text(lab_x, lab_y-200    , 'ATLAS-SUSY-2013-02 EM', color = 'black', fontsize = fontsize-3 )
