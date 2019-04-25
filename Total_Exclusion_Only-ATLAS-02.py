@@ -95,8 +95,8 @@ for t1,t2,t5,tgq,tot,G,Q in zip(T1,T2,T5,TGQ,TOT,GLU,SQ):
 
 
 # *************************************************** Plotting part
-fontsize = 20
-F_legend = 14
+fontsize = 16
+F_legend = 10
 bins = [0 + i*80 for i in range (0,100)]
 
 lab_x_frac , lab_y_frac = 2 , 95
@@ -119,7 +119,7 @@ lab_y = 2750
 
 X_glu  = [ T1_glu, T2_glu,  T5_glu , TGQ_glu ]
 X_sq   = [ T1_sq,  T2_sq ,  T5_sq  , TGQ_sq  ]
-LABELS = [ 'T1', 'T2' , 'T5',  'TGQ3j' , 'T2+T5+TGQ3j']                           
+LABELS = [ 'T1', 'T2' , 'T5',  'T3GQ' , 'T2+T5+T3GQ']                           
 COLORS = [ 'blue', 'dodgerblue', 'cyan', 'green']
 
 COLORS = [ 'dodgerblue', 'blue' , 'red' , 'magenta' ]
@@ -129,13 +129,13 @@ LW = 1.3
 bl = 'black'
 
 # Gluino distribution
-plt.grid()
+plt.grid(linestyle = ':', color = 'lightgray', lw = 0.7 )
 print str(len(ATLAS_GLU)), str(len(TOT_glu)) , str(len(T2T5TGQ_glu))
 
 n, bins, patches = plt.hist(ATLAS_GLU, bins, histtype='stepfilled'   , stacked= False , color = 'slateblue' , label = 'ATLAS 1508.06608', linewidth=0)
 n, bins, patches = plt.hist(ATLAS_GLU, bins, histtype='step'   , stacked= False , color = bl , linewidth=LW-0.2)
 
-n, bins, patches = plt.hist(TOT_glu, bins, histtype='stepfilled'   , stacked= False , color = 'yellow' , label = 'All Results', linewidth=0)
+n, bins, patches = plt.hist(TOT_glu, bins, histtype='stepfilled'   , stacked= False , color = 'yellow' , label = 'SModelS Tot.', linewidth=0)
 n, bins, patches = plt.hist(TOT_glu, bins, histtype='step'   , stacked= False , color = bl , linewidth=LW-0.2)
 
 n, bins, patches = plt.hist(T2T5TGQ_glu, bins, histtype='stepfilled'   , stacked= False , color = 'lime' , label = 'T2+T5+T3GQ', linewidth=0)
@@ -158,14 +158,14 @@ plt.ylabel('Number of Points / 80 GeV' , fontsize = fontsize-2)
 plt.xlabel(r'$ m_{\tilde g }$ [GeV]'   , fontsize = fontsize+2)
 plt.legend(fontsize = F_legend)
 plt.savefig('PLOTS/'+ WHAT+'_Txnames_Contribution_ATLAS02_Gluino.png', dpi = 170,bbox_inches='tight' )
-plt.savefig('/afs/hephy.at/user/f/fambrogi/www/TGQ_Paper/'+ WHAT+'_Txnames_Contribution_Gluino.png', dpi = 170,bbox_inches='tight' )
+#plt.savefig('/afs/hephy.at/user/f/fambrogi/www/TGQ_Paper/'+ WHAT+'_Txnames_Contribution_Gluino.png', dpi = 170,bbox_inches='tight' )
 
 plt.close()
 
 # Suqark distribution
 plt.axis([xmin, XMAX, ymin , YMAX+1500])
 LW = 1.5
-plt.grid()
+plt.grid(linestyle = ':', color = 'lightgray', lw = 0.7 )
 
 print str(len(ATLAS_GLU)), str(len(TOT_glu)) , str(len(T2T5TGQ_glu))
 
@@ -183,6 +183,12 @@ plt.ylabel('Number of Points / 80 GeV' , fontsize = fontsize-2)
 plt.xlabel(r'min($ m_{\tilde q }$) [GeV]'   , fontsize = fontsize+2)
 plt.legend(fontsize = F_legend)
 plt.savefig('PLOTS/'+ WHAT+'_Txnames_Contribution_ATLAS02_Squark.png', dpi = 170,bbox_inches='tight' )
-plt.savefig('/afs/hephy.at/user/f/fambrogi/www/TGQ_Paper/'+ WHAT+'_Txnames_Contribution_Squark.png', dpi = 170,bbox_inches='tight' )
+#plt.savefig('/afs/hephy.at/user/f/fambrogi/www/TGQ_Paper/'+ WHAT+'_Txnames_Contribution_Squark.png', dpi = 170,bbox_inches='tight' )
 
 plt.close()
+
+tot_less = [ n for n in ATLAS_GLU if n < 1000 ]
+smo_less = [ n for n in TOT_glu if n < 1000 ]
+
+print 'the total number of poins for gluino less that 1 TeV is ', len(tot_less) , len(smo_less)
+

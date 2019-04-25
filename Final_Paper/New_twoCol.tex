@@ -241,9 +241,9 @@ The major improvement appears in the Bino-like LSP case, as noticeable also in t
 \subfigure
 {\includegraphics[width=0.49\textwidth]{PLOTS/BINO_rValus_Glu_Diff_Neu.png}}
 \subfigure
-{\includegraphics[width=0.49\textwidth]{PLOTS/Bino_Con.png}}
+{\includegraphics[width=0.49\textwidth]{PLOTS/Combination/Bino_Con.png}}
 \subfigure
-{\includegraphics[width=0.49\textwidth]{PLOTS/Higgsino_Con.png}}
+{\includegraphics[width=0.49\textwidth]{PLOTS/Combination/Higgsino_Con.png}}
 \end{center}
 \caption{Top panel: \SMO~ $r$ values for the points excluded by the newly implemented EM results, for the Bino-like LSP in the $(m_{\tilde{g}},min(m_{\tilde q}))$ (left) and $(m_{\tilde{g}}, m_{\tilde{g}} - m_{\tilde \chi _1 ^0 })$ mass planes (right). Bottom panel: Contribution of the \textit{T1}, \textit{T2}, \textit{T5} and \textit{T3GQ} simplified model results and their combination for the analysis ATLAS-SUSY-2013-02, as a function of \MGLU.} 
 \label{rValues}
@@ -298,6 +298,28 @@ Glu_TGQ_Only 2792
 Glu_T2_T5_TGQ_Only 299
 Total points 22823
 \end{verbatim}
+
+\subsection{Individual SMS r-values}
+In Figures \ref{rvalues-bino} and \ref{rvalues-higgsino} the distribution for the r-values for the \textit{T2}, \textit{T5}, \textit{T3GQ} models and their combination is shown, for the Bino and Higgsino-like LSP cases respectively. The contribution from the \textit{T1} model, for which results exist, are not considered. Note that the plots are projected onto the $(m_{\tilde g}, min(m_{\tilde q}))$ mass plane. This highlights the contribution from the two alternative mass hierarchies $m_{\tilde g} > min(m_{\tilde q})$ or $min(m_{\tilde q}) > m_{\tilde g} $, clearly indicated by the points distributed around the diagonal of the plots. 
+\\
+\begin{figure*}[!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{PLOTS/App/Bino_Combo.pdf}
+	\end{center}
+	\caption{$r$ value distribution for the \textit{T2}, \textit{T5}, \textit{T3GQ} and their combination for the points excluded using the ATLAS-SUSY-2013-02 analysis alone, for the Bino-like LSP. In grey, the points for which $r$ value $\leq$ 1 are shown.} 
+	\label{rvalues-bino}
+\end{figure*}
+\\
+
+\iffalse
+\begin{figure}[!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{PLOTS/App/Higgsino_Combo.pdf}
+	\end{center}
+	\caption{Same as Fig. \ref{rvalues-bino} for the Higgsino-like LSP dataset.} 
+	\label{rvalues-higgsino}
+\end{figure}
+\fi
 
 
 %
@@ -369,9 +391,6 @@ Total points 22823
 
 %{\color{blue} Ideally, make a cmparison with the T2 results *only*} 
 
-
-
-\clearpage
 
 \section{Conclusion}\label{sec:conclusion}
 Despite a plethora of available simplified model spectra results, in the form of upper limit or efficiency maps, a large portion of the parameter space of a full theory like the pMSSM is left unconstrained. This is a well known fact in the case of model points with complicated mass spectra, that give rise to long decay patterns and for which simplified model are not the adequate method of interpretation of searches. Fortunately there exist a class of simplified models involving only three SUSY particles and short decay chains that captures a large fraction of the signals from gluino-squark associated production. Due to the large production cross section at the LHC, such results prove effective in constraining efficiently the parameter space of the pMSSM-19. It was shown indeed that existing searches for SUSY in the all-hadronic final state are sensitive to the kinematics of such signature, and that thanks to the available recasting tools, it is possible to produce dedicated EM results. The coverage reached thanks to the newly produced results amounts to 74 and 71 $\%$ of the official ATLAS exclusion for the Bino and Higgsino-like LSP dataset respectively, and exceed those values for model points with light gluinos. 
@@ -446,25 +465,7 @@ The following Tables \ref{ATLAS02_UL} and \ref{ATLAS02_UL_2}  compare the upper 
 \end{table*}
 \\
 
-\section{Individual SMS r-values}
-In Figures \ref{rvalues-bino} and \ref{rvalues-higgsino} the distribution for the r-values for the \textit{T2}, \textit{T5}, \textit{T3GQ} models and their combination is shown, for the Bino and Higgsino-like LSP cases respectively. The contribution from the \textit{T1} model, for which results exist, are not considered. Note that the plots are projected onto the $(m_{\tilde g}, min(m_{\tilde q}))$ mass plane. This highlights the contribution from the two alternative mass hierarchies $m_{\tilde g} > min(m_{\tilde q})$ or $min(m_{\tilde q}) > m_{\tilde g} $, clearly indicated by the points distributed around the diagonal of the plots. 
-\\
-\begin{figure}[!]
-\begin{center}
-\includegraphics[width=1\textwidth]{PLOTS/App/Bino_Combo.pdf}
-\end{center}
-\caption{r-values distribution for the \textit{T2}, \textit{T5}, \textit{T3GQ} and their combination for the points excluded using the ATLAS-SUSY-2013-02 analysis alone, for the Bino-like LSP. In grey, the points for which $r$ value $\leq$ 1 are shown.} 
-\label{rvalues-bino}
-\end{figure}
-\\
 
-\begin{figure}[!]
-\begin{center}
-\includegraphics[width=1\textwidth]{PLOTS/App/Higgsino_Combo.pdf}
-\end{center}
-\caption{Same as Fig. \ref{rvalues-bino} for the Higgsino-like LSP dataset.} 
-\label{rvalues-higgsino}
-\end{figure}
 
 \section{pMSSM19 Parameters}
 \begin{table}[!h]
