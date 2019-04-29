@@ -1,5 +1,22 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
+\bibitem{Chatrchyan:2013sza}
+{\bf CMS} Collaboration, S.~Chatrchyan et~al., {\it {Interpretation of Searches
+  for Supersymmetry with simplified Models}},  {\em Phys. Rev.} {\bf D88}
+  (2013), no.~5 052017, [\href{http://arxiv.org/abs/1301.2175}{{\tt
+  arXiv:1301.2175}}].
+
+\bibitem{Papucci:2014rja}
+M.~Papucci, K.~Sakurai, A.~Weiler, and L.~Zeune, {\it {Fastlim: a fast LHC
+  limit calculator}},  {\em Eur. Phys. J.} {\bf C74} (2014), no.~11 3163,
+  [\href{http://arxiv.org/abs/1402.0492}{{\tt arXiv:1402.0492}}].
+
+\bibitem{Kraml:2014sna}
+S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, V.~Magerl, W.~Magerl,
+  D.~Proschofsky-Spindler, M.~Traub, and W.~Waltenberger, {\it {SModelS v1.0: a
+  short user guide}},  \href{http://arxiv.org/abs/1412.1745}{{\tt
+  arXiv:1412.1745}}.
+
 \bibitem{Ambrogi:2017lov}
 F.~Ambrogi, S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, and W.~Waltenberger, {\it
   {On the coverage of the pMSSM by simplified model results}},  {\em Eur. Phys.
@@ -8,6 +25,18 @@ F.~Ambrogi, S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, and W.~Waltenberger, {\it
 
 \bibitem{ATLASpMSSMhepdata}
 \url{http://hepdata.cedar.ac.uk/view/ins1389857}.
+
+\bibitem{Ambrogi:2017neo}
+F.~Ambrogi, S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, V.~Magerl, J.~Sonneveld,
+  M.~Traub, and W.~Waltenberger, {\it {SModelS v1.1 user manual: Improving
+  simplified model constraints with efficiency maps}},  {\em Comput. Phys.
+  Commun.} {\bf 227} (2018) 72--98,
+  [\href{http://arxiv.org/abs/1701.06586}{{\tt arXiv:1701.06586}}].
+
+\bibitem{Alwall:2011uj}
+J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer, and T.~Stelzer, {\it {MadGraph
+  5 : Going Beyond}},  {\em JHEP} {\bf 06} (2011) 128,
+  [\href{http://arxiv.org/abs/1106.0522}{{\tt arXiv:1106.0522}}].
 
 \bibitem{Sjostrand:2006za}
 T.~Sjostrand, S.~Mrenna, and P.~Z. Skands, {\it {PYTHIA 6.4 Physics and
@@ -45,6 +74,30 @@ http://madanalysis.irmp.ucl.ac.be/raw-attachment/wiki/PublicAnalysisDatabase/ma5
 M.~Cacciari, G.~P. Salam, and G.~Soyez, {\it {FastJet User Manual}},  {\em
   Eur.Phys.J.} {\bf C72} (2012) 1896,
   [\href{http://arxiv.org/abs/1111.6097}{{\tt arXiv:1111.6097}}].
+
+\bibitem{Kraml:2013mwa}
+S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, W.~Magerl, D.~Proschofsky-Spindler,
+  and W.~Waltenberger, {\it {SModelS: a tool for interpreting simplified-model
+  results from the LHC and its application to supersymmetry}},  {\em Eur. Phys.
+  J.} {\bf C74} (2014) 2868, [\href{http://arxiv.org/abs/1312.4175}{{\tt
+  arXiv:1312.4175}}].
+
+\bibitem{Ambrogi:2018ujg}
+F.~Ambrogi et~al., {\it {SModelS v1.2: long-lived particles, combination of
+  signal regions, and other novelties}},
+  \href{http://arxiv.org/abs/1811.10624}{{\tt arXiv:1811.10624}}.
+
+\bibitem{Read:2002hq}
+A.~L. Read, {\it {Presentation of search results: The CL(s) technique}},  {\em
+  J. Phys.} {\bf G28} (2002) 2693--2704. [,11(2002)].
+
+\bibitem{Junk:1999kv}
+T.~Junk, {\it {Confidence level computation for combining searches with small
+  statistics}},  {\em Nucl. Instrum. Meth.} {\bf A434} (1999) 435--443,
+  [\href{http://arxiv.org/abs/hep-ex/9902006}{{\tt hep-ex/9902006}}].
+
+\bibitem{fastlim:web}
+\url{http://fastlim.web.cern.ch/}.
 
 \bibitem{Aad:2015baa}
 {\bf ATLAS} Collaboration, G.~Aad et~al., {\it {Summary of the ATLAS

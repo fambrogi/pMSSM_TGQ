@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.10)  23 APR 2019 23:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.10)  29 APR 2019 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -676,7 +676,11 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@lastruleclass=\count138
 \@thisrulewidth=\dimen147
 )
-(./New_twoCol.aux)
+(./New_twoCol.aux
+
+LaTeX Warning: Label `rValues' multiply defined.
+
+)
 \openout1 = `New_twoCol.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -693,8 +697,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count139
 \scratchdimen=\dimen148
@@ -768,27 +771,25 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+<PLOTS/Diagrams_2.pdf, id=38, 994.60904pt x 297.89574pt>
+File: PLOTS/Diagrams_2.pdf Graphic file (type pdf)
+<use PLOTS/Diagrams_2.pdf>
+Package pdftex.def Info: PLOTS/Diagrams_2.pdf  used on input line 75.
+(pdftex.def)             Requested size: 409.60156pt x 122.67896pt.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 77.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
 
-LaTeX Warning: Citation `Chatrchyan:2013sza' on page 1 undefined on input line 
-73.
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 76.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-
-LaTeX Warning: Citation `Papucci:2014rja' on page 1 undefined on input line 76.
-
-
-
-LaTeX Warning: Citation `Kraml:2014sna' on page 1 undefined on input line 76.
-
-
-LaTeX Warning: Citation `2015baa' on page 1 undefined on input line 76.
+Overfull \hbox (1.29578pt too wide) in paragraph at lines 84--92
+\T1/cmr/m/n/10 The same model points were then tested with \T1/cmtt/m/n/10 SMod
+elS \T1/cmr/m/n/10 v1.1
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -797,181 +798,93 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (7.33281pt too wide) in paragraph at lines 80--81
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+[2 <./PLOTS/Diagrams_2.pdf>]
+
+LaTeX Warning: Reference `decay_TQG' on page 3 undefined on input line 123.
+
+
+Overfull \hbox (19.64685pt too wide) in paragraph at lines 127--156
+\T1/cmr/m/n/10 [[][]9[][], [][]10[][]]. The anal-y-sis re-cast-ing was per-form
+ed with \T1/cmtt/m/n/10 MadAnalysis
+ []
+
+
+Overfull \hbox (0.90698pt too wide) in paragraph at lines 127--156
+\T1/cmtt/m/n/10 5\T1/cmr/m/n/10 , us-ing the re-cast-ing codes for the anal-y-s
+is ATLAS-SUSY-
+ []
+
+[3]
+
+LaTeX Warning: Reference `' on page 4 undefined on input line 164.
+
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 171.
+
+Overfull \hbox (2.0456pt too wide) in paragraph at lines 163--190
+\T1/cmr/m/n/10 sig-na-ture. Note that the same prob-lem re-lated to the choice
+ []
+
+
+Overfull \hbox (37.91138pt too wide) in paragraph at lines 163--190
+\T1/cmr/m/n/10 of the mass hi-er-ar-chy ap-plies to the $\OML/cmm/m/it/10 T\OT1
+/cmr/m/n/10 5$ \T1/cmr/m/n/10 model: the "[[[`jet']],[[`jet']]]"
+ []
+
+<PLOTS/New/New_Res.pdf, id=247, 972.9652pt x 375.4291pt>
+File: PLOTS/New/New_Res.pdf Graphic file (type pdf)
+<use PLOTS/New/New_Res.pdf>
+Package pdftex.def Info: PLOTS/New/New_Res.pdf  used on input line 193.
+(pdftex.def)             Requested size: 512.0pt x 197.56151pt.
+
+Overfull \hbox (5.23816pt too wide) in paragraph at lines 200--202
+\T1/cmr/m/n/10 for ar-bi-trary BSM mod-els and the ex-per-i-men-tal data. While
+
+ []
+
+
+Overfull \hbox (2.18811pt too wide) in paragraph at lines 203--204
+[]\T1/cmr/m/n/10 The two main steps at the ba-sis of the \T1/cmtt/m/n/10 SModel
+S\T1/cmr/m/n/10 workflow
+ []
+
+[4]
+Overfull \hbox (7.33281pt too wide) in paragraph at lines 216--217
 []\T1/cmr/bx/n/10 Higgsino-like LSP \T1/cmr/m/n/10 when $\OT1/cmr/m/n/10 (\OML/
 cmm/m/it/10 N[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 N[]\OT1/cmr/m/n/10 ) \OML/cm
 m/m/it/10 > max\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 N[]; N[]\OT1/cmr/m/n/10 )$
  []
 
 
-LaTeX Warning: Citation `Ambrogi:2017neo' on page 2 undefined on input line 84.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--86
-
+Overfull \hbox (0.54596pt too wide) in paragraph at lines 218--223
+\T1/cmr/m/n/10 ram-e-ters se-lected in the con-fig-u-ra-tion file \T1/cmtt/m/n/
+10 parameters.ini
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
-
+[5 <./PLOTS/New/New_Res.pdf>]
+Overfull \hbox (4.80968pt too wide) in paragraph at lines 227--228
+[]\T1/cmr/m/it/10 T2\T1/cmr/m/n/10 (which re-places the maps of-fi-cially pro-v
+ided by CMS)
  []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 96.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 96.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 96.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 96.
-
-<PLOTS/Diagrams_2.pdf, id=62, 994.60904pt x 297.89574pt>
-File: PLOTS/Diagrams_2.pdf Graphic file (type pdf)
-<use PLOTS/Diagrams_2.pdf>
-Package pdftex.def Info: PLOTS/Diagrams_2.pdf  used on input line 127.
-(pdftex.def)             Requested size: 409.60156pt x 122.67896pt.
-[2]
-
-LaTeX Warning: Citation `2011uj' on page 3 undefined on input line 138.
-
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 175.
-
-LaTeX Warning: Reference `app:ul' on page 3 undefined on input line 192.
-
-[3]
-Overfull \hbox (6.31386pt too wide) in paragraph at lines 198--203
-\T1/cmr/m/n/9 de-scribed orig-i-nally in [[][]1[][]], that is here sum-ma-rized
-. The pMSSM-
- []
-
-
-Overfull \hbox (11.47536pt too wide) in paragraph at lines 198--203
-\T1/cmr/m/n/9 orig-i-nally used by the AT-LAS col-lab-o-ra-tion in the re-intep
-retation
- []
-
-
-Overfull \hbox (1.75443pt too wide) in paragraph at lines 198--203
-\T1/cmr/m/n/9 sec-tion cal-cu-la-tor, which pro-vides a use-ful in-ter-face wit
-h \T1/cmtt/m/n/9 Pythia
- []
-
-
-Overfull \hbox (40.04234pt too wide) in paragraph at lines 198--203
-\T1/cmr/m/n/9 two rel-e-vant pa-ram-e-ters se-lected in the con-fig-u-ra-tion f
-ile \T1/cmtt/m/n/9 parameters.ini
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--203
-
- []
-
-
-LaTeX Warning: Citation `fastlim:web' on page 4 undefined on input line 204.
-
-<PLOTS/New/New_Res.pdf, id=125, 972.9652pt x 375.4291pt>
-File: PLOTS/New/New_Res.pdf Graphic file (type pdf)
-<use PLOTS/New/New_Res.pdf>
-Package pdftex.def Info: PLOTS/New/New_Res.pdf  used on input line 210.
-(pdftex.def)             Requested size: 512.0pt x 197.56151pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--216
-
- []
-
-
-Overfull \hbox (0.21306pt too wide) in paragraph at lines 233--236
-[]\T1/cmr/m/n/9 Table [][]3[][] shows the new to-tal ex-clu-sion of the pMSSM p
-oints,
- []
-
-[4 <./PLOTS/Diagrams_2.pdf>]
-! Undefined control sequence.
-l.239 \subfigure
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<PLOTS/BINO_rValus_Glu_Sq.png, id=259, 524.39111pt x 415.40796pt>
-File: PLOTS/BINO_rValus_Glu_Sq.png Graphic file (type png)
-<use PLOTS/BINO_rValus_Glu_Sq.png>
-Package pdftex.def Info: PLOTS/BINO_rValus_Glu_Sq.png  used on input line 240.
-(pdftex.def)             Requested size: 250.88281pt x 198.74701pt.
-! Undefined control sequence.
-l.241 \subfigure
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<PLOTS/BINO_rValus_Glu_Diff_Neu.png, id=261, 517.4532pt x 415.40796pt>
-File: PLOTS/BINO_rValus_Glu_Diff_Neu.png Graphic file (type png)
-<use PLOTS/BINO_rValus_Glu_Diff_Neu.png>
-Package pdftex.def Info: PLOTS/BINO_rValus_Glu_Diff_Neu.png  used on input line
- 242.
-(pdftex.def)             Requested size: 250.88281pt x 201.40923pt.
-! Undefined control sequence.
-l.243 \subfigure
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<PLOTS/Combination/Bino_Con.png, id=262, 436.1707pt x 327.7657pt>
-File: PLOTS/Combination/Bino_Con.png Graphic file (type png)
-<use PLOTS/Combination/Bino_Con.png>
-Package pdftex.def Info: PLOTS/Combination/Bino_Con.png  used on input line 244
-.
-(pdftex.def)             Requested size: 250.88281pt x 188.53383pt.
-! Undefined control sequence.
-l.245 \subfigure
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<PLOTS/Combination/Higgsino_Con.png, id=263, 436.1707pt x 327.7657pt>
-File: PLOTS/Combination/Higgsino_Con.png Graphic file (type png)
-<use PLOTS/Combination/Higgsino_Con.png>
-Package pdftex.def Info: PLOTS/Combination/Higgsino_Con.png  used on input line
- 246.
-(pdftex.def)             Requested size: 250.88281pt x 188.53383pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `combination_gluino' on page 5 undefined on input line
- 261.
-
-
-LaTeX Warning: Reference `fraction' on page 5 undefined on input line 268.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 269.
 
 ! Undefined control sequence.
-l.271 		\subfigure
+l.234 		\subfigure
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -979,12 +892,34 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png, id=266, 529.0164pt x 415.40796pt>
-File: PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png Graphic file (type png)
-<use PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png>
-Package pdftex.def Info: PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png  used on in
-put line 272.
-(pdftex.def)             Requested size: 250.88281pt x 197.01024pt.
+<PLOTS/Combination/Bino_Con.png, id=309, 436.1707pt x 327.7657pt>
+File: PLOTS/Combination/Bino_Con.png Graphic file (type png)
+<use PLOTS/Combination/Bino_Con.png>
+Package pdftex.def Info: PLOTS/Combination/Bino_Con.png  used on input line 235
+.
+(pdftex.def)             Requested size: 250.88281pt x 188.53383pt.
+! Undefined control sequence.
+l.236 		\subfigure
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<PLOTS/Combination/Higgsino_Con.png, id=311, 436.1707pt x 327.7657pt>
+File: PLOTS/Combination/Higgsino_Con.png Graphic file (type png)
+<use PLOTS/Combination/Higgsino_Con.png>
+Package pdftex.def Info: PLOTS/Combination/Higgsino_Con.png  used on input line
+ 237.
+(pdftex.def)             Requested size: 250.88281pt x 188.53383pt.
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 250.
+
+Overfull \hbox (0.7959pt too wide) in paragraph at lines 242--270
+\T1/cmr/m/n/10 points, 21,151 and 28,669 points for the Bino and Higgsino-
+ []
+
 ! Undefined control sequence.
 l.273 		\subfigure
                   
@@ -994,15 +929,29 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png, id=267, 529.0164pt x 415.40796
-pt>
-File: PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png Graphic file (type png)
-<use PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png>
-Package pdftex.def Info: PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png  used o
-n input line 274.
-(pdftex.def)             Requested size: 250.88281pt x 197.01024pt.
+<PLOTS/BINO_rValus_Glu_Sq.png, id=318, 524.39111pt x 415.40796pt>
+File: PLOTS/BINO_rValus_Glu_Sq.png Graphic file (type png)
+<use PLOTS/BINO_rValus_Glu_Sq.png>
+Package pdftex.def Info: PLOTS/BINO_rValus_Glu_Sq.png  used on input line 274.
+(pdftex.def)             Requested size: 250.88281pt x 198.74701pt.
+
+Overfull \hbox (0.57336pt too wide) in paragraph at lines 274--275
+ [] 
+ []
+
+
+LaTeX Warning: Reference `combination_gluino' on page 6 undefined on input line
+ 299.
+
+
+LaTeX Warning: Reference `fraction' on page 6 undefined on input line 306.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 307.
+
 ! Undefined control sequence.
-l.275 		\subfigure
+l.309 		\subfigure
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1010,16 +959,47 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Combination/ATLAS-SUSY-2013-02_Bino_rValuesHisto.pdf, id=268, 458.60396p
+<PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png, id=320, 529.0164pt x 415.40796pt>
+File: PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png Graphic file (type png)
+<use PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png>
+Package pdftex.def Info: PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png  used on in
+put line 310.
+(pdftex.def)             Requested size: 250.88281pt x 197.01024pt.
+! Undefined control sequence.
+l.311 		\subfigure
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png, id=321, 529.0164pt x 415.40796
+pt>
+File: PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png Graphic file (type png)
+<use PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png>
+Package pdftex.def Info: PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png  used o
+n input line 312.
+(pdftex.def)             Requested size: 250.88281pt x 197.01024pt.
+! Undefined control sequence.
+l.313 		\subfigure
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<PLOTS/Combination/ATLAS-SUSY-2013-02_Bino_rValuesHisto.pdf, id=322, 458.60396p
 t x 290.84143pt>
 File: PLOTS/Combination/ATLAS-SUSY-2013-02_Bino_rValuesHisto.pdf Graphic file (
 type pdf)
 <use PLOTS/Combination/ATLAS-SUSY-2013-02_Bino_rValuesHisto.pdf>
 Package pdftex.def Info: PLOTS/Combination/ATLAS-SUSY-2013-02_Bino_rValuesHisto
-.pdf  used on input line 276.
+.pdf  used on input line 314.
 (pdftex.def)             Requested size: 250.88281pt x 159.10675pt.
 ! Undefined control sequence.
-l.277 		\subfigure
+l.315 		\subfigure
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1027,131 +1007,233 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Combination/ATLAS-SUSY-2013-02_Higgsino_rValuesHisto.pdf, id=269, 458.60
+<PLOTS/Combination/ATLAS-SUSY-2013-02_Higgsino_rValuesHisto.pdf, id=323, 458.60
 396pt x 290.84143pt>
 File: PLOTS/Combination/ATLAS-SUSY-2013-02_Higgsino_rValuesHisto.pdf Graphic fi
 le (type pdf)
 <use PLOTS/Combination/ATLAS-SUSY-2013-02_Higgsino_rValuesHisto.pdf>
 Package pdftex.def Info: PLOTS/Combination/ATLAS-SUSY-2013-02_Higgsino_rValuesH
-isto.pdf  used on input line 278.
+isto.pdf  used on input line 316.
 (pdftex.def)             Requested size: 250.88281pt x 159.10675pt.
 
-LaTeX Warning: Reference `Histos_r' on page 5 undefined on input line 282.
+LaTeX Warning: Reference `Histos_r' on page 6 undefined on input line 320.
 
-[5 <./PLOTS/New/New_Res.pdf>]
+[6]
 
-LaTeX Warning: Reference `rvalues-higgsino' on page 6 undefined on input line 3
-03.
+LaTeX Warning: Reference `rvalues-higgsino' on page 7 undefined on input line 3
+41.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 305.
+               Default added (so using `!tbp') on input line 343.
 
-<PLOTS/App/Bino_Combo.pdf, id=298, 581.31938pt x 458.44594pt>
+<PLOTS/App/Bino_Combo.pdf, id=335, 581.31938pt x 458.44594pt>
 File: PLOTS/App/Bino_Combo.pdf Graphic file (type pdf)
 <use PLOTS/App/Bino_Combo.pdf>
-Package pdftex.def Info: PLOTS/App/Bino_Combo.pdf  used on input line 307.
+Package pdftex.def Info: PLOTS/App/Bino_Combo.pdf  used on input line 345.
 (pdftex.def)             Requested size: 512.0pt x 403.77643pt.
+! Undefined control sequence.
+<argument> ...tive mass hierarchies $m_{\tilde \g 
+                                                  }>m_{min(\tilde q)}$ or $m...
+l.347 ...ed for the Monte Carlo event generation.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--313
+! Undefined control sequence.
+<recently read> \g 
+                   
+l.347 ...ed for the Monte Carlo event generation.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \g 
+              
+l.347 ...ed for the Monte Carlo event generation.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \g 
+                   
+l.347 ...ed for the Monte Carlo event generation.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \g 
+              
+l.347 ...ed for the Monte Carlo event generation.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--351
 
  []
 
-(./New_twoCol.bbl [6]
-Overfull \hbox (34.59142pt too wide) in paragraph at lines 42--43
-\T1/cmr/m/n/9 attachment/wiki/PublicAnalysisDatabase/ma5_validation_CMS- 
+! Undefined control sequence.
+l.370 		\subfigure
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<PLOTS/Combination/Bino_TOT_GLU_Histo_rValue.pdf, id=340, 435.85146pt x 326.199
+42pt>
+File: PLOTS/Combination/Bino_TOT_GLU_Histo_rValue.pdf Graphic file (type pdf)
+<use PLOTS/Combination/Bino_TOT_GLU_Histo_rValue.pdf>
+Package pdftex.def Info: PLOTS/Combination/Bino_TOT_GLU_Histo_rValue.pdf  used 
+on input line 371.
+(pdftex.def)             Requested size: 250.88281pt x 187.76727pt.
+! Undefined control sequence.
+l.372 		\subfigure
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<PLOTS/Combination/Higgsino_TOT_GLU_Histo_rValue.pdf, id=341, 435.85146pt x 326
+.19942pt>
+File: PLOTS/Combination/Higgsino_TOT_GLU_Histo_rValue.pdf Graphic file (type pd
+f)
+<use PLOTS/Combination/Higgsino_TOT_GLU_Histo_rValue.pdf>
+Package pdftex.def Info: PLOTS/Combination/Higgsino_TOT_GLU_Histo_rValue.pdf  u
+sed on input line 373.
+(pdftex.def)             Requested size: 250.88281pt x 187.76727pt.
+
+Overfull \hbox (0.57336pt too wide) in paragraph at lines 371--374
+ [] 
  []
 
-) [7
 
-] [8 <./PLOTS/BINO_rValus_Glu_Sq.png> <./PLOTS/BINO_rValus_Glu_Diff_Neu.png> <.
-/PLOTS/Combination/Bino_Con.png> <./PLOTS/Combination/Higgsino_Con.png>]
-[9 <./PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png> <./PLOTS/Weights/HIGGSINO_rVa
+Overfull \hbox (0.57336pt too wide) in paragraph at lines 371--374
+ [] 
+ []
+
+[7 <./PLOTS/Combination/Bino_Con.png> <./PLOTS/Combination/Higgsino_Con.png> <.
+/PLOTS/BINO_rValus_Glu_Sq.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <./PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png> <./PLOTS/Weights/HIGGSINO_rVa
 lus_Glu_Sq_Ratio.png> <./PLOTS/Combination/ATLAS-SUSY-2013-02_Bino_rValuesHisto
 .pdf> <./PLOTS/Combination/ATLAS-SUSY-2013-02_Higgsino_rValuesHisto.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./PLOTS/Combination/ATLAS-SUSY-2013-02_
 Higgsino_rValuesHisto.pdf): PDF inclusion: multiple pdfs with page group includ
 ed in a single page
->] [10 <./PLOTS/App/Bino_Combo.pdf>]
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `app:ul' on page 11 undefined on input line 416.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (19.85886pt too wide) in paragraph at lines 416--418
-[] \T1/cmr/m/n/9 The fol-low-ing Ta-bles [][]4[][] and [][]5[][] com-pare the u
-p-per lim-its ob-tained for the mass point ($\OML/cmm/m/it/9 M[]; M[]; M[]\OT1/
-cmr/m/n/9 ) = (1000\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 200\OML/cmm/m/it/9 ; \OT1/c
-mr/m/n/9 190)\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 (1200\OML/cmm/m/it/9 ; \OT1/cmr/m
-/n/9 600\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 500)$
+ [9 <./PLOTS/App/Bino_Combo.pdf>] (./New_twoCol.bbl
+Overfull \hbox (34.59142pt too wide) in paragraph at lines 71--72
+\T1/cmr/m/n/9 attachment/wiki/PublicAnalysisDatabase/ma5_validation_CMS- 
+ []
+
+[10 <./PLOTS/Combination/Bino_TOT_GLU_Histo_rValue.pdf> <./PLOTS/Combination/Hi
+ggsino_TOT_GLU_Histo_rValue.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./PLOTS/Combination/Higgsino_TOT_GLU_Hi
+sto_rValue.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>])
+Overfull \hbox (68.19803pt too wide) in paragraph at lines 462--463
+\T1/cmr/m/n/10 tained for the mass point ($\OML/cmm/m/it/10 M[]; M[]; M[]\OT1/c
+mr/m/n/10 ) = (1000\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 200\OML/cmm/m/it/10 ; \OT
+1/cmr/m/n/10 190)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (1200\OML/cmm/m/it/10 ; \OT
+1/cmr/m/n/10 600\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 500)$
  []
 
 
-! LaTeX Error: There's no line here to end.
+Overfull \hbox (22.45692pt too wide) in paragraph at lines 462--463
+\T1/cmr/m/n/10 GeV for the two dif-fer-ent hi-er-ar-chy mod-els \T1/cmr/m/it/10
+ T3GQ\T1/cmr/m/n/10 ($\OML/cmm/m/it/10 m[]; m[]; m[]$\T1/cmr/m/n/10 )
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.467 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (117.20596pt too wide) in paragraph at lines 518--530
+ [] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 539.
+[11] [12
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.490 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 494.
-[11
-
-
-] [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 494.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 539.
  (./New_twoCol.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 494.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 494.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 539.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 539.
 Package rerunfilecheck Info: File `New_twoCol.out' has not changed.
-(rerunfilecheck)             Checksum: 1A3F0BA46B916A4C8D959791CAD84391;404.
+(rerunfilecheck)             Checksum: C66E0D60880ADD8F22EC0B25A474FA9E;470.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 494.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 539.
  ) 
 Here is how much of TeX's memory you used:
- 8540 strings out of 494847
- 119586 string characters out of 6179080
- 221026 words of memory out of 5000000
- 11648 multiletter control sequences out of 15000+600000
+ 8574 strings out of 494847
+ 120335 string characters out of 6179080
+ 223488 words of memory out of 5000000
+ 11664 multiletter control sequences out of 15000+600000
  30751 words of font info for 80 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 32i,13n,32p,1910b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,13n,32p,1915b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/federico/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.
 600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0
 700.600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cbx0900.600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecti0900.600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/ljfour/jknap
-pen/ec/ectt0900.600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecsx1000.600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/ljfo
-ur/jknappen/ec/ecrm0600.600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/
-ljfour/jknappen/ec/ecti1000.600pk> </home/federico/.texlive2017/texmf-var/fonts
-/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/federico/.texlive2017/texmf-var/f
-onts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/federico/.texlive2017/texmf-v
-ar/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/federico/.texlive2017/tex
+csx1000.600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecbx1000.600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/ljfour/jknap
+pen/ec/ecrm0600.600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecti1000.600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/ljfo
+ur/jknappen/ec/ecrm0700.600pk> </home/federico/.texlive2017/texmf-var/fonts/pk/
+ljfour/jknappen/ec/ectt0900.600pk> </home/federico/.texlive2017/texmf-var/fonts
+/pk/ljfour/jknappen/ec/ecti0900.600pk> </home/federico/.texlive2017/texmf-var/f
+onts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/federico/.texlive2017/texmf-v
+ar/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/federico/.texlive2017/tex
 mf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.600pk> </home/federico/.texlive2017
 /texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx0900.600pk> </home/federico/.texlive
 2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/federico/.tex
@@ -1170,11 +1252,12 @@ m/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on New_twoCol.pdf (12 pages, 3171893 bytes).
+fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy9.pfb>
+Output written on New_twoCol.pdf (12 pages, 2939215 bytes).
 PDF statistics:
- 1192 PDF objects out of 1200 (max. 8388607)
- 445 compressed objects within 5 object streams
- 63 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1386 PDF objects out of 1440 (max. 8388607)
+ 517 compressed objects within 6 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
