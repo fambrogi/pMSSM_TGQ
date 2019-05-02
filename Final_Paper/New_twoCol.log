@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.10)  30 APR 2019 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.10)  2 MAY 2019 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -767,8 +767,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<PLOTS/Diagrams_2.pdf, id=38, 994.60904pt x 297.89574pt>
+) (./New_twoCol.toc)
+\tf@toc=\write4
+\openout4 = `New_twoCol.toc'.
+
+<PLOTS/Diagrams_2.pdf, id=46, 994.60904pt x 297.89574pt>
 File: PLOTS/Diagrams_2.pdf Graphic file (type pdf)
 <use PLOTS/Diagrams_2.pdf>
 Package pdftex.def Info: PLOTS/Diagrams_2.pdf  used on input line 76.
@@ -879,7 +882,7 @@ Overfull \hbox (0.54596pt too wide) in paragraph at lines 212--217
 10 parameters.ini
  []
 
-<PLOTS/New/New_Res.pdf, id=272, 972.9652pt x 375.4291pt>
+<PLOTS/New/New_Res.pdf, id=280, 972.9652pt x 375.4291pt>
 File: PLOTS/New/New_Res.pdf Graphic file (type pdf)
 <use PLOTS/New/New_Res.pdf>
 Package pdftex.def Info: PLOTS/New/New_Res.pdf  used on input line 220.
@@ -893,7 +896,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Combination/Bino_Con.png, id=275, 436.1707pt x 327.7657pt>
+<PLOTS/Combination/Bino_Con.png, id=283, 436.1707pt x 327.7657pt>
 File: PLOTS/Combination/Bino_Con.png Graphic file (type png)
 <use PLOTS/Combination/Bino_Con.png>
 Package pdftex.def Info: PLOTS/Combination/Bino_Con.png  used on input line 228
@@ -908,7 +911,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Combination/Higgsino_Con.png, id=277, 436.1707pt x 327.7657pt>
+<PLOTS/Combination/Higgsino_Con.png, id=285, 436.1707pt x 327.7657pt>
 File: PLOTS/Combination/Higgsino_Con.png Graphic file (type png)
 <use PLOTS/Combination/Higgsino_Con.png>
 Package pdftex.def Info: PLOTS/Combination/Higgsino_Con.png  used on input line
@@ -931,6 +934,9 @@ Overfull \hbox (0.7959pt too wide) in paragraph at lines 243--271
  []
 
 [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 272.
@@ -944,7 +950,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png, id=300, 529.0164pt x 415.40796pt>
+<PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png, id=308, 529.0164pt x 415.40796pt>
 File: PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png Graphic file (type png)
 <use PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png>
 Package pdftex.def Info: PLOTS/Weights/BINO_rValus_Glu_Sq_Ratio.png  used on in
@@ -959,7 +965,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png, id=301, 529.0164pt x 415.40796
+<PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png, id=309, 529.0164pt x 415.40796
 pt>
 File: PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png Graphic file (type png)
 <use PLOTS/Weights/HIGGSINO_rValus_Glu_Sq_Ratio.png>
@@ -975,7 +981,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Combination/ATLAS-SUSY-2013-02_Bino_rValuesHisto.pdf, id=302, 458.60396p
+<PLOTS/Combination/ATLAS-SUSY-2013-02_Bino_rValuesHisto.pdf, id=310, 458.60396p
 t x 290.84143pt>
 File: PLOTS/Combination/ATLAS-SUSY-2013-02_Bino_rValuesHisto.pdf Graphic file (
 type pdf)
@@ -992,7 +998,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Combination/ATLAS-SUSY-2013-02_Higgsino_rValuesHisto.pdf, id=303, 458.60
+<PLOTS/Combination/ATLAS-SUSY-2013-02_Higgsino_rValuesHisto.pdf, id=311, 458.60
 396pt x 290.84143pt>
 File: PLOTS/Combination/ATLAS-SUSY-2013-02_Higgsino_rValuesHisto.pdf Graphic fi
 le (type pdf)
@@ -1000,27 +1006,20 @@ le (type pdf)
 Package pdftex.def Info: PLOTS/Combination/ATLAS-SUSY-2013-02_Higgsino_rValuesH
 isto.pdf  used on input line 281.
 (pdftex.def)             Requested size: 250.88281pt x 159.10675pt.
+[6 <./PLOTS/New/New_Res.pdf> <./PLOTS/Combination/Bino_Con.png> <./PLOTS/Combin
+ation/Higgsino_Con.png>]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `combination_gluino' on page 6 undefined on input line
+LaTeX Warning: Reference `combination_gluino' on page 7 undefined on input line
  289.
 
 
-LaTeX Warning: Reference `fraction' on page 6 undefined on input line 296.
-
-[6 <./PLOTS/New/New_Res.pdf> <./PLOTS/Combination/Bino_Con.png> <./PLOTS/Combin
-ation/Higgsino_Con.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+LaTeX Warning: Reference `fraction' on page 7 undefined on input line 296.
 
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 298.
 
-<PLOTS/App/Bino_Combo.pdf, id=335, 581.31938pt x 458.44594pt>
+<PLOTS/App/Bino_Combo.pdf, id=343, 581.31938pt x 458.44594pt>
 File: PLOTS/App/Bino_Combo.pdf Graphic file (type pdf)
 <use PLOTS/App/Bino_Combo.pdf>
 Package pdftex.def Info: PLOTS/App/Bino_Combo.pdf  used on input line 300.
@@ -1094,6 +1093,9 @@ pdfTeX warning: /usr/bin/pdflatex (file ./PLOTS/Combination/ATLAS-SUSY-2013-02_
 Higgsino_rValuesHisto.pdf): PDF inclusion: multiple pdfs with page group includ
 ed in a single page
 >]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 LaTeX Warning: Reference `rvalues-higgsino' on page 8 undefined on input line 3
 46.
@@ -1106,7 +1108,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 346--358
 
 Underfull \vbox (badness 6876) has occurred while \output is active []
 
-
+ [8 <./PLOTS/App/Bino_Combo.pdf>]
 ! Undefined control sequence.
 l.361 		\subfigure
                   
@@ -1116,7 +1118,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Combination/Bino_TOT_GLU_Histo_rValue.pdf, id=457, 435.85146pt x 326.199
+<PLOTS/Combination/Bino_TOT_GLU_Histo_rValue.pdf, id=499, 435.85146pt x 326.199
 42pt>
 File: PLOTS/Combination/Bino_TOT_GLU_Histo_rValue.pdf Graphic file (type pdf)
 <use PLOTS/Combination/Bino_TOT_GLU_Histo_rValue.pdf>
@@ -1132,7 +1134,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<PLOTS/Combination/Higgsino_TOT_GLU_Histo_rValue.pdf, id=458, 435.85146pt x 326
+<PLOTS/Combination/Higgsino_TOT_GLU_Histo_rValue.pdf, id=500, 435.85146pt x 326
 .19942pt>
 File: PLOTS/Combination/Higgsino_TOT_GLU_Histo_rValue.pdf Graphic file (type pd
 f)
@@ -1153,9 +1155,6 @@ Overfull \hbox (0.57336pt too wide) in paragraph at lines 362--365
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./PLOTS/App/Bino_Combo.pdf>]
-Underfull \vbox (badness 1648) has occurred while \output is active []
-
 
 Overfull \hbox (6.1557pt too wide) in paragraph at lines 441--442
 \T1/cmr/m/n/10 While sim-pli-fied mod-els have be-come hugely pop-u-lar among
@@ -1172,6 +1171,9 @@ gle page
 LaTeX Warning: Citation `SMODELS13' on page 10 undefined on input line 448.
 
 (./New_twoCol.bbl
+Underfull \vbox (badness 4120) has occurred while \output is active []
+
+
 Overfull \hbox (34.59142pt too wide) in paragraph at lines 71--72
 \T1/cmr/m/n/9 attachment/wiki/PublicAnalysisDatabase/ma5_validation_CMS- 
  []
@@ -1205,9 +1207,7 @@ Overfull \hbox (117.20596pt too wide) in paragraph at lines 519--531
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 540.
-[11
-
-] [12
+[11] [12
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 540.
@@ -1220,12 +1220,15 @@ Package rerunfilecheck Info: File `New_twoCol.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 540.
  ) 
 Here is how much of TeX's memory you used:
- 8573 strings out of 494847
- 120226 string characters out of 6179080
- 222614 words of memory out of 5000000
+ 8577 strings out of 494847
+ 120270 string characters out of 6179080
+ 220611 words of memory out of 5000000
  11665 multiletter control sequences out of 15000+600000
  30751 words of font info for 80 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -1262,10 +1265,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy9.pfb>
-Output written on New_twoCol.pdf (12 pages, 2580010 bytes).
+Output written on New_twoCol.pdf (12 pages, 2579579 bytes).
 PDF statistics:
- 1368 PDF objects out of 1440 (max. 8388607)
- 516 compressed objects within 6 object streams
- 79 named destinations out of 1000 (max. 500000)
+ 1377 PDF objects out of 1440 (max. 8388607)
+ 525 compressed objects within 6 object streams
+ 80 named destinations out of 1000 (max. 500000)
  120 words of extra memory for PDF output out of 10000 (max. 10000000)
 
