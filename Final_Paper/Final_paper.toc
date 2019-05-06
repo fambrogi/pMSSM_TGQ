@@ -9,7 +9,6 @@
 \contentsline {subsection}{\numberline {5.1}Breakdown of the SMS Results}{7}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Estimation of the Uncertainties}{10}{subsection.5.2}
 \contentsline {section}{\numberline {6}Conclusion}{10}{section.6}
-\contentsline {section}{References}{12}{section*.13}
+\contentsline {section}{References}{13}{section*.13}
 \let \numberline \tmptocnumberline 
-\contentsline {section}{\numberline {Appendix \nobreakspace {}A}T3GQ vs T3QG Upper Limits}{13}{appendix.A}
-\contentsline {section}{\numberline {Appendix \nobreakspace {}B}Extra material}{13}{appendix.B}
+\contentsline {section}{\numberline {Appendix \nobreakspace {}A}Limits Comparison}{14}{appendix.A}

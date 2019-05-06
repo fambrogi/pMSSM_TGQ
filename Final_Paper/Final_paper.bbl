@@ -23,6 +23,13 @@ F.~Ambrogi, S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, and W.~Waltenberger, {\it
   J.} {\bf C78} (2018), no.~3 215, [\href{http://arxiv.org/abs/1707.09036}{{\tt
   arXiv:1707.09036}}].
 
+\bibitem{Djouadi:1998di}
+{\bf MSSM Working Group} Collaboration, A.~Djouadi et~al., {\it {The Minimal
+  supersymmetric standard model: Group summary report}},  in {\em {GDR
+  (Groupement De Recherche) - Supersymetrie, Montpellier, France, April 15-17,
+  1998}}.
+\newblock \href{http://arxiv.org/abs/hep-ph/9901246}{{\tt hep-ph/9901246}}.
+
 \bibitem{ATLASpMSSMhepdata}
 \url{http://hepdata.cedar.ac.uk/view/ins1389857}.
 
@@ -102,6 +109,35 @@ T.~Junk, {\it {Confidence level computation for combining searches with small
   statistics}},  {\em Nucl. Instrum. Meth.} {\bf A434} (1999) 435--443,
   [\href{http://arxiv.org/abs/hep-ex/9902006}{{\tt hep-ex/9902006}}].
 
+\bibitem{Skands:2003cj}
+P.~Z. Skands et~al., {\it {SUSY Les Houches accord: Interfacing SUSY spectrum
+  calculators, decay packages, and event generators}},  {\em JHEP} {\bf 07}
+  (2004) 036, [\href{http://arxiv.org/abs/hep-ph/0311123}{{\tt
+  hep-ph/0311123}}].
+
+\bibitem{Berger:2008cq}
+C.~F. Berger, J.~S. Gainer, J.~L. Hewett, and T.~G. Rizzo, {\it {Supersymmetry
+  Without Prejudice}},  {\em JHEP} {\bf 02} (2009) 023,
+  [\href{http://arxiv.org/abs/0812.0980}{{\tt arXiv:0812.0980}}].
+
+\bibitem{CahillRowley:2012cb}
+M.~W. Cahill-Rowley, J.~L. Hewett, S.~Hoeche, A.~Ismail, and T.~G. Rizzo, {\it
+  {The New Look pMSSM with Neutralino and Gravitino LSPs}},  {\em Eur. Phys.
+  J.} {\bf C72} (2012) 2156, [\href{http://arxiv.org/abs/1206.4321}{{\tt
+  arXiv:1206.4321}}].
+
+\bibitem{CahillRowley:2012kx}
+M.~W. Cahill-Rowley, J.~L. Hewett, A.~Ismail, and T.~G. Rizzo, {\it {More
+  energy, more searches, but the phenomenological MSSM lives on}},  {\em Phys.
+  Rev.} {\bf D88} (2013), no.~3 035002,
+  [\href{http://arxiv.org/abs/1211.1981}{{\tt arXiv:1211.1981}}].
+
+\bibitem{Cahill-Rowley:2014twa}
+M.~Cahill-Rowley, J.~L. Hewett, A.~Ismail, and T.~G. Rizzo, {\it {Lessons and
+  prospects from the pMSSM after LHC Run I}},  {\em Phys. Rev.} {\bf D91}
+  (2015), no.~5 055002, [\href{http://arxiv.org/abs/1407.4130}{{\tt
+  arXiv:1407.4130}}].
+
 \bibitem{Martin:1997ns}
 S.~P. Martin, {\it {A Supersymmetry primer}},
   \href{http://arxiv.org/abs/hep-ph/9709356}{{\tt hep-ph/9709356}}. [Adv. Ser.
@@ -158,6 +194,18 @@ W.~Beenakker, S.~Brensing, M.~Kramer, A.~Kulesza, E.~Laenen, et~al., {\it
 \url{http://fastlim.web.cern.ch/}.
 
 \bibitem{databases}
-https://github.com/SModelS/smodels-database-release/releases/.
+\url{https://github.com/SModelS/smodels-database-release/releases/}.
+
+\bibitem{Kraml:2016eti}
+S.~Kraml, U.~Laa, L.~Panizzi, and H.~Prager, {\it {Scalar versus fermionic top
+  partner interpretations of $t\bar t + E_T^{\rm miss}$ searches at the LHC}},
+  {\em JHEP} {\bf 11} (2016) 107, [\href{http://arxiv.org/abs/1607.02050}{{\tt
+  arXiv:1607.02050}}].
+
+\bibitem{Dutta:2018ioj}
+J.~Dutta, S.~Kraml, A.~Lessa, and W.~Waltenberger, {\it {SModelS extension with
+  the CMS supersymmetry search results from Run 2}},  {\em LHEP} {\bf 1}
+  (2018), no.~1 5--12, [\href{http://arxiv.org/abs/1803.02204}{{\tt
+  arXiv:1803.02204}}].
 
 \end{thebibliography}\endgroup

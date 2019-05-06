@@ -3,47 +3,51 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Final_paper.aux
 The style file: JHEP.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "SMODELS13"
-You've used 32 entries,
+Repeated entry---line 4806 of file references.bib
+ : @inproceedings{Djouadi:1998di
+ :                              ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "ddd"
+Warning--empty year in Djouadi:1998di
+You've used 40 entries,
             2195 wiz_defined-function locations,
-            725 strings with 9131 characters,
-and the built_in function-call counts, 8991 in all, are:
-= -- 864
-> -- 382
+            779 strings with 10686 characters,
+and the built_in function-call counts, 11578 in all, are:
+= -- 1118
+> -- 485
 < -- 0
-+ -- 141
-- -- 109
-* -- 714
-:= -- 1234
-add.period$ -- 35
-call.type$ -- 32
-change.case$ -- 26
++ -- 178
+- -- 138
+* -- 936
+:= -- 1588
+add.period$ -- 44
+call.type$ -- 40
+change.case$ -- 34
 chr.to.int$ -- 0
-cite$ -- 32
-duplicate$ -- 454
-empty$ -- 838
-format.name$ -- 109
-if$ -- 2281
+cite$ -- 41
+duplicate$ -- 600
+empty$ -- 1075
+format.name$ -- 138
+if$ -- 2943
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 96
-newline$ -- 100
-num.names$ -- 26
-pop$ -- 148
+int.to.str$ -- 40
+missing$ -- 125
+newline$ -- 125
+num.names$ -- 34
+pop$ -- 187
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 325
+skip$ -- 420
 stack$ -- 0
-substring$ -- 435
-swap$ -- 185
+substring$ -- 534
+swap$ -- 247
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 56
-width$ -- 34
-write$ -- 302
-(There were 2 warnings)
+warning$ -- 1
+while$ -- 72
+width$ -- 42
+write$ -- 392
+(There was 1 error message)
