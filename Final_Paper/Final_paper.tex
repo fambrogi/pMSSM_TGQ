@@ -281,8 +281,26 @@ We used the complete set of SMS results available for 8 TeV centre-of-mass energ
 	\item ATLAS-SUSY-2013-02: \Ttwo~(which replaces the maps officially provided by ATLAS), \Tfive~and \TGQ~results; \
 	\item CMS-SUS-13-012 \Ttwo~(which replaces the maps officially provided by CMS) and \TGQ~results.
 \end{itemize}
-The replacement of the \Ttwo results was done in order to cover smaller mass gaps, as described in Tab. \ref{TGQ_Planes}. The new EMs were made available with the database release 1.2.2. All the versions of \SMO~databases can be consulted at \cite{databases}.
+The replacement of the \Ttwo results was done in order to cover smaller mass gaps, as described in Tab. \ref{TGQ_Planes}. The new EMs were made available with the database release 1.2.2. All the versions of \SMO~databases can be consulted at \cite{databases}. For convenience, all the EMs results that will discussed when presenting the extension of the pMSSM-19 coverage are summarised in Tab.\ref{EMS}. Note that several EMs results were recast for the CMS-SUS-13-012 analysis, and already employed for the coverage in the first study. 
 %
+\begin{table}[!h]
+	\begin{center}
+		\renewcommand{\arraystretch}{1.3}
+		\begin{tabular}{ c l c}  \toprule  \toprule 
+			%\multicolumn{3}{c}{($M_1,M_2,M_3) = (1000,200,190)$} & \multicolumn{3}{c}{ \textbf{T3GQ}} & \multicolumn{3}{c}{ \textbf{T3QG}} \\  \toprule 
+			\multicolumn{3}{c}{ATLAS-SUSY-2013-02 , CMS-SUS-13-012} \\ \toprule 
+			SMS & Decay & Source \\ \toprule
+			\textit{T1} &  $ p p \rightarrow \tilde g \tilde g, \tilde g \rightarrow q \bar q \tilde \chi_1 ^0 $ & Official \\
+            \Ttwo & $  p p \rightarrow \tilde q \tilde q , \tilde q \rightarrow q \tilde \chi_1 ^0 $&  Recast\\
+            \Tfive & $p p \rightarrow \tilde g \tilde g , \tilde g \rightarrow \tilde q q,  \tilde q \rightarrow q \tilde \chi_1 ^0 $& Recast  \\
+            \TGQ & $ p p \rightarrow \tilde g \tilde q, \tilde g \rightarrow \tilde q q,  \tilde q \rightarrow q \tilde \chi_1 ^0 $ & Recast \\  
+            \bottomrule \bottomrule                                             
+		\end{tabular}
+	\end{center}
+	\caption{Summary of the EMs considered in the extension of the pMSSM-19 coverage.}
+	\label{EMS}
+\end{table}
+
 \section{Extending the pMSSM Coverage}\label{sec::impact}
 In this Section we study the improvements in the pMSSM coverage provided by the additional EMs for the \textit{T3GQ} gluino-squark model, in combination with the \textit{T2} and \textit{T5} model. 
 \\
@@ -475,6 +493,43 @@ We finally note than a similar methodology was employed by the ATLAS collaborati
 %\label{13_TeV}
 %\end{table*}
 %{\color{blue} Ideally, make a cmparison with the T2 results *only*} 
+\section{A Look at 13 TeV Results}
+In this Section we discuss briefly what happens with SMS results produced with 13 TeV centre-of-mass energy collision data. Due to the large increase in the production cross section, it is expected that the coverage of the pMSSM-19 for the same dataset of points designed for 8 TeV results, increases considerably. In fact, this was already shown in \cite{Dutta:2018ioj}: by using SMS results for a selection of 13 TeV analyses, with collision data adding up to around 36 $fb^{-1}$, almost all the entire set of pMSSM-19 points considered by ATLAS could be excluded, including points out of reach with 8 TeV searches. The aim of the present discussion is to demonstrate that, despite the large increase in the production cross section, certain regions of the parameter space cannot be covered even with the latest results. In Fig. \ref{13TEV} we consider a set of points which can be excluded with the new ATLAS-SUSY-2013-02 EMs, but cannot be excluded by the 13 TeV results implemented in the most updated release v.1.2. of the \SMO~database. The points are divided into two categories. The first include points that do not map onto any of the available results, mainly because the mass array characterising the models in the decomposition cannot be mapped onto the mass grid of the results. The second category includes points for which 13 TeV results can indeed be applied, but they prove insufficient to exclude the points. The two different mass planes show clearly that indeed the majority of points falls in the region where the mass gap between the gluino-LSP or squark-LSP is small. In Fig. \ref{13TeVrvalue} we also include the distributions of 8 TeV ATLAS-SUSY-2013-02 results, which reaches up to values greater than few tens.
+\begin{figure}
+\begin{center}
+\subfigure
+{\includegraphics[width=0.49\textwidth]{PLOTS/13TeV/13TeV_Glu_Neu.pdf}}
+\subfigure
+{\includegraphics[width=0.49\textwidth]{PLOTS/13TeV/13TeV_Sq_Neu.pdf}}
+\end{center}
+\caption{Distribution of points (Bino-like LSP dataset) excluded by the 8 TeV EM results for the analysis ATLAS-SUSY-2013-02, but not excluded by recent 13 TeV analyses published in v1.2.2 of the \SMO~ database. In cyan, the points fall outside the grid of results available for 13 TeV results; in purple, points for which the 13 TeV $r \ value <1$. Note that most of the points lies in the region of small gluino/squark-LSP mass gap.}. 
+\label{13TEV}
+\end{figure}
+%
+\begin{figure}
+ 	\begin{center}
+
+ 		\includegraphics[width=0.49\textwidth]{PLOTS/13TeV/rvalues.pdf}
+
+ 	\end{center}
+ 	\caption{Distribution of points (Bino-like LSP dataset) excluded by the 8 TeV EM results for the analysis ATLAS-SUSY-2013-02, but not excluded by recent 13 TeV analyses published in v1.2.2 of the \SMO~ database. In cyan, the points fall outside the grid of results available for 13 TeV results; in purple, points for which the 13 TeV $r \ value <1$. Note that most of the points lies in the region of small gluino/squark-LSP mass gap.}. 
+ 	\label{13TeVrvalue}
+ \end{figure}
+%
+We note that the recent Run 2 inclusive ATLAS 0 lepton,2-6 jets search\cite{Aaboud:2017vwy}, that uses 36 $fb^{-1}$ of collision data, is interpreted with gluino and squark pair production and gluino-squark SMS. In particular, the gluino-squark model is in fact a realisation of the pMSSM where only 1st and 2nd generation squarks and gluinos are considered, and all the other sparticles are decoupled. They parametrized the mass planes by fixing the LSP mass (Bino-like, for $m_{\tilde \chi _1} ^0 = (0,695,995)$ and considered a grid of gluino and squark masses. We note that the in order to use such results, an interpolation in the LSP mass of around 700 GeV, to cover the region $m_{\tilde \chi _1} ^0 < 700$ GeV , has to be performed. Unfortunately the results are provided (on \texttt{InspireHEP}\cite{HEP201607} only in the form of UL maps. It would be much appreciated if EMs for the gluino-squark model were also made available and allow for the combination with the published EMs for the \Ttwo~model. 
+%
+Finally, we provide the results of one of such points, the SLHA file \textit{457584173} from the Bino-like LSP dataset. The mass spectrum, obtained with \texttt{pySLHA}, is shown in Fig. \ref{pyslha}.
+\begin{figure}
+	\begin{center}
+		
+		\includegraphics[width=0.49\textwidth]{PLOTS/13TeV/457584173_pyslha.pdf}
+		
+	\end{center}
+	\caption{Mass spectrum of the point \textit{457584173}, from the Bino-like LSP dataset.}. 
+	\label{13TeVrvalue}
+\end{figure}
+
+
 \section{Conclusion}\label{sec:conclusion}
 While simplified models have become hugely popular among the experimental collaboration for the interpretation of their BSM searches, it is always challenging to make use of such results to investigate complicated theories. Moreover, the question if the simplified approach is sufficient to properly cover the a full model is always open. A big step forward, for the case of the pMSSM-19, was taken in \cite{ddd} , where it was shown that a large portion of the parameter space of such SUSY model can be efficiently constrained by means of SMS, without the computationally expensive procedure of analyses recasting. At the same time,  despite the plenty SMS results, there is a lot of room for improvement in the coverage. Certainly, the very essence of SMS makes them inadequate in the presence of  complicated mass spectra, that give rise to long decay patterns and that are better captured by full analyses recast. 
 Fortunately the main outcome of the previous study showed clearly that for the majority of uncovered model points, most of the unconstrained $\sigma \times BR$ was captured by a class of simplified models involving only three SUSY particles and short decay, arising from gluino-squark production. The associated $3jets + MET$ signature is easily covered by inclusive all hadronic final state searches at the LHC, targeting specifically low jet multiplicity, such as ATLAS-SUSY-2013-02 and CMS-SUS-13-012. The results presented in this work show concretely that  it is possible to produce such dedicated EM results, using available recastign tools, and significantly increase the coverage of the model up to 74% and 71% of the total ATLAS exclusion for the Bino and Higgsino like LSP dataset respectively. 
