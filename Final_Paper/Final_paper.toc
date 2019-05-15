@@ -1,10 +1,10 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {section}{\numberline {2}The 3 jets + $E_T ^{miss}$ Signature }{3}{section.2}
-\contentsline {section}{\numberline {3}Production of the Efficiency Maps}{3}{section.3}
+\contentsline {section}{\numberline {3}Production of the Efficiency Maps}{4}{section.3}
 \contentsline {section}{\numberline {4}Simplified Model Analysis Setup}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}SModelS Workflow}{5}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Selection of the pMSSM-19 Model Points}{5}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}SModelS Database}{6}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.1}\texttt {SModelS\xspace }\nobreakspace {} Workflow}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Selection of the pMSSM-19 Model Points}{6}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}\texttt {SModelS\xspace }\nobreakspace {} Database}{7}{subsection.4.3}
 \contentsline {section}{\numberline {5}Extending the pMSSM Coverage}{7}{section.5}
 \contentsline {subsection}{\numberline {5.1}Breakdown of the SMS Results}{8}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Estimation of the Uncertainties}{10}{subsection.5.2}
