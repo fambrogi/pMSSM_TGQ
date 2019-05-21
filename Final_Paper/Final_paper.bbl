@@ -81,7 +81,7 @@ S.~Bein and D.~Sengupta, {\it {MadAnalysis 5 implementation of
   CMS-SUS-13-012}}, .
 
 \bibitem{CMS-SUS-13-012VALIDATION}
-http://madanalysis.irmp.ucl.ac.be/raw-attachment/wiki/PublicAnalysisDatabase/ma5\_validation\_CMS-SUS-13-012.pdf.
+\url{http://madanalysis.irmp.ucl.ac.be/raw-attachment/wiki/PublicAnalysisDatabase/ma5\_validation\_CMS-SUS-13-012.pdf}.
 
 \bibitem{Cacciari:2011ma}
 M.~Cacciari, G.~P. Salam, and G.~Soyez, {\it {FastJet User Manual}},  {\em
@@ -196,16 +196,26 @@ W.~Beenakker, S.~Brensing, M.~Kramer, A.~Kulesza, E.~Laenen, et~al., {\it
 \bibitem{databases}
 \url{https://github.com/SModelS/smodels-database-release/releases/}.
 
-\bibitem{Kraml:2016eti}
-S.~Kraml, U.~Laa, L.~Panizzi, and H.~Prager, {\it {Scalar versus fermionic top
-  partner interpretations of $t\bar t + E_T^{\rm miss}$ searches at the LHC}},
-  {\em JHEP} {\bf 11} (2016) 107, [\href{http://arxiv.org/abs/1607.02050}{{\tt
-  arXiv:1607.02050}}].
-
 \bibitem{Dutta:2018ioj}
 J.~Dutta, S.~Kraml, A.~Lessa, and W.~Waltenberger, {\it {SModelS extension with
   the CMS supersymmetry search results from Run 2}},  {\em LHEP} {\bf 1}
   (2018), no.~1 5--12, [\href{http://arxiv.org/abs/1803.02204}{{\tt
   arXiv:1803.02204}}].
+
+\bibitem{Aaboud:2017vwy}
+{\bf ATLAS} Collaboration, M.~Aaboud et~al., {\it {Search for squarks and
+  gluinos in final states with jets and missing transverse momentum using
+  36??fb$^{-1}$ of $\sqrt{s}=13$??TeV pp collision data with the ATLAS
+  detector}},  {\em Phys. Rev.} {\bf D97} (2018), no.~11 112001,
+  [\href{http://arxiv.org/abs/1712.02332}{{\tt arXiv:1712.02332}}].
+
+\bibitem{HEP201607}
+\url{https://www.hepdata.net/record/77891}.
+
+\bibitem{Kraml:2016eti}
+S.~Kraml, U.~Laa, L.~Panizzi, and H.~Prager, {\it {Scalar versus fermionic top
+  partner interpretations of $t\bar t + E_T^{\rm miss}$ searches at the LHC}},
+  {\em JHEP} {\bf 11} (2016) 107, [\href{http://arxiv.org/abs/1607.02050}{{\tt
+  arXiv:1607.02050}}].
 
 \end{thebibliography}\endgroup
