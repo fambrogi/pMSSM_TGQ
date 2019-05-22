@@ -212,6 +212,11 @@ J.~Dutta, S.~Kraml, A.~Lessa, and W.~Waltenberger, {\it {SModelS extension with
 \bibitem{HEP201607}
 \url{https://www.hepdata.net/record/77891}.
 
+\bibitem{Buckley:2013jua}
+A.~Buckley, {\it {PySLHA: a Pythonic interface to SUSY Les Houches Accord
+  data}},  {\em Eur. Phys. J.} {\bf C75} (2015), no.~10 467,
+  [\href{http://arxiv.org/abs/1305.4194}{{\tt arXiv:1305.4194}}].
+
 \bibitem{Kraml:2016eti}
 S.~Kraml, U.~Laa, L.~Panizzi, and H.~Prager, {\it {Scalar versus fermionic top
   partner interpretations of $t\bar t + E_T^{\rm miss}$ searches at the LHC}},
