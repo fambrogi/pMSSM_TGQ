@@ -1,17 +1,17 @@
-\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
-\contentsline {section}{\numberline {2}The 3 jets + $E_T ^{miss}$ Signature }{2}{section.2}
-\contentsline {section}{\numberline {3}Production of the Efficiency Maps}{3}{section.3}
-\contentsline {section}{\numberline {4}Simplified Model Analysis Setup}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}\texttt {SModelS\xspace }\nobreakspace {} Workflow}{5}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Selection of the pMSSM-19 Model Points}{5}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}\texttt {SModelS\xspace }\nobreakspace {} Database}{6}{subsection.4.3}
-\contentsline {section}{\numberline {5}Extending the pMSSM Coverage}{7}{section.5}
-\contentsline {subsection}{\numberline {5.1}Breakdown of the SMS Results}{7}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Estimation of the Uncertainties}{9}{subsection.5.2}
-\contentsline {section}{\numberline {6}A Look at 13 TeV Results}{10}{section.6}
-\contentsline {section}{\numberline {7}Conclusion}{11}{section.7}
-\contentsline {section}{References}{13}{section*.18}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.3}% 
+\contentsline {section}{\numberline {2}The 3 jets + $E_T ^{miss}$ Signature }{2}{section.5}% 
+\contentsline {section}{\numberline {3}Production of the Efficiency Maps}{3}{section.11}% 
+\contentsline {section}{\numberline {4}Simplified Model Analysis Setup}{5}{section.16}% 
+\contentsline {subsection}{\numberline {4.1}\texttt {SModelS\xspace }\nobreakspace {} Workflow}{5}{subsection.17}% 
+\contentsline {subsection}{\numberline {4.2}Selection of the pMSSM-19 Model Points}{5}{subsection.19}% 
+\contentsline {subsection}{\numberline {4.3}\texttt {SModelS\xspace }\nobreakspace {} Database}{6}{subsection.20}% 
+\contentsline {section}{\numberline {5}Extending the pMSSM Coverage}{7}{section.23}% 
+\contentsline {subsection}{\numberline {5.1}Breakdown of the SMS Results}{7}{subsection.25}% 
+\contentsline {subsection}{\numberline {5.2}Estimation of the Uncertainties}{9}{subsection.30}% 
+\contentsline {section}{\numberline {6}A Look at 13 TeV Results}{10}{section.32}% 
+\contentsline {section}{\numberline {7}Conclusion}{12}{section.38}% 
+\contentsline {section}{References}{14}{section*.40}% 
 \let \numberline \tmptocnumberline 
-\contentsline {section}{\numberline {Appendix \nobreakspace {}A}Limits Comparison}{14}{appendix.A}
-\contentsline {section}{\numberline {Appendix \nobreakspace {}B}Distributions of r values}{14}{appendix.B}
-\contentsline {section}{\numberline {Appendix \nobreakspace {}C}Individual r values}{15}{appendix.C}
+\contentsline {section}{\numberline {Appendix \nobreakspace {}A}Limits Comparison}{15}{appendix.41}% 
+\contentsline {section}{\numberline {Appendix \nobreakspace {}B}Distributions of r values}{15}{appendix.44}% 
+\contentsline {section}{\numberline {Appendix \nobreakspace {}C}Individual r values}{16}{appendix.46}% 
