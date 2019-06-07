@@ -37,7 +37,7 @@
 \usepackage[colorlinks,citecolor=blue,urlcolor=blue,linkcolor=blue]{hyperref}
 
 
-\title{{\boldmath Extending the pMSSM Coverage with Gluino-Squark \\ Simplified Models Results}}
+\title{{\boldmath Constraining the pMSSM  with \\ Gluino-Squark Simplified Models}}
 
 
 %% %simple case: 2 authors, same institution
@@ -100,25 +100,34 @@
 Simplified models spectra (SMS) have become the standard method for the LHC collaborations to interpret the results of their searches for Beyond the Standard Model (BSM) particles, as in the case of Supersymmetry (SUSY). The most notable benefit is the drastic reduction of the large parameter spaces of full theories to a handful of new states. SMS serve not only as a useful benchmark to design and optimize the searches, but also they can easily highlight the specific strength of each search. Only a few SUSY particle appears in each SMS, while all the remaining SUSY particles are too massive to be produced at the LHC energy due to very small cross section production, and they can not appear as intermediate on-shell states in cascade decays. 
 \\
 In the case of SUSY, the masses of the of the particles, their production cross section and their decay modes are sufficient to fully characterise each SMS. Once these parameters are fixed, it is straightforward to estimate the exclusion provided by the LHC searches with SMS. The interpretation of searches with SMS started back at the early LHC era, with the data collected at a centre-of-mass energy of 7 TeV (see e.g. \cite{Chatrchyan:2013sza} by the CMS Collaboration). The choice of specific SMS relies on their simple experimental signatures and kinematical properties of the particles captured by the detectors. It is to be particularly stressed how the kinematics of the events is determined mainly by the mass scale of the SUSY particles involved, rather than the specific quantum or gauge numbers of the theory. Using SMS to re-interpret the results  of  the searches in the context of complete theory is however challenging. The main difficulty comes from considering the full particle spectra appearing in general theories. In fact, considering for example the R-parity conserving MSSM, the kinematics of the cascade decays to the lightest supersymmetric particles (LSP) might differ significantly from the on of the simplified case. The SMS commonly used for the interpretation of searches normally include up to three SUSY particles masses for cascade decays, or for asymmetric production (production of two different SUSY particles).
-
-
-For the task of re-interpretation of searches with SMS results, 
-dedicated tools such as \FASTLIM \cite{Papucci:2014rja} and \SMO \cite{Kraml:2014sna} were developed. They can decompose the signal of SUSY models into its SMS, and check the constraints provided by the LHC searches, contained in a dedicated database of results. In particular, \SMO~ was used in \cite{Ambrogi:2017lov} to study the coverage of the pMSSM-19\cite{Djouadi:1998di} with SMS with respect to the full recast analyses performed by the ATLAS collaboration. Specifically, the set of pMSSM points considered were made public by the ATLAS collaboration on the \texttt{HepData} website\cite{ATLASpMSSMhepdata}. The sensitivity of the ATLAS searches for a selection of BSM searches on the pMSSM was presented in \cite{Aad:2015baa}. They re-run their analyses on thousands of pMSSM model points, and characterised the constraints offered by each search considered for the reinterpretation .
+\\
+%
+%
+%
+For the task of re-interpretation of searches with SMS results in the context of general models, dedicated tools such as \FASTLIM \cite{Papucci:2014rja} and \SMO \cite{Kraml:2014sna} were developed. They can decompose BSM signals into its SMS, and check the constraints provided by the LHC searches, contained in a dedicated database of results. In particular, \SMO~ was used in \cite{Ambrogi:2017lov} to study the coverage of the pMSSM-19\cite{Djouadi:1998di} with SMS with respect to the full recast analyses performed by the ATLAS collaboration. The set of pMSSM points considered were made public by the ATLAS collaboration on the \texttt{HepData} website\cite{ATLASpMSSMhepdata}. The sensitivity of the ATLAS searches for a selection of BSM searches on the pMSSM was presented in \cite{Aad:2015baa}. They re-run their analyses on thousands of pMSSM model points, and characterised the constraints offered by a selection of the searches performed during the LHC Run 1, with proton-proton collisions at 8 TeV centre-of-mass energy.
 %
 \\
-The same model points were then tested with \SMO~ v1.1\cite{Ambrogi:2017neo}, obtaining a total coverage of roughly 55$\%$-63$\%$ for the Bino and Higgsino-like LSP case, respectively\footnote{The Wino-like LSP dataset was neglected since most of the model pointed included long-lived charged particles, a signature which could not be handled by the v1.1 used.}. The work also showed that by means of efficiency maps (EM) results, that can be produced by phenomenologists outside the experimental collaborations, it was possible to increase significantly the number of excluded point. This is mainly due to the fact that the LHC collaborations provide results only for a limited set of SMS, and many interesting model, to which existing searches are sensitive to, are left unexplored.
+The same model points were then tested with \SMO~ v1.1\cite{Ambrogi:2017neo}, obtaining a total coverage of roughly 55$\%$-63$\%$ for the Bino and Higgsino-like LSP case, respectively\footnote{The Wino-like LSP dataset was neglected since most of the model pointed included long-lived charged particles, a signature which could not be handled by the v1.1 used.}. It was shown that by means of efficiency maps (EM) results, that can be produced by phenomenologists outside the experimental collaborations, it was possible to increase significantly the number of excluded point with respect to using upper limit (UL) results only. In fact, from one side, the LHC collaborations provide results only for a limited set of SMS, and many interesting model, to which existing searches are sensitive to, are left unexplored, so EM enables phenomenologists to produce results for arbitrary SMS. From the other side, EM results can combine several signals together and obtain more stringent limits.  
 \\
-Indeed, the comparison between the \SMO~ approach and the re-interpretation performed by the ATLAS collaboration showed  that the main limitation of the simplified model approach is the lack of results for simple signatures, such as the $3jets$ + missing energy (\MET). One of the \SMO~ tool main features is the ability of extracting the most relevant signatures in terms of $\sigma \times BR$ (production cross section  times branching ratio) that are not currently constrained by simplified models results, called \textit{missing topologies}. The aforementioned $3jets$ +\MET~ signature can arise, for example, from gluino-squark associated production, where the gluino decays preferentially to an on-shell lighter squark, in turn decaying to a quark (that is reconstructed by the analysis as a jet of hadrons) and the LSP. This simplified model can be fully described by three mass parameters of the sparticle involved: $m_{\tilde g}, m_{\tilde q}$ and $m_{\tilde \chi _1 ^0}$. However, under the simplified model assumption, results for such model can be used to constrain the alternative mass hierarchy where the squark is heavier than the gluino, so that in this scenario the squark decays to on-shell gluino. The gluino can then decay radiatively to a gluon and the LSP or via an off-shell squark (i.e. 3-body decay, producing a $4jets$ + $E_T ^{miss}$ signature), depending on its mass difference with the lightest squark. 
-The idea at the basis of this paper is to extend the previous study of the coverage of the pMSSM, and concretely show how the inclusion of newly created EM for the $3jets$ + \MET~signature increases the coverage of the pMSSM. This can be efficiently done by combining the information obtained with \SMO~ regarding the important missing topologies, and the usage of analyses recasting tools to produce EMs results for arbitrary simplified models, to be implemented in the database of experimental results. For this purpose, this paper is structured as follows. Section \ref{sec::T3GQ} summarises the main characteristics of the $3jets$ + \MET~signature arising from gluino-squark production. In Section \ref{sec::setup} the set up of the \SMO~ analysis is described: the details regarding the production of the EMs for the gluino-squark model are discussed, and the set of pMSSM points used for the study are provided. Section \ref{sec::impact} summarises the improved constrained obtained with the newly added EMs, in particular discussing the benefit of the signal combination from EM results. A brief analysis of the current state of the art simpliifed model results at 13 TeV is discussed in Chapter \ref{ch::13TeV}. Finally an outlook about future extensions of the procedure is given in the conclusive Chapter \ref{sec:conclusion}.  
+The comparison between the \SMO~ approach and the re-interpretation performed by the ATLAS collaboration showed  that the simplified model approach could be potentially improved by including results for simple signatures, such as the $3jets$ + missing energy (\MET).
+This signature can arise, for example, from gluino-squark associated production, where the gluino decays preferentially to an on-shell lighter squark, in turn decaying to a quark (that is reconstructed by the analysis as a jet of hadrons) and the LSP. It was found that this simplified model, for which experimental results are not available, possesses on average the largest $\sigma \times BR$ (production cross section  times branching ratio).
+% This simplified model can be fully described by three mass parameters of the sparticle involved: $m_{\tilde g}, m_{\tilde q}$ and $m_{\tilde \chi _1 ^0}$. However, under the simplified model assumption, results for such model can be used to constrain the alternative mass hierarchy where the squark is heavier than the gluino, so that in this scenario the squark decays to on-shell gluino. The gluino can then decay radiatively to a gluon and the LSP or via an off-shell squark (i.e. 3-body decay, producing a $4jets$ + $E_T ^{miss}$ signature), depending on its mass difference with the lightest squark. 
 %
-\section{The 3 jets + $E_T ^{miss}$ Signature }\label{sec::T3GQ}
-\begin{figure*}
+
+The idea at the basis of this paper is to extend the previous study of the coverage of the pMSSM, and concretely show how the inclusion of newly created EM for the $3jets$ + \MET~signature increases the coverage of the pMSSM. This can be efficiently done by combining the information obtained with \SMO~ regarding the important missing topologies, and the usage of analyses recasting tools to produce EMs results for arbitrary simplified models, to be implemented in the database of experimental results. For this purpose, this paper is structured as follows. Section \ref{sec::T3GQ} summarises the main characteristics of the $3jets$ + \MET~signature arising from gluino-squark production. In Section \ref{sec::setup} the set up of the \SMO~ analysis is described: the details regarding the production of the EMs for the gluino-squark model are discussed, and the set of pMSSM points used for the study are provided. Section \ref{sec::impact} summarises the improved constrained obtained with the newly added EMs, in particular discussing the benefit of the signal combination from EM results. A brief analysis of the current state of the art simplified model results at 13 TeV is discussed in Chapter \ref{ch::13TeV}. Finally an outlook about future extensions of the procedure is given in the conclusive Chapter \ref{sec:conclusion}.  
+%
+\section{The 3 jets + $E_T ^{miss}$ Signature in the pMSSM-19 }\label{sec::T3GQ}
+\begin{figure*}[!ht]
 	\begin{center}
 		\includegraphics[width=0.95\textwidth]{PLOTS/diagrams.png}
 	\end{center}
-	\caption{Diagrams for the simplified models used for the extension of the database. Models \textit{T3GQ}(a) and \textit{T3QG}(b), corresponding to the two different mass hierarchies $m_{\tilde g} > m_{\tilde q}$ and $m_{\tilde q} > m_{\tilde g}$, are identified by the experimental signature \textit{[[[`jet']],[[`jet’],[`jet']]]} in \SMO~ notation. Light quarks and gluons are included in the definition of `jet'. Diagrams c) and d) represent the \textit{T2} and \textit{T5} models, mapping to the \textit{[[[`jet’]],[[`jet']]]} and \textit{[[[`jet’],[`jet']],[[`jet’],[`jet']]]} signatures. Note that the insertion of the final state particles in the vertices of each topology uniquely identifies a given simplified model.}
+	\caption{Diagrams for the simplified models used for the extension of the database. Models \textit{T3GQ}(a) and \textit{T3QG}(b), corresponding to the two different mass hierarchies $m_{\tilde g} > m_{\tilde q}$ and $m_{\tilde q} > m_{\tilde g}$, are identified by the experimental signature \textit{[[[`jet']],[[`jet'],[`jet']]]} in \SMO~ notation. Light quarks and gluons are included in the definition of `jet'. Diagrams c) and d) represent the \textit{T2} and \textit{T5} models, mapping to the \textit{[[[`jet']],[[`jet']]]} and \textit{[[[`jet'],[`jet']],[[`jet'],[`jet']]]} signatures. Note that the insertion of the final state particles in the vertices of each topology uniquely identifies a given simplified model.}
 	\label{Diagrams}
 \end{figure*}
+
+The pMSSM-19, a realization of the phenomenological Minimal Supersymmetric Standard Model with 19 free parameters, was used by both the ATLAS and CMS collaborations to test the impact of Run 1 searches on a realistic model. 
+
+
 In generic pMSSM-19 points, the squark mass parameters are: 
 \begin{equation*}
 m_{\tilde u_L} = m_{\tilde d_L} = m_{\tilde c_L} = m_{\tilde s_L} 
@@ -500,11 +509,8 @@ In this Section we discuss briefly what happens with SMS results produced with 1
 In Fig. \ref{13TEV} we consider a set of points which can be excluded with the new ATLAS-SUSY-2013-02 EMs, but cannot be excluded by the 13 TeV results implemented in the most updated release v.1.2. of the \SMO~ database. The points are divided into two categories. The first include points that do not map onto any of the available results, mainly because the mass array characterising the models in the decomposition cannot be mapped onto the mass grid of the results. The second category includes points for which 13 TeV results can indeed be applied, but they prove insufficient to exclude the points. 
 The two different mass planes show clearly that indeed the majority of points falls in the region where the mass gap between the gluino-LSP or squark-LSP is small. In Fig. \ref{13TeVrvalue} we also include the distributions of 8 TeV ATLAS-SUSY-2013-02 results, which reaches up to values greater than few tens.
 %
-We note that the recent Run 2 inclusive ATLAS 0 lepton,2-6 jets search\cite{Aaboud:2017vwy}, that uses 36 $fb^{-1}$ of collision data, is interpreted with gluino and squark pair production and gluino-squark SMS. In particular, the gluino-squark model is in fact a realisation of the pMSSM where only 1st and 2nd generation squarks and gluinos are considered, and all the other sparticles are decoupled. They parametrized the mass planes by fixing the LSP mass (Bino-like, for $m_{\tilde \chi _1} ^0 = (0,695,995)$ and considered a grid of gluino and squark masses. We note that the in order to use such results, an interpolation in the LSP mass of around 700 GeV, to cover the region $m_{\tilde \chi _1} ^0 < 700$ GeV , has to be performed. Unfortunately the results are provided (on \texttt{InspireHEP}\cite{HEP201607} only in the form of UL maps. It would be much appreciated if EMs for the gluino-squark model were also made available and allow for the combination with the published EMs for the \Ttwo~model. 
-%
-%
-%
-\begin{figure}
+
+\begin{wrapfigure}{r}{0.5\textwidth}  
 	\begin{center}
 		
 		\includegraphics[width=0.49\textwidth]{PLOTS/13TeV/rvalues.pdf}
@@ -512,24 +518,29 @@ We note that the recent Run 2 inclusive ATLAS 0 lepton,2-6 jets search\cite{Aabo
 	\end{center}
 	\caption{Distribution of points (Bino-like LSP dataset) excluded by the 8 TeV EM results for the analysis ATLAS-SUSY-2013-02, but not excluded by recent 13 TeV analyses published in v1.2.2 of the \SMO~ database. In cyan, the points fall outside the grid of results available for 13 TeV results; in purple, points for which the $r \ value <1$ with 13 TeV results. Note that most of the points lies in the region of small gluino/squark-LSP mass gap.}. 
 	\label{13TeVrvalue}
-\end{figure}
-Finally, we provide the results of one of such points, the SLHA file \textit{59847871} from the Bino-like LSP dataset. The mass spectrum, adapted from the tool \texttt{pySLHA}\cite{Buckley:2013jua}, is shown in Fig. \ref{pyslha}. We see that, besides the light neutralinos/chargino $\tilde \chi _1 ^0,\tilde \chi _2 ^0,\tilde \chi _3 ^0,\tilde \chi _1 ^{\pm}$ whose mass lies around 500 GeV, the lightest SUSY particles are down-type right-handed squark, with mass of 854 GeV. The gluino is slightly heavier, with a mass of 1.072 TeV. The up-type right-handed and the left-handed squarks have a mass of 1.763 and 2.353 TeV respectively. In Table \ref{tab_13tev} the results from the best 13 TeV analysis and the results from our recast EMs for the 8 TeV searches are shown, and the values for the production cross section in Tab. \ref{cross_sections}. 
-%
-%
-\begin{figure}
+\end{wrapfigure}
+
+We note that the recent Run 2 inclusive ATLAS 0 lepton,2-6 jets search\cite{Aaboud:2017vwy}, that uses 36 $fb^{-1}$ of collision data, is interpreted with gluino and squark pair production and gluino-squark SMS. In particular, the gluino-squark model is in fact a realisation of the pMSSM where only 1st and 2nd generation squarks and gluinos are considered, and all the other sparticles are decoupled. They parametrized the mass planes by fixing the LSP mass (Bino-like, for $m_{\tilde \chi _1} ^0 = (0,695,995)$ and considered a grid of gluino and squark masses. We note that the in order to use such results, an interpolation in the LSP mass of around 700 GeV, to cover the region $m_{\tilde \chi _1} ^0 < 700$ GeV , has to be performed. Unfortunately the results are provided (on \texttt{InspireHEP}\cite{HEP201607} only in the form of UL maps. It would be much appreciated if EMs for the gluino-squark model were also made available and allow for the combination with the published EMs for the \Ttwo~model. 
+
+\begin{wrapfigure}{l}{0.5\textwidth} 
 	\begin{center}		
 		\includegraphics[width=0.49\textwidth]{PLOTS/13TeV/59847871.pdf}
 	\end{center}
 	\caption{Mass spectrum of the point \textit{59847871}, from the Bino-like LSP dataset. Right-handed squarks are the lightest coloured particles, opening the $\tilde g \rightarrow q \tilde q $ decay channel. {\color{blue} FIX!!! right up and down squarks}} 
 	\label{pyslha}
-\end{figure}
+\end{wrapfigure}
+
+Finally, we provide the results of one of such points, the SLHA file \textit{59847871} from the Bino-like LSP dataset. The mass spectrum, adapted from the tool \texttt{pySLHA}\cite{Buckley:2013jua}, is shown in Fig. \ref{pyslha}. We see that, besides the light neutralinos/chargino $\tilde \chi _1 ^0,\tilde \chi _2 ^0,\tilde \chi _3 ^0,\tilde \chi _1 ^{\pm}$ whose mass lies around 500 GeV, the lightest SUSY particles are down-type right-handed squark, with mass of 854 GeV. The gluino is slightly heavier, with a mass of 1.072 TeV. The up-type right-handed and the left-handed squarks have a mass of 1.763 and 2.353 TeV respectively. In Table \ref{tab_13tev} the results from the best 13 TeV analysis and the results from our recast EMs for the 8 TeV searches are shown, and the values for the production cross section in Tab. \ref{cross_sections}. 
 %
 %
+
+
+
 
 \begin{table}[!h]
 	\footnotesize
 	\begin{center}
-		\renewcommand{\arraystretch}{1.3}
+		\renewcommand{\arraystretch}{1.1}
 		\begin{tabular}{ l c c}  \toprule \toprule
 			\multicolumn{3}{c}{Point 59847871 Bino-like LSP dataset} \\ \toprule 
 			\textbf{Analysis} & \textbf{$\sqrt{s}$ [TeV]}  & \textbf{r value} \\  \toprule
@@ -547,7 +558,7 @@ Finally, we provide the results of one of such points, the SLHA file \textit{598
 \begin{table}[!h]
 	\footnotesize
 	\begin{center}
-		\renewcommand{\arraystretch}{1.3}
+		\renewcommand{\arraystretch}{1.1}
 		\begin{tabular}{ l c c}  \toprule \toprule
 			\textbf{Process} & $\sigma$(8 TeV) [pb]  & $\sigma$(13 TeV) [pb] \\  \toprule
 			$pp \rightarrow \tilde g \tilde g$ & 1.09*10$^{-2}$ & 1.66*10$^{-1}$\\
