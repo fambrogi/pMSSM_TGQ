@@ -155,44 +155,97 @@ or, for small $\Delta M(min(m_{\tilde q}), m_{\tilde g})$,  via a three-body dec
 p p \rightarrow \tilde g \tilde q ,\tilde q \rightarrow \tilde g q, \tilde g \rightarrow q \bar q \tilde \chi _1 ^0.
 \end{equation}
 \\
+
 The simplified model of interest of this work produces a $3jet$ + missing energy final state as formulated in the Decays \ref{decay_TGQ} and \ref{decay_loop}\footnote{Both correspond to the \textit{[[[`jet']],[[`jet'],['jet']]]} signature in the \SMO~ bracket language.}. This experimental signature can be obtained by considering two different mass hierarchies, which are depicted by the diagrams a) and b) in Fig. \ref{Diagrams}. The first, labelled \textit{T3GQ} represents the case where the gluinos are heavier than the squarks considered; the latter, labelled \textit{T3QG} represents the alternative case. Note that for our purposes, it is sufficient to consider only the lightest of the three squarks. Depending on the specific pMSSM model point considered, one of the two alternative mass hierarchies will produce this specific signature, due to the strong nature of the gluino-squark coupling.
 %
 As stated in the introduction, the \textit{T3GQ} model was found to be the most important missing result for the pMSSM. It is to note, however that, by construction, the \textit{T2} and \textit{T5} models, represented by plots c) and d) of Fig. \ref{Diagrams}, are automatically important when the \textit{T3GQ} model also is. In practice, the \textit{T3GQ} model is an asymmetric model composed by one branch from the \textit{T2} and one branch from the \textit{T5} models. Thanks to the usage of EM results, it is thus possible to combine the signals from the $pp \rightarrow \tilde g \tilde g$, $pp \rightarrow \tilde q \tilde q$ and $pp \rightarrow \tilde g \tilde q$ channels. Along with the results from \textit{TGQ}, the power of combining the \textit{T2} and \textit{T5} models will be explored in this work. For completeness, results for the \textit{T2} and \textit{T5} models were already included in the previous release of the database, hence did not appear in the missing topologies list of the original study. 
 \section{Production of the Efficiency Maps}\label{EMprod}
-The set-up for the production of the Monte Carlo signals is the following. Events at parton level were generated using \texttt{MadGraph5\_aMC@NLO}\cite{Alwall:2011uj}, and then showered and hadronized using \texttt{Pythia 6.4}\cite{Sjostrand:2006za}. The processes considered for the production of the samples for the simplified model are described in Tab. \ref{mg5_processes}.
-
-
-\begin{wraptable}{r}{8cm}
-	\small
+The set-up for the production of the Monte Carlo signals is the following. Events at parton level were generated using \texttt{MadGraph5\_aMC@NLO}\cite{Alwall:2011uj}, and then showered and hadronized using \texttt{Pythia 6.4}\cite{Sjostrand:2006za}. The processes considered for the production of the samples for the simplified model are described in the left columns of Tab. \ref{TGQ_Planes}.
+\begin{table}
+			\small
 	\begin{center}
 		\renewcommand{\arraystretch}{1.0}
-		\begin{tabular}{ l l }  \toprule  \toprule 
+
+		\begin{tabular}{ l l | c c  }  \toprule  \toprule 
 			%\multicolumn{3}{c}{($M_1,M_2,M_3) = (1000,200,190)$} & \multicolumn{3}{c}{ \textbf{T3GQ}} & \multicolumn{3}{c}{ \textbf{T3QG}} \\  \toprule 
-			\multicolumn{2}{c}{\texttt{MadGraph5\_aMC@NLO} processes} \\ \toprule \toprule
-			\multicolumn{2}{l}{\Ttwo: $p p \rightarrow \tilde q \tilde q$}  \\
-			& define Q = dl dr dl\textasciitilde dr\textasciitilde ul ur ul \textasciitilde ur\textasciitilde \\
-			& generate p p $>$ Q Q  \\
-			&  add process p p $>$ Q Q j \\  \toprule 
-			\multicolumn{2}{l}{\Tfive: $p p \rightarrow \tilde g \tilde g$ } \\ 
-			& generate p p $>$ go go \\
-			&  add process p p $>$ go go j \\ \toprule 
-			\multicolumn{2}{l}{\TGQ: $p p \rightarrow \tilde g \tilde q$} \\  
-			&  define Q = dl dr dl\textasciitilde dr\textasciitilde ul ur ul\textasciitilde ur\textasciitilde \\
-			&  generate p p $>$ go Q \$ go Q \\
-			&  add process p p $>$ go Q j \$ go Q \\  \bottomrule \bottomrule 
-			%
+			\multicolumn{2}{c|}{\texttt{MadGraph5\_aMC@NLO} processes} &  \multicolumn{2}{c}{Mass Planes} \\ \toprule \toprule
+			
+			\multicolumn{2}{l|}{\textbf{\Ttwo}: $p p \rightarrow \tilde q \tilde q$} & up to $m_{\tilde q}-m_{\tilde \chi _1 ^0}$=5 GeV &  \\
+			& define Q = dl dr dl\textasciitilde dr\textasciitilde ul ur ul \textasciitilde ur\textasciitilde & &  \\
+			& generate p p $>$ Q Q & &  \\
+			&  add process p p $>$ Q Q j & & \\  \toprule 
+			
+			
+			\multicolumn{2}{l|}{\textbf{\Tfive}: $p p \rightarrow \tilde g \tilde g$ } & x=(0.05,0.50,0.95) & \\ 
+			& generate p p $>$ go go & $\Delta M(\tilde q, \tilde \chi _1 ^0)$ = 5 GeV & \\
+			&  add process p p $>$ go go j & &  \\ \toprule 
+			
+			
+			\multicolumn{2}{l|}{\textbf{\TGQ}: $p p \rightarrow \tilde g \tilde q$} \\  
+			&  define Q = dl dr dl\textasciitilde dr\textasciitilde ul ur ul\textasciitilde ur\textasciitilde & $m_{\tilde g}$ = 200,...,1200 & 50 GeV bin \\
+			
+			&  generate p p $>$ go Q \$ go Q & $m_{\tilde g}$ = 1300,...,2000 & 100 GeV bin \\
+			
+			&  add process p p $>$ go Q j \$ go Q & $m_{\tilde q}$ up to $m_{\tilde q}-m_{\tilde \chi _1 ^0}=5 GeV $ & 50 GeV bin \\  \bottomrule \bottomrule 
 		\end{tabular}
-	\end{center}
+	\caption{\texttt{MadGraph5\_aMC@NLO} processes for the production of the Monte Carlo samples, and mass plane parametrization used for the EMs production of the \textit{T2}, \textit{T3GQ} and \textit{T5}. See the text for details. }
+	\label{TGQ_Planes} 
+\end{center}
+\end{table}
+\normalsize
+\iffalse
+\begin{table}
+	\small
+	%\begin{center}
+	\renewcommand{\arraystretch}{1.0}
+	\begin{tabular}{ l l }  \toprule  \toprule 
+		%\multicolumn{3}{c}{($M_1,M_2,M_3) = (1000,200,190)$} & \multicolumn{3}{c}{ \textbf{T3GQ}} & \multicolumn{3}{c}{ \textbf{T3QG}} \\  \toprule 
+		\multicolumn{2}{c}{\texttt{MadGraph5\_aMC@NLO} processes} \\ \toprule \toprule
+		\multicolumn{2}{l}{\Ttwo: $p p \rightarrow \tilde q \tilde q$}  \\
+		& define Q = dl dr dl\textasciitilde dr\textasciitilde ul ur ul \textasciitilde ur\textasciitilde \\
+		& generate p p $>$ Q Q  \\
+		&  add process p p $>$ Q Q j \\  \toprule 
+		\multicolumn{2}{l}{\Tfive: $p p \rightarrow \tilde g \tilde g$ } \\ 
+		& generate p p $>$ go go \\
+		&  add process p p $>$ go go j \\ \toprule 
+		\multicolumn{2}{l}{\TGQ: $p p \rightarrow \tilde g \tilde q$} \\  
+		&  define Q = dl dr dl\textasciitilde dr\textasciitilde ul ur ul\textasciitilde ur\textasciitilde \\
+		&  generate p p $>$ go Q \$ go Q \\
+		&  add process p p $>$ go Q j \$ go Q \\  \bottomrule \bottomrule 
+		%
+	\end{tabular}
+	%\end{center}
 	\normalsize
 	\caption{\texttt{MadGraph5\_aMC@NLO} processes for the production of the Monte Carlo samples.}
 	\label{mg5_processes}
-
-\end{wraptable}
+	\footnotesize
+	%\begin{center}
+	\small
+	\renewcommand{\arraystretch}{1.0}
+	\begin{tabular}{ l l l }  \toprule \toprule 
+		\multicolumn{3}{c}{\texttt{ \normalsize \textbf{Mass Planes}}} \\ \toprule \toprule
+		\multicolumn{3}{l}{\Ttwo: $p p \rightarrow \tilde q \tilde q$} \\
+		& - & min($\Delta M(\tilde q, \tilde \chi _1 ^0)$) = 5 GeV \\ \midrule
+		\multicolumn{3}{l}{\Tfive: $p p \rightarrow \tilde g \tilde g$} \\ 
+		&x=(0.05,0.50,0.95) &  \\ 
+		&$\Delta M(\tilde q, \tilde \chi _1 ^0)$ = 5 GeV&  \\ \midrule
+		\multicolumn{3}{l}{\TGQ: $p p \rightarrow \tilde g \tilde q$} \\  
+		& $m_{\tilde g}$ = 200,...,1200 & 50 GeV bin \\ 
+		& $m_{\tilde g}$ = 1300,...,2000 & 100 GeV bin ($m_{\tilde g}\leq$2 TeV) \\
+		& $m_{\tilde q}$ & 50 GeV bins ($m_{\tilde q}\leq$1 TeV) \\
+		& & min($\Delta M(\tilde q, \tilde \chi _1 ^0)$) = 5 GeV \\ \bottomrule \bottomrule
+	\end{tabular}
+	%\end{center}
+	\normalsize
+	\caption{Mass plane parametrization used for the EMs production of the \textit{T2}, \textit{T3GQ} and \textit{T5}. See the text for details.}
+	\label{TGQ_Planes} 
+\end{table}
+\fi
 Note that the processes considered the emission of up to one extra parton. The syntax $\$go \ Q$ is used to avoid the presence of on-shell resonances, represented by intermediate gluino or squarks, that would lead to double counting when performing the merging between matrix-element and parton-shower. The merging between the matrix elements and parton-shower formalisms was performed adopting the $k_T \ jet$ MLM scheme \cite{MLM,Alwall:2007fs}. 
 %
 The analysis recasting was performed with \texttt{MadAnalysis 5}, using the recasting codes for the analysis ATLAS-SUSY-2013-02\cite{ATLAS-SUSY-2013-02MA5,ATLAS-SUSY-2013-02VALIDATION} and CMS-SUS-13-012\cite{CMS-SUS-13-012MA5,CMS-SUS-13-012VALIDATION}. The tuned version of \texttt{DELPHES 3} integrated in the \texttt{MadAnalysis 5} framework was used to take into consideration the detector efficiency on the particles. Jets were clustered using \texttt{FastJet}\cite{Cacciari:2011ma}.
 %
-The description of the grid of mass points defined for the production of the efficiency maps is provided in Tab. \ref{TGQ_Planes}. The analyses chosen for the recasting search for SUSY events in the all hadronic final state, vetoing the presence of isolated leptons. In particular the two above analyses are sensitive to events with small jet multiplicity, as generated by the simplified models considered. Although official EM results for the \textit{T2} model were made public by the collaborations, part of the parameter space with small mass gap between the squark and the LSP is below $~$50 GeV is not properly covered. For this reason, EMs were produced to replace the official results, up to a mass difference as small as 5 GeV between the squarks and the LSP. In addition, also the results for the \Tfive~model were extended to cover scenarios with small mass difference between the gluino-squark and squark-LSP. The parameter $x$ is defined so that
+The description of the grid of mass points defined for the production of the efficiency maps is provided in the right columns of Tab. \ref{TGQ_Planes}. The analyses chosen for the recasting search for SUSY events in the all hadronic final state, vetoing the presence of isolated leptons. In particular the two above analyses are sensitive to events with small jet multiplicity, as generated by the simplified models considered. Although official EM results for the \textit{T2} model were made public by the collaborations, part of the parameter space with small mass gap between the squark and the LSP is below $~$50 GeV is not properly covered. For this reason, EMs were produced to replace the official results, up to a mass difference as small as 5 GeV between the squarks and the LSP. In addition, also the results for the \Tfive~model were extended to cover scenarios with small mass difference between the gluino-squark and squark-LSP. The parameter $x$ is defined so that
 \begin{equation}
 m_{\tilde q}= x\cdot m_{\tilde g} + (1-x)\cdot m_{\tilde \chi_1 ^0}.
 \end{equation}
@@ -203,30 +256,6 @@ For the \textit{T3GQ} model, the gluino mass reaches the value of 2 TeV, with a 
 \end{equation}
 were produced. Note that the values of the maximum values of the gluinos and squarks were chosen arbitrarily, since a priory there is no possibility to determine the efficiency of the analysis and of the cross section upper limit. It will be see in Section \ref{sec::impact} that indeed this limit should be extended to regions of larger \MGLU, since both the efficiency of the recast analyses considered and the associated gluino-squark production cross sections are sufficiently sizeable.
 %
-
-\begin{wraptable}{r}{8cm}
-	\footnotesize
-	\begin{center}
-		\small
-		\renewcommand{\arraystretch}{1.0}
-		\begin{tabular}{ l l l }  \toprule \toprule 
-			\multicolumn{3}{c}{\texttt{ \normalsize \textbf{Mass Planes}}} \\ \toprule \toprule
-			\multicolumn{3}{l}{\Ttwo: $p p \rightarrow \tilde q \tilde q$} \\
-			& - & min($\Delta M(\tilde q, \tilde \chi _1 ^0)$) = 5 GeV \\ \midrule
-			\multicolumn{3}{l}{\Tfive: $p p \rightarrow \tilde g \tilde g$} \\ 
-			&x=(0.05,0.50,0.95) &  \\ 
-			&$\Delta M(\tilde q, \tilde \chi _1 ^0)$ = 5 GeV&  \\ \midrule
-			\multicolumn{3}{l}{\TGQ: $p p \rightarrow \tilde g \tilde q$} \\  
-			& $m_{\tilde g}$ = 200,...,1200 & 50 GeV bin \\ 
-			& $m_{\tilde g}$ = 1300,...,2000 & 100 GeV bin ($m_{\tilde g}\leq$2 TeV) \\
-			& $m_{\tilde q}$ & 50 GeV bins ($m_{\tilde q}\leq$1 TeV) \\
-			& & min($\Delta M(\tilde q, \tilde \chi _1 ^0)$) = 5 GeV \\ \bottomrule \bottomrule
-		\end{tabular}
-	\end{center}
-	\normalsize
-	\caption{Mass plane parametrization used for the EMs production of the \textit{T2}, \textit{T3GQ} and \textit{T5}. See the text for details.}
-	\label{TGQ_Planes} 
-\end{wraptable}
 %
 For the gluino-squark model we chose the hierarchy $m_{\tilde g} > m_{\tilde q}$, so the \textit{T3GQ} model was chosen to constrain the "[[[`jet']],[[`jet],[`jet']]]" signature. Note that the same problem related to the choice of the mass hierarchy applies to the $T5$ model: the "[[[`jet']],[[`jet']]]" signature can be obtained both with $\tilde g \rightarrow g \tilde \chi _1 ^0$ and $\tilde q \rightarrow q \tilde \chi _1 ^0$. Also for the recasting of this model the former hierarchy was chosen. In \ref{app:ul} the comparison between the values of the upper limits and efficiencies obtained for the two different mass hierarchy, for two benchmark points, are provided. Differences can indeed arise due to the different hadronization and clustering of quarks and gluon into jets, so that the jets momentum and multiplicity, and linked kinematics variables such as the hadronic transverse energy, might differ. However such differences have a limited impact in the efficiency selection, typically contained within 20$\%$. The observed UL calculation, however, is based on the selection of best expected signal region, i.e. the signal region which provides the best expected limit. The observed number of events indeed suffer from statistical fluctuation, that might be quite different from one signal region to another. For this reason, a small difference in the efficiency might lead to the selection of a different signal regions providing the best expected limit, and consequently to a discording observed UL from SR to SR. While this might result in up to a factor 2 difference in the observed UL, this translates into a modest uncertainty in the cross section UL and in the mass of the related SUSY particle, with little impact in the general interpretation of the excluded regions of the parameter space of the tested pMSSM-19. 
 %
@@ -259,13 +288,6 @@ This requirements reduced the original number of points tested by ATLAS from 103
 The same version v1.1.1 of \SMO~ was employed. The \SMO~ cross section calculator, which provides a useful interface with \texttt{Pythia 8}(\texttt{v.8.226})\cite{Sjostrand:2014zea}, \texttt{Pythia 6}\cite{Sjostrand:2006za} and \texttt{NLLFast}~\cite{nllfast,Beenakker:1996ch,Kulesza:2008jb,Kulesza:2009kq,Beenakker:2009ha,Beenakker:2011fu,Beenakker:1997ut,Beenakker:2010nq} was used to compute the production cross sections, up to NLO+NLL order for strong production, and LO for electroweak processes; \texttt{Pythia 6}~was instead used for slepton production. The other two relevant parameters selected in the configuration file \texttt{parameters.ini} are the \texttt{sigmacut}= 0.03 fb, that controls the  minimum allowed weight  $w = \sigma \times BR$ for each simplified model appearing in the decomposition, and \verb|minmassgap| = 5 GeV, i.e. the minimum mass gap for which the SM products appearing in the decay chain are considered visible. 
 %
 \subsection{\SMO~ Database}
-\begin{figure*}
-	\begin{center}
-		\includegraphics[width=1\textwidth]{PLOTS/New/New_Res.pdf}	
-	\end{center}
-	\caption{Distributions of the points excluded by ATLAS (purple), by \SMO~ with the inclusion of the newly home-grown maps (light blue), and by the previous work \cite{Ambrogi:2017lov} (slate blue), for the Bino(top) and Higgsino-like LSP (bottom).}
-	\label{pmssm_new_exclusion_gluino}
-\end{figure*}
 We used the complete set of SMS results available for 8 TeV centre-of-mass energy of the release 1.1.1 of the database. These include official results in the form of upper limits and efficiency maps from the ATLAS and CMS collaborations, EMs results produced by the \texttt{FastLim} collaboration available at \cite{fastlim:web} and adapted to the \SMO~ infrastructure, and the set of EM results recast by \SMO~ collaboration. The complete description of the database of v1.1.1 can be consulted in \cite{Ambrogi:2017lov}). In addition we added the EM results specifically produced for this work described in Section \ref{EMprod}. Concretely, the additional EMs results in the updated database are:
 \begin{itemize}
 	\item ATLAS-SUSY-2013-02: \Ttwo~(which replaces the maps officially provided by ATLAS), \Tfive~and \TGQ~results; \
@@ -277,9 +299,10 @@ The replacement of the \Ttwo results was done in order to cover smaller mass gap
 
 
 % 
-\begin{wraptable}{r}{8cm}
+\begin{wraptable}{r}{7cm}
 	\begin{center}
-		\renewcommand{\arraystretch}{1.1}
+		\small
+		\renewcommand{\arraystretch}{0.9}
 		\begin{tabular}{ c l c}  \toprule  \toprule 
 			%\multicolumn{3}{c}{($M_1,M_2,M_3) = (1000,200,190)$} & \multicolumn{3}{c}{ \textbf{T3GQ}} & \multicolumn{3}{c}{ \textbf{T3QG}} \\  \toprule 
 			\multicolumn{3}{c}{ATLAS-SUSY-2013-02 , CMS-SUS-13-012} \\ \toprule 
@@ -294,23 +317,29 @@ The replacement of the \Ttwo results was done in order to cover smaller mass gap
 	\caption{Summary of the EMs considered in the extension of the pMSSM-19 coverage.}
 	\label{EMS}
 \end{wraptable}
+\normalsize
 Note that several EMs results were recast for the CMS-SUS-13-012 analysis, and already employed for the coverage in the first study. finally, note that the focus of the rest of this work will be centred around the results provided by the ATLAS-SUSY-2013-02 EMs here described, mainly for two reasons. The first one is the availability of a direct comparison with the full recast performed by the ATLAS collaboration. The second one is that on average, the results from this analysis are more constraining with respect to the CMS counterpart. This is due to the specific design of the analysis: the signal regions in the ATLAS search are very inclusive hence the efficiency can capture a large portion of the SUSY signals within the same signal region. On the contrary, the CMS analysis defines 36 non-overlapping signal region, so that the SUSY signal is split into several bins (specifically the hadronic transverse energy, missing hadronic transverse energy and jet multiplicity bins). Since the combination of signal regions is not possible, only the best signal region is used to calculate the limits, that in general result weaker than the ATLAS search.
 %
 
 \section{Extending the pMSSM Coverage}\label{sec::impact}
+\begin{figure*}
+	\begin{center}
+		\includegraphics[width=1\textwidth]{PLOTS/New/New_Res.pdf}	
+	\end{center}
+	\caption{Distributions of the points excluded by ATLAS (purple), by \SMO~ with the inclusion of the newly home-grown maps (light blue), and by the previous work \cite{Ambrogi:2017lov} (slate blue), for the Bino(top) and Higgsino-like LSP (bottom).}
+	\label{pmssm_new_exclusion_gluino}
+\end{figure*}
 In this Section we study the improvements in the pMSSM coverage provided by the additional EMs for the \textit{T3GQ} gluino-squark model, in combination with the \textit{T2} and \textit{T5} model. 
 \\
 %
 \begin{table}[!h]
 	\footnotesize
 	\begin{center}
-		\renewcommand{\arraystretch}{1.3}
-		\begin{tabular}{l l c }  \toprule  \toprule 
-			& \textbf{ATLAS} & \textbf{\SMO (EM+UL)} \\ \toprule \toprule 
-			\textbf{Bino LSP} & &  \\
-			& 38527 & 28765 (74 $\% $) \\ 
-			\textbf{Higgsino LSP} & &   \\
-			& 45345 & 32358 (71 $\% $) \\ \bottomrule   \bottomrule  
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{l c c }    \toprule 
+			& \textbf{ATLAS} & \textbf{\SMO (EM+UL)} \\  \toprule 
+			\textbf{Bino LSP} & 38527 & 28765 (74 $\% $) \\ 
+			\textbf{Higgsino LSP} & 45345 & 32358 (71 $\% $) \\    \bottomrule  
 		\end{tabular}
 	\end{center}
 	\caption{\SMO~ constraints for the Bino and Higgsino-like LSP after the addition of the newly implemented EMs results for the models \textit{T2}, \textit{T5} and \textit{T3GQ}.}
@@ -343,11 +372,14 @@ i.e. gluino decay to the LSP via off-shell light squarks, provided by the ATLAS 
 %
 %
 Note that points can be excluded by more than one results, e.g. points with both light squarks and gluinos, with $m_{\tilde g} > m_{\tilde q}$, might be excluded by both the \textit{T2} and \textit{T5} results; for this reason, the histogram relative to each SMS cannot be stacked together. A major difference between the Bino and the Higgsino-like LSP case concerns the exclusion from the \textit{T1} results, which are significant in the former case, but almost irrelevant in the latter. The model is considered for completeness since such result is available. However, this signal cannot be in general combined with the other signatures of interest, since the \textit{T1} model arises most frequently from the decay of a gluino decaying to an off-shell squark, which is by construction a competing decay channel with respect to the \textit{T3GQ} model. Other SUSY configuration can still result in the \textit{T1} signature, for example the production of charginos and neutralinos decaying hadronically to off-shell vector bosons, but they are practically irrelevant due to the small $\sigma \times BR$.  
-In Fig. \ref{fraction} the contribution of the model carrying the largest $r$ value (or partial weight) among the available \textit{T1}, \textit{T2}, \textit{T5} and \textit{T3GQ} is highlighted. For the majority of the points, this values amount to around half of the total weight, calculated using all the available EM results. Besides taking advantage of the availability of recasting tools, EM results are also extremely useful since they allow for the combination of signals, allowing for the reconstruction of full SUSY events. 
-%
-%
-In the case of the \textit{T2}, \textit{T5} and \textit{T3GQ}, the squark-squark, gluino-gluino and gluino-squark productions and their consequent decays to the LSP.
-%
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{PLOTS/App/Bino_Combo.pdf}
+	\end{center}
+	\vspace{0.2pt}
+	\caption{Distributions of the \RVALUE for \textit{T2}, \textit{T5}, \textit{T3GQ} and their combination for the points excluded by the ATLAS-SUSY-2013-02 results (Bino-like LSP dataset). Grey points have a total $r$ value $\leq$ 1. A large portion of points excluded bz \Ttwo~ lies in the $m_{\tilde g}<$500 GeV mass, due to the gluino loop decay $\tilde g \rightarrow g \tilde \chi _1 ^0$. A similar argument holds for the \Tfive~ model, in the region where the result constrains the $\tilde q \rightarrow q \tilde g, \tilde g \rightarrow  g \tilde \chi _1 ^0$ decay. The \TGQ~model results can efficiently constrain the two alternative mass hierarchies $m_{\tilde g}>m_{min(\tilde q)}$ or $m_{min(\tilde q)}>m_{\tilde g }$. In particular it shows that the EMs should be extended to cover \MGLU~masses larger than the 2 TeV values.}
+	\label{rvalues-bino}
+\end{figure}
 %
 \iffalse
 \begin{verbatim}
@@ -386,16 +418,8 @@ As stressed when introducing EMs, one of the advantages of using such kind of re
 	\caption{Number of points that can be excluded only by including each individual result for \Tone~,\Ttwo,\Tfive,\TGQ, or their combination. See the text for details.}
 	\label{breakdown_number} 
 \end{table}
-Finally, in Fig. \ref{rvalues-bino} the distribution for the r-values for the \textit{T2}, \textit{T5}, \textit{T3GQ} models and their combination is shown, for the Bino and Higgsino-like LSP cases respectively. The contribution from the \textit{T1} model is not considered. Note that the plots are projected onto the $(m_{\tilde g}, min(m_{\tilde q}))$ mass plane. This highlights the contribution from the two alternative mass hierarchies $m_{\tilde g} > min(m_{\tilde q})$ or $min(m_{\tilde q}) > m_{\tilde g} $, clearly indicated by the points distributed around the diagonal of the plots.  {\color{blue} fill the space .}
+Finally, in Fig. \ref{rvalues-bino} the distribution for the r-values for the \textit{T2}, \textit{T5}, \textit{T3GQ} models and their combination is shown, for the Bino and Higgsino-like LSP cases respectively. The contribution from the \textit{T1} model is not considered. Note that the plots are projected onto the $(m_{\tilde g}, min(m_{\tilde q}))$ mass plane. This highlights the contribution from the two alternative mass hierarchies $m_{\tilde g} > min(m_{\tilde q})$ or $min(m_{\tilde q}) > m_{\tilde g} $, clearly indicated by the points distributed around the diagonal of the plots. 
 
-\begin{figure}[!h]
-	\begin{center}
-		\includegraphics[width=1\textwidth]{PLOTS/App/Bino_Combo.pdf}
-	\end{center}
-	\vspace{0.2pt}
-	\caption{Distributions of the \RVALUE for \textit{T2}, \textit{T5}, \textit{T3GQ} and their combination for the points excluded by the ATLAS-SUSY-2013-02 results (Bino-like LSP dataset). Grey points have a total $r$ value $\leq$ 1. A large portion of points excluded bz \Ttwo~ lies in the $m_{\tilde g}<$500 GeV mass, due to the gluino loop decay $\tilde g \rightarrow g \tilde \chi _1 ^0$. A similar argument holds for the \Tfive~ model, in the region where the result constrains the $\tilde q \rightarrow q \tilde g, \tilde g \rightarrow  g \tilde \chi _1 ^0$ decay. The \TGQ~model results can efficiently constrain the two alternative mass hierarchies $m_{\tilde g}>m_{min(\tilde q)}$ or $m_{min(\tilde q)}>m_{\tilde g }$. In particular it shows that the EMs should be extended to cover \MGLU~masses larger than the 2 TeV values.}
-	\label{rvalues-bino}
-\end{figure}
 %
 %
 \iffalse
@@ -490,11 +514,10 @@ We finally note than a similar methodology was employed by the ATLAS collaborati
 %\end{table*}
 %{\color{blue} Ideally, make a cmparison with the T2 results *only*} 
 \section{A Look at 13 TeV Results}\label{ch::13TeV}
-In this Section we discuss briefly what happens with SMS results produced with 13 TeV centre-of-mass energy collision data. Due to the large increase in the production cross section, it is expected that the coverage of the pMSSM-19 for the same dataset of points designed for 8 TeV results, increases considerably. In fact, this was already shown in \cite{Dutta:2018ioj}: by using SMS results for a selection of 13 TeV analyses, with collision data adding up to around 36 $fb^{-1}$, almost all the entire set of pMSSM-19 points considered by ATLAS could be excluded, including the ones out of the of 8 TeV searches, mainly due to very small values of the cross sections. The aim of the present discussion is to demonstrate that, despite the large increase in the production cross section, certain regions of the parameter space cannot be covered even with the latest results. 
+We discuss in this Section some results obtained with recent SMS results from LHC Run 2 searches. Due to the large increase in the production cross section, it is expected that the coverage of the pMSSM-19 for the same dataset of points designed for 8 TeV results increases considerably. In fact, this was already shown in \cite{Dutta:2018ioj}: by using SMS results for a selection of 13 TeV analyses, with collision data adding up to around 36 $fb^{-1}$, almost all the entire set of pMSSM-19 points considered by ATLAS could be excluded, including the ones out of the of 8 TeV searches, mainly due to very small values of the cross sections. The aim of the present discussion is to demonstrate that, despite the large increase in the production cross section, certain regions of the parameter space cannot be covered even with more recent results.
 \\
-
 %
-\begin{figure}
+\begin{figure}[!h]
 	\begin{center}
 		\subfigure
 		{\includegraphics[width=0.49\textwidth]{PLOTS/13TeV/13TeV_Glu_Neu.pdf}}
@@ -506,37 +529,32 @@ In this Section we discuss briefly what happens with SMS results produced with 1
 \end{figure}
 %
 %
-In Fig. \ref{13TEV} we consider a set of points which can be excluded with the new ATLAS-SUSY-2013-02 EMs, but cannot be excluded by the 13 TeV results implemented in the most updated release v.1.2. of the \SMO~ database. The points are divided into two categories. The first include points that do not map onto any of the available results, mainly because the mass array characterising the models in the decomposition cannot be mapped onto the mass grid of the results. The second category includes points for which 13 TeV results can indeed be applied, but they prove insufficient to exclude the points. 
-The two different mass planes show clearly that indeed the majority of points falls in the region where the mass gap between the gluino-LSP or squark-LSP is small. In Fig. \ref{13TeVrvalue} we also include the distributions of 8 TeV ATLAS-SUSY-2013-02 results, which reaches up to values greater than few tens.
+In Fig. \ref{13TEV} we consider a set of points which can be excluded with the new ATLAS-SUSY-2013-02 EMs, but cannot be excluded by the 13 TeV results implemented in the most updated release v.1.2. of the \SMO~ database. The points are divided into two categories. The first include points that do not map onto any of the available results. This is mainly due to the limitation in the mass grid for which results are available, that might not allow to cover the specific mass configuration of the model points tested by \SMO~; in practise, it is not possible to interpolate within the results available and extract UL values for the mass configuration tested. Furthermore, the variety of SMS used for the interpretation at 13 TeV is still rather small. The second category includes points for which 13 TeV results can indeed be applied, but they prove insufficient to consider the point excluded, i.e. the \RVALUE does not exceed unity. 
+The two different mass planes employed for the projections of the results show clearly that indeed the majority of points falls in the region where the mass gap between the gluino-LSP or squark-LSP is small. We characterize the distribution of the \RVALUE~ of such points in Fig. \ref{13TeVrvalue}, using the results for the 8 TeV ATLAS-SUSY-2013-02 analysis. We see that the \RVALUE~ of a significant number of model points stretches up to few tens. 
 %
-
 \begin{wrapfigure}{r}{0.5\textwidth}  
 	\begin{center}
 		
 		\includegraphics[width=0.49\textwidth]{PLOTS/13TeV/rvalues.pdf}
 		
 	\end{center}
-	\caption{Distribution of points (Bino-like LSP dataset) excluded by the 8 TeV EM results for the analysis ATLAS-SUSY-2013-02, but not excluded by recent 13 TeV analyses published in v1.2.2 of the \SMO~ database. In cyan, the points fall outside the grid of results available for 13 TeV results; in purple, points for which the $r \ value <1$ with 13 TeV results. Note that most of the points lies in the region of small gluino/squark-LSP mass gap.}. 
+	\caption{Distribution of points (Bino-like LSP dataset) excluded by the 8 TeV EM results for the analysis ATLAS-SUSY-2013-02, but not excluded by recent 13 TeV analyses published in v1.2.2 of the \SMO~ database. The results are projected onto the $(m_{\tilde g},m_{\tilde \chi _1 ^0})$ mass plane (left panel), and onto the $(min(m_{\tilde g}),m_{\tilde g})$ mass plane (right). In cyan, the points fall outside the grid of results available for 13 TeV results; in purple, points for which the $r \ value <1$ with 13 TeV results. Note that most of the points lies in the region of small gluino/squark-LSP mass gap.}. 
 	\label{13TeVrvalue}
 \end{wrapfigure}
 
-We note that the recent Run 2 inclusive ATLAS 0 lepton,2-6 jets search\cite{Aaboud:2017vwy}, that uses 36 $fb^{-1}$ of collision data, is interpreted with gluino and squark pair production and gluino-squark SMS. In particular, the gluino-squark model is in fact a realisation of the pMSSM where only 1st and 2nd generation squarks and gluinos are considered, and all the other sparticles are decoupled. They parametrized the mass planes by fixing the LSP mass (Bino-like, for $m_{\tilde \chi _1} ^0 = (0,695,995)$ and considered a grid of gluino and squark masses. We note that the in order to use such results, an interpolation in the LSP mass of around 700 GeV, to cover the region $m_{\tilde \chi _1} ^0 < 700$ GeV , has to be performed. Unfortunately the results are provided (on \texttt{InspireHEP}\cite{HEP201607} only in the form of UL maps. It would be much appreciated if EMs for the gluino-squark model were also made available and allow for the combination with the published EMs for the \Ttwo~model. 
+On a side note, we observe that the recent Run 2 inclusive ATLAS 0 lepton,2-6 jets search\cite{Aaboud:2017vwy}, that uses 36 $fb^{-1}$ of collision data, is interpreted with both gluino and squark pair productions, plus a gluino-squark model intended as a realisation of the pMSSM where only 1st and 2nd generation squarks and gluinos are light, and all the other sparticles are decoupled. They parametrized the mass planes by fixing the LSP mass (Bino-like, for $m_{\tilde \chi _1} ^0 = (0,695,995)$ and considered a grid of gluino and squark masses. In order to use such results, an interpolation in the LSP mass of around 700 GeV, to cover the region $m_{\tilde \chi _1} ^0 < 700$ GeV , has to be performed, which is quite a large mass interval. Unfortunately the results are provided (on \texttt{InspireHEP}\cite{HEP201607} only in the form of UL maps. It would be much appreciated if EMs for the gluino-squark model were also made available and allow for the combination with the published EMs for the \Ttwo~model to exploit the full gluino-squark signal constraints.
 
-\begin{wrapfigure}{l}{0.5\textwidth} 
+\begin{figure}
 	\begin{center}		
-		\includegraphics[width=0.49\textwidth]{PLOTS/13TeV/59847871.pdf}
+		\includegraphics[width=0.65\textwidth]{PLOTS/13TeV/59847871.pdf}
 	\end{center}
 	\caption{Mass spectrum of the point \textit{59847871}, from the Bino-like LSP dataset. Right-handed squarks are the lightest coloured particles, opening the $\tilde g \rightarrow q \tilde q $ decay channel. {\color{blue} FIX!!! right up and down squarks}} 
 	\label{pyslha}
-\end{wrapfigure}
+\end{figure}
 
-Finally, we provide the results of one of such points, the SLHA file \textit{59847871} from the Bino-like LSP dataset. The mass spectrum, adapted from the tool \texttt{pySLHA}\cite{Buckley:2013jua}, is shown in Fig. \ref{pyslha}. We see that, besides the light neutralinos/chargino $\tilde \chi _1 ^0,\tilde \chi _2 ^0,\tilde \chi _3 ^0,\tilde \chi _1 ^{\pm}$ whose mass lies around 500 GeV, the lightest SUSY particles are down-type right-handed squark, with mass of 854 GeV. The gluino is slightly heavier, with a mass of 1.072 TeV. The up-type right-handed and the left-handed squarks have a mass of 1.763 and 2.353 TeV respectively. In Table \ref{tab_13tev} the results from the best 13 TeV analysis and the results from our recast EMs for the 8 TeV searches are shown, and the values for the production cross section in Tab. \ref{cross_sections}. 
+Finally, we show in detail the results of one of such points, namely the SLHA file \textit{59847871} from the Bino-like LSP dataset. Its mass spectrum, adapted from the tool \texttt{pySLHA}\cite{Buckley:2013jua}, is shown in Fig. \ref{pyslha}. We see that, besides the light neutralinos/chargino $\tilde \chi _1 ^0,\tilde \chi _2 ^0,\tilde \chi _3 ^0,\tilde \chi _1 ^{\pm}$ whose mass lies around 500 GeV, the lightest SUSY particles are down-type right-handed squark, with mass of 854 GeV. The gluino is slightly heavier, with a mass of 1.072 TeV. The up-type right-handed and the left-handed squarks have a mass of 1.763 and 2.353 TeV respectively. In Table \ref{tab_13tev} the results from the best 13 TeV analysis and the results from our recast EMs for the 8 TeV searches are shown.
 %
 %
-
-
-
-
 \begin{table}[!h]
 	\footnotesize
 	\begin{center}
@@ -570,18 +588,19 @@ Finally, we provide the results of one of such points, the SLHA file \textit{598
 	\caption{Cross section production [pb] for the processes $pp \rightarrow \tilde g \tilde g$,$pp \rightarrow \tilde g \tilde q$, $pp \rightarrow \tilde q \tilde q$. Cross sections values are calculated at NLL order.}
 	\label{cross_sections}
 \end{table}
+%
+The only applicable 13 TeV results are in the form of \Ttwo~ SMS UL, coming from the decay of the down-type right-handed squarks to their corresponding Standard Model quark companion and the LSP. On the other hand, gluinos decay via one-step cascade to the intermediate lighter squarks; overall, this would produce the \Tfive~ signature. The values of the cross section, listed in Tab. \ref{cross_sections}, show that indeed the three different production channels $pp \rightarrow \tilde g \tilde g$, $pp \rightarrow \tilde g \tilde q$ and $pp \rightarrow \tilde q \tilde q$ have comparable size.
 
 
-
-
+%
 \section{Conclusion}\label{sec:conclusion}
-While simplified models have become hugely popular among the experimental collaboration for the interpretation of their BSM searches, it is always challenging to make use of such results to investigate complicated theories. Moreover, the question if the simplified approach is sufficient to properly cover the a full model is always open. A concrete step forward was made by analysing the ATLAS pMSSM-19 dataset with simplified models, showing that a large portion of the parameter space of such SUSY model can be efficiently constrained by means of SMS, without the computationally expensive procedure of analyses recasting. At the same time,  despite the plenty SMS results, there is a lot of room for improvement in the coverage. The essence of SMS makes them inadequate in the presence of  complicated mass spectra, that give rise to long decay patterns and that are better captured by full analyses recast. Fortunately the main outcome of the previous study showed clearly that for the majority of uncovered model points, most of the unconstrained $\sigma \times BR$ was captured by a class of simplified models involving only three SUSY particles and short decay, arising from gluino-squark production. The associated $3jets+$\MET~ signature is easily covered by inclusive all hadronic final state searches at the LHC, targeting specifically low jet multiplicity, such as ATLAS-SUSY-2013-02 and CMS-SUS-13-012. The results presented in this work show concretely that it is possible to produce such dedicated EM results, using available recasting tools, and significantly increase the coverage of the model up to 74$\%$ and 71$\%$ of the total ATLAS exclusion for the Bino and Higgsino like LSP dataset respectively. 
+While simplified models have become hugely popular among the experimental collaboration for the interpretation of their BSM searches, it is always challenging to make use of such results to investigate complicated theories. Moreover, the question if the simplified approach is sufficient to properly cover the a full model is always open. A concrete step forward was made by analysing the ATLAS pMSSM-19 dataset with simplified models, showing that a large portion of the parameter space of such SUSY model can be efficiently constrained by means of SMS, without the computationally expensive procedure of analyses recasting. At the same time, despite the plenty available SMS results, there is a lot of room for improvement in the coverage. The essence of SMS makes them inadequate in the presence of complicated mass spectra, that give rise to long decay patterns and that are better captured by full analyses recast. Fortunately the main outcome of the previous study showed clearly that for the majority of uncovered model points, most of the unconstrained $\sigma \times BR$ was captured by a class of simplified models involving only three SUSY particles and short decay, arising from gluino-squark production. The associated $3jets+$\MET~ signature is easily covered by inclusive all hadronic final state searches at the LHC, targeting specifically low jet multiplicity, such as ATLAS-SUSY-2013-02 and CMS-SUS-13-012. The results presented in this work show concretely that it is possible to produce such dedicated EM results, using available recasting tools, and significantly increase the coverage of the model up to 74$\%$ and 71$\%$ of the total ATLAS exclusion for the Bino and Higgsino like LSP dataset respectively. 
 Moreover, due to the large cross section for gluino-squark production, it was shown that the new EMs could be still extended to larger particle mass, and obtain additional constraints. 
-The workflow can be extended and implemented for other theories: once the most important missing simplified signatures are determined, recast EM can be produced only once, and the results can be re-used to constrain generic models. In addition to the possibility to produce customized SMS results, EMs have the advantage of allowing the combination of multiple signals. In particular, the combination of the \Ttwo+\Tfive+\TGQ~signals for the ATLAS-SUSY-2013-02 analysis is sufficient to cover the XX and XX of the points covered by the full recast of the analysis, as performed by ATLAS. We note that this is obtained by neglecting most of the popular simplified model for gluino production, such as the direct decays of gluinos via off-shell top $pp \rightarrow \tilde g \tilde g, \tilde g \rightarrow t \bar t \chi _1 ^0$ and sbottom squarks $pp \rightarrow \tilde g \tilde g, \tilde g \rightarrow b \bar b \chi _1 ^0$, and models for third generation squarks direct decay such as $pp \rightarrow \tilde b \tilde b, \tilde b \rightarrow b \chi _1 ^0$ and $pp \rightarrow \tilde b \tilde b, \tilde b \rightarrow b \chi _1 ^0$, to which the search is expected to be sensitive to (see e.g. \cite{Kraml:2016eti} for the top squark model). 
-On another note, we are aware that the latest data, referring to proton collisions at 13 TeV centre-of-mass energy, give much better constraints on the same model due to the significant increase in the production cross section, and also in the larger amount of data, since the latest SUSY searches form the ATLAS and CMS collaborations are based on an integrated luminosity of around 140 $fb^{-1}$, already a factor 7 higher than the luminosity collected during Run 1. The impact on the pMSSM-19 was already estimated in \cite{Dutta:2018ioj}. There is however a substantial difference and outcome in the aim of the two works. With this study, we aimed at somehow give a concrete exemplification of systematic use of the tool \SMO~ in association with public recasting tool to improve what is the state of the art of the available SMS results. Stressing the importance of specific simplified models results, produced for specific SUSY searches, is valuable information for the future. In fact, still neither the \Tfive nor the \TGQ models are available at higher centre-of-mass energy, being those official or recast results. This works constitute a solid starting point for building future updates of the databases of SUSY SMS results, and we invite both the experimental collaboration and our colleague phenomenologists to produce UL and/or EM results for the SMS here studied.
+The workflow can be extended and implemented for other theories: once the most important missing simplified signatures are determined, recast EM can be produced only once, and the results can be re-used to constrain generic models. In addition to the possibility to produce customized SMS results, EMs have the advantage of allowing the combination of multiple signals. In particular, the combination of the \Ttwo+\Tfive+\TGQ~signals for the ATLAS-SUSY-2013-02 analysis is sufficient alone to cover around 70 $\%$of the points covered by the full recast of the analysis, as performed by ATLAS. We note that this is obtained by neglecting most of the popular simplified model for gluino production, such as the direct decays of gluinos via off-shell top $pp \rightarrow \tilde g \tilde g, \tilde g \rightarrow t \bar t \chi _1 ^0$ and sbottom squarks $pp \rightarrow \tilde g \tilde g, \tilde g \rightarrow b \bar b \chi _1 ^0$, and models for third generation squarks direct decay such as $pp \rightarrow \tilde b \tilde b, \tilde b \rightarrow b \chi _1 ^0$ and $pp \rightarrow \tilde b \tilde b, \tilde b \rightarrow b \chi _1 ^0$, to which the search is expected to be sensitive to (see e.g. \cite{Kraml:2016eti} for the top squark model). 
+On another note, we are aware that the latest data, referring to proton collisions at 13 TeV centre-of-mass energy, give much better constraints on the same model due to the significant increase in the production cross section, and also in the larger amount of data, since the latest SUSY searches form the ATLAS and CMS collaborations are based on an integrated luminosity of around 140 $fb^{-1}$, already a factor 7 higher than the luminosity collected during Run 1. The impact on the pMSSM-19 was already estimated in \cite{Dutta:2018ioj}. There is however a substantial difference and outcome in the aim of the two works. With this study, we aimed at somehow give a concrete exemplification of systematic use of the tool \SMO~ in association with public recasting tool to improve what is the state of the art of the available SMS results. Stressing the importance of specific simplified models results, produced for specific SUSY searches, is valuable information for the future. In fact, still neither the \Tfive~ nor the \TGQ~ models are available at higher centre-of-mass energy, being those official or recast results. This works constitute a solid starting point for building future updates of the databases of SUSY SMS results, and we invite both the experimental collaboration and our colleague phenomenologists to produce UL and/or EM results for the SMS here studied.
 %
 \section*{Acknowledgments}
-The author thanks Wolfgang Waltenberger, Sabine Kraml, Ursula Laa and Andre Lessa from the SModleS collaborations for useful discussions, and for providing the data used in the comparison with early 13 TeV results. The author is grateful to the Institut f\"ur Hochenergiephysik of the \"Osterreichische Akademie der Wissenschaften for the opportunity to use the computing facilities.
+The author thanks Wolfgang Waltenberger, Sabine Kraml, Ursula Laa and Andre Lessa from the \SMO~ collaborations for useful discussions, and for providing the data used in the comparison with early 13 TeV results. The author is grateful to the Institut f\"ur Hochenergiephysik of the \"Osterreichische Akademie der Wissenschaften for the opportunity to use the computing facilities.
 %
 \bibliography{references}
 \addcontentsline{toc}{section}{References}
