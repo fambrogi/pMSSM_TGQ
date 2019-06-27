@@ -26,8 +26,8 @@ F.~Ambrogi, S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, and W.~Waltenberger, {\it
 \bibitem{Djouadi:1998di}
 {\bf MSSM Working Group} Collaboration, A.~Djouadi et~al., {\it {The Minimal
   supersymmetric standard model: Group summary report}},  in {\em {GDR
-  (Groupement De Recherche) - Supersymetrie, Montpellier, France, April 15-17,
-  1998}}.
+  (Groupement De Recherche) - Supersymetrie Montpellier, France, April 15-17,
+  1998}}, 1998.
 \newblock \href{http://xxx.lanl.gov/abs/hep-ph/9901246}{{\tt hep-ph/9901246}}.
 
 \bibitem{ATLASpMSSMhepdata}
@@ -45,6 +45,12 @@ F.~Ambrogi, S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, V.~Magerl, J.~Sonneveld,
   simplified model constraints with efficiency maps}},  {\em Comput. Phys.
   Commun.} {\bf 227} (2018) 72--98,
   [\href{http://xxx.lanl.gov/abs/1701.0658}{{\tt arXiv:1701.0658}}].
+
+\bibitem{Khachatryan:2016nvf}
+{\bf CMS} Collaboration, V.~Khachatryan et~al., {\it {Phenomenological MSSM
+  interpretation of CMS searches in pp collisions at sqrt(s) = 7 and 8 TeV}},
+  {\em JHEP} {\bf 10} (2016) 129,
+  [\href{http://xxx.lanl.gov/abs/1606.0357}{{\tt arXiv:1606.0357}}].
 
 \bibitem{Alwall:2011uj}
 J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer, and T.~Stelzer, {\it {MadGraph
@@ -68,6 +74,17 @@ J.~Alwall et~al., {\it {Comparative study of various algorithms for the merging
   of parton showers and matrix elements in hadronic collisions}},  {\em Eur.
   Phys. J.} {\bf C53} (2008) 473--500,
   [\href{http://xxx.lanl.gov/abs/0706.2569}{{\tt arXiv:0706.2569}}].
+
+\bibitem{Conte:2012fm}
+E.~Conte, B.~Fuks, and G.~Serret, {\it {MadAnalysis 5, A User-Friendly
+  Framework for Collider Phenomenology}},  {\em Comput. Phys. Commun.} {\bf
+  184} (2013) 222--256, [\href{http://xxx.lanl.gov/abs/1206.1599}{{\tt
+  arXiv:1206.1599}}].
+
+\bibitem{Conte:2018vmg}
+E.~Conte and B.~Fuks, {\it {Confronting new physics theories to LHC data with
+  MadAnalysis 5}},  \href{http://xxx.lanl.gov/abs/1808.0048}{{\tt
+  arXiv:1808.0048}}.
 
 \bibitem{ATLAS-SUSY-2013-02MA5}
 G.~Chalons and D.~Sengupta, {\it {Madanalysis 5 implementation of the ATLAS

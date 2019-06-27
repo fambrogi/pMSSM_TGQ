@@ -3,50 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: jhepexample.aux
 The style file: JHEP.bst
 Database file #1: references.bib
-Repeated entry---line 4812 of file references.bib
- : @inproceedings{Djouadi:1998di
- :                              ,
-I'm skipping whatever remains of this entry
-Warning--empty year in Djouadi:1998di
-You've used 43 entries,
+You've used 46 entries,
             2195 wiz_defined-function locations,
-            796 strings with 11114 characters,
-and the built_in function-call counts, 12305 in all, are:
-= -- 1198
-> -- 498
+            814 strings with 11585 characters,
+and the built_in function-call counts, 13130 in all, are:
+= -- 1285
+> -- 525
 < -- 0
-+ -- 184
-- -- 141
-* -- 987
-:= -- 1675
-add.period$ -- 47
-call.type$ -- 43
-change.case$ -- 36
++ -- 194
+- -- 148
+* -- 1055
+:= -- 1789
+add.period$ -- 50
+call.type$ -- 46
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 44
-duplicate$ -- 645
-empty$ -- 1151
-format.name$ -- 141
-if$ -- 3139
+cite$ -- 46
+duplicate$ -- 686
+empty$ -- 1226
+format.name$ -- 148
+if$ -- 3350
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 133
-newline$ -- 134
-num.names$ -- 36
-pop$ -- 200
+int.to.str$ -- 46
+missing$ -- 144
+newline$ -- 143
+num.names$ -- 39
+pop$ -- 210
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 456
+skip$ -- 483
 stack$ -- 0
-substring$ -- 562
-swap$ -- 267
+substring$ -- 611
+swap$ -- 283
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 76
-width$ -- 45
-write$ -- 422
-(There was 1 error message)
+warning$ -- 0
+while$ -- 82
+width$ -- 48
+write$ -- 453
